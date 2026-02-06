@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Twitter, Youtube, Mail, Phone, MapPin } from 'lucide-react';
-import logoImage from 'figma:asset/7debed77dd564425f84186c474c7cb785226a20f.png';
+import logoImage from '@/assets/7debed77dd564425f84186c474c7cb785226a20f.png';
 
 export function Footer() {
   return (
