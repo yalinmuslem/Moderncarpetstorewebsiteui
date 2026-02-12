@@ -5,7 +5,7 @@ import Chip from "./Chip";
 
 const Hero: React.FC = () => {
   return (
-    <section className="text-center pt-6 pb-16 px-6 flex items-center flex-col">
+    <section className="text-center pt-6 pb-28 px-6 flex items-center flex-col">
       <AnimatedContent
         distance={100}
         direction="vertical"

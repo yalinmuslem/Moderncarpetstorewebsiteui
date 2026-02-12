@@ -42,10 +42,10 @@ const FAQ: React.FC = () => {
       </div>
       <div className="">
         {faqs.map((faq, idx) => (
-          <div key={idx} className="py-4">
+          <div key={idx} className="py-2">
             <button
               onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-              className="w-full flex justify-between items-center text-left font-medium py-2 text-[#162a1c]"
+              className="w-full flex justify-between items-center text-left font-normal py-2 text-[#162a1c]"
             >
               <span>{faq.q}</span>
               <span className="text-2xl transition-transform duration-300">
