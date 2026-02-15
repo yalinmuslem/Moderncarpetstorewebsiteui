@@ -41,7 +41,7 @@ const ServiceCard: React.FC<ServiceItem> = ({ title, description, image }) => {
           alt={title}
         />
       </div>
-      <h3 className="text-2xl font-medium mb-3 text-[#162a1c]">{title}</h3>
+      <h3 className="text-2xl font-medium mb-3 text-[#220905]">{title}</h3>
       <p className="text-gray-500 leading-relaxed">{description}</p>
     </div>
   );
@@ -53,7 +53,7 @@ export const Services: React.FC = () => {
       <div className="md:sticky md:top-20 h-fit">
         <Chip>Services</Chip>
 
-        <h2 className="text-5xl font-medium mt-6 mb-8 text-[#162a1c] leading-[1.1]">
+        <h2 className="text-5xl font-medium mt-6 mb-8 text-[#220905] leading-[1.1]">
           Your guide for <br /> the road ahead
         </h2>
         <p className="text-gray-500 text-lg max-w-md">

@@ -13,7 +13,7 @@ const About: React.FC = () => {
   return (
     <section className="text-center py-32 bg-white flex flex-col items-center">
       <Chip>About</Chip>
-      <div className="text-4xl md:text-5xl font-normal max-w-4xl mx-auto mt-8 leading-tight text-[#162a1c]">
+      <div className="text-4xl md:text-5xl font-normal max-w-4xl mx-auto mt-8 leading-tight text-[#220905]">
         {lines.map((line, idx) => (
           <BlurText
             key={idx}
@@ -25,7 +25,7 @@ const About: React.FC = () => {
           />
         ))}
       </div>
-      <button className="mt-10 bg-[#162a1c] text-white px-8 py-3 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-[#23422c] transition-colors">
+      <button className="mt-10 bg-[#162a1c] text-white px-8 py-3 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-[#bd0d11] transition-colors">
         Learn more <MoveRight size={16} />
       </button>
     </section>

@@ -9,11 +9,12 @@ import BentoGrid from "@/components/BentoGrid";
 import GradualBlurMemo from "@/components/GradualBlur";
 import { Services } from "@/components/Services";
 import { CTA } from "@/components/CTA";
+import Products from "@/components/Projects";
 
 const GreenleafLanding: React.FC = () => {
   return (
     <>
-      <div className="min-h-screen bg-white text-[#162a1c] font-sans selection:bg-[#162a1c] selection:text-white">
+      <div className="min-h-screen bg-white text-[#220905] font-sans selection:bg-[#162a1c] selection:text-white">
         {/* 1. HEADER & NAVIGATION */}
         <Navbar />
 
@@ -27,11 +28,15 @@ const GreenleafLanding: React.FC = () => {
           {/* 4. ABOUT SECTION (With BlurText Animation) */}
           <About />
 
+          <Products />
+
           {/* 5. SERVICES SECTION */}
           <Services />
 
           {/* 6. TESTIMONIALS SECTION */}
           <Testimonials />
+
+          {/* <Portofolio /> */}
 
           {/* 7. FAQ SECTION */}
           <FAQ />

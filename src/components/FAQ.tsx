@@ -36,7 +36,7 @@ const FAQ: React.FC = () => {
     <section className="max-w-4xl mx-auto px-6 py-32">
       <div className="text-center mb-16">
         <Chip>FAQ</Chip>
-        <h2 className="text-5xl font-medium mt-6 text-[#162a1c]">
+        <h2 className="text-5xl font-medium mt-6 text-[#220905]">
           Frequently asked questions
         </h2>
       </div>
@@ -45,7 +45,7 @@ const FAQ: React.FC = () => {
           <div key={idx} className="py-2">
             <button
               onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-              className="w-full flex justify-between items-center text-left font-normal py-2 text-[#162a1c]"
+              className="w-full flex justify-between items-center text-left font-normal py-2 text-[#220905]"
             >
               <span>{faq.q}</span>
               <span className="text-2xl transition-transform duration-300">

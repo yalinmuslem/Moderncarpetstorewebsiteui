@@ -1,7 +1,7 @@
 import React from "react";
 import { MoveRight } from "lucide-react";
 import AnimatedContent from "./AnimatedContent";
-import Chip from "./Chip";
+import Magnet from "./Magnet";
 
 const Hero: React.FC = () => {
   return (
@@ -18,9 +18,12 @@ const Hero: React.FC = () => {
         threshold={0.1}
         delay={0}
       >
-        <div className="inline-block bg-gray-50 border border-gray-100 rounded-full px-4 py-2 text-xs font-medium mb-8">
-          <span className="text-gray-500 mr-2">●</span>
-          <Chip>1 spot left this month</Chip>
+        <div className="flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-full px-4 py-2 text-xs font-medium mb-8">
+          <span className="relative flex size-3">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#bd0d11] opacity-75"></span>
+            <span className="relative inline-flex size-3 rounded-full bg-[#bd0d11]"></span>
+          </span>
+          1 spot left this month
         </div>
       </AnimatedContent>
 
@@ -36,7 +39,7 @@ const Hero: React.FC = () => {
         threshold={0.1}
         delay={0.2}
       >
-        <h1 className="text-5xl md:text-7xl  tracking-tight leading-[1.1] mb-8 text-[#162a1c]">
+        <h1 className="text-5xl md:text-7xl  tracking-tight leading-[1.1] mb-8 text-[#220905]">
           Carbon consultants <br /> for savvy SMEs
         </h1>
       </AnimatedContent>
@@ -71,9 +74,11 @@ const Hero: React.FC = () => {
         threshold={0.1}
         delay={0.6}
       >
-        <button className="bg-[#162a1c] text-white px-8 py-4 rounded-full font-medium hover:bg-[#23422c] transition-all shadow-xl shadow-green-900/10 flex items-center gap-2">
-          Book my free consultation <MoveRight size={20} />
-        </button>
+        <Magnet padding={10} disabled={false} magnetStrength={2}>
+          <button className="cursor-pointer bg-[#162a1c] text-white px-8 py-4 rounded-full font-medium hover:bg-[#bd0d11] transition-all shadow-xl shadow-green-900/10 flex items-center gap-2">
+            Book my free consultation <MoveRight size={20} />
+          </button>
+        </Magnet>
       </AnimatedContent>
     </section>
   );

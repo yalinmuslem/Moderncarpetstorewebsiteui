@@ -6,7 +6,7 @@ export const CTA = () => {
     <section className="max-w-7xl mx-auto px-6 pb-20">
       <div className="bg-[#f8f9f8] rounded-[3.5rem] p-12 md:p-24 flex flex-col md:flex-row items-center gap-10 overflow-hidden relative border border-gray-100">
         <div className="md:w-1/2 z-10 text-center md:text-left">
-          <h2 className="text-5xl md:text-6xl font-medium mb-8 text-[#162a1c]">
+          <h2 className="text-5xl md:text-6xl font-medium mb-8 text-[#220905]">
             Ready to take <br /> climate action?
           </h2>
           <p className="text-gray-500 text-lg mb-10">

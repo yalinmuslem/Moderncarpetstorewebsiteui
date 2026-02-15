@@ -4,23 +4,23 @@ const Navbar: React.FC = () => {
   return (
     <nav className="flex justify-between items-center px-6 py-6 max-w-7xl mx-auto">
       <div className="flex items-center gap-2">
-        <img src="@/assets/logo.png" />
-        <span className="text-2xl font-bold tracking-tight text-[#162a1c]">
-          Greenleaf
-        </span>
+        <img src="/logo.png" className="w-12 rounded-lg" />
+        {/* <span className="text-2xl font-bold tracking-tight text-[#220905]">
+          Standard Carpets
+        </span> */}
       </div>
       <div className="hidden md:flex space-x-10 text-sm font-medium text-gray-500">
         {["Home", "Services", "About", "Blog", "Contact"].map((item) => (
           <a
             key={item}
             href="#"
-            className="hover:text-[#162a1c] transition-colors"
+            className="hover:text-[#220905] transition-colors"
           >
             {item}
           </a>
         ))}
       </div>
-      <button className="p-2 text-[#162a1c]" aria-label="Search">
+      <button className="p-2 text-[#220905]" aria-label="Search">
         <svg
           className="w-5 h-5"
           fill="none"

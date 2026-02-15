@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
               <a
                 key={social}
                 href="#"
-                className="w-8 h-8 border border-gray-700 rounded-full flex items-center justify-center text-sm hover:bg-white hover:text-[#162a1c] transition-all"
+                className="w-8 h-8 border border-gray-700 rounded-full flex items-center justify-center text-sm hover:bg-white hover:text-[#220905] transition-all"
               >
                 {social}
               </a>
