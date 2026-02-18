@@ -5,15 +5,15 @@ import Chip from "./Chip";
 
 const About: React.FC = () => {
   const lines = [
-    "We're a small team of passionate",
-    "carbon experts helping forward-thinking companies",
-    "prepare for the future.",
+    "✔️Over 20 years of industry experience",
+    "✔️Family-run business with a personal approach",
+    "✔️High-quality flooring at competitive prices",
   ];
 
   return (
     <section className="text-center py-32 bg-white flex flex-col items-center">
-      <Chip>About</Chip>
-      <div className="text-4xl md:text-5xl font-normal max-w-4xl mx-auto mt-8 leading-tight text-[#220905]">
+      <Chip>Why Choose Standard Carpets?</Chip>
+      <div className="text-3xl md:text-3xl font-normal max-w-4xl mx-auto mt-8 leading-tight text-[#220905]">
         {lines.map((line, idx) => (
           <BlurText
             key={idx}
@@ -25,7 +25,7 @@ const About: React.FC = () => {
           />
         ))}
       </div>
-      <button className="mt-10 bg-[#162a1c] text-white px-8 py-3 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-[#bd0d11] transition-colors">
+      <button className="mt-10 bg-[#660000] text-white px-8 py-3 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-[#bd0d11] transition-colors">
         Learn more <MoveRight size={16} />
       </button>
     </section>

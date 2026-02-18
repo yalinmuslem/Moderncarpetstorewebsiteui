@@ -9,13 +9,13 @@ import BentoGrid from "@/components/BentoGrid";
 import GradualBlurMemo from "@/components/GradualBlur";
 import { Services } from "@/components/Services";
 import { CTA } from "@/components/CTA";
-import Products from "@/components/Projects";
+import Products from "@/components/Product";
 import Chip from "@/components/Chip";
 
 const GreenleafLanding: React.FC = () => {
   return (
     <>
-      <div className="min-h-screen bg-white text-[#220905] font-sans selection:bg-[#162a1c] selection:text-white">
+      <div className="min-h-screen bg-white text-[#220905] font-sans selection:bg-[#660000] selection:text-white">
         {/* 1. HEADER & NAVIGATION */}
         <Navbar />
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Plus, Minus } from "lucide-react";
+import { Plus, Minus, MoveRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Chip from "./Chip";
 
@@ -7,6 +7,7 @@ interface Product {
   name: string;
   img: string;
   text: string;
+  link: string;
 }
 
 const products: Product[] = [
@@ -14,30 +15,35 @@ const products: Product[] = [
     name: "Carpet",
     text: "Experience the ultimate in comfort and style with our premium carpet collection. From plush textures to vibrant colors, our carpets are designed to transform your space into a cozy haven.",
     img: "carpet.png",
+    link: "/carpet",
   },
   {
     name: "Vinyl Flooring",
     text: "Discover the perfect blend of durability and design with our vinyl flooring options. Whether you're looking for a sleek modern look or a classic wood finish, our vinyl flooring is built to withstand the demands of everyday life while elevating your home's aesthetic.",
     img: "vinyl.png",
+    link: "/vinyl",
   },
   {
     name: "Luxury Vinyl Tiles",
     text: "Elevate your space with our luxury vinyl tiles, offering the perfect combination of style and resilience. With a wide range of designs that mimic natural materials, our LVT flooring provides a sophisticated look while being easy to maintain and ideal for high-traffic areas.",
     img: "lvt.png",
+    link: "/lvt",
   },
   {
     name: "Laminate Flooring",
     text: "Transform your home with our laminate flooring, designed to provide the beauty of hardwood at a fraction of the cost. Our laminate options are not only visually stunning but also durable and easy to install, making them the perfect choice for any room in your house.",
     img: "laminated.png",
+    link: "/laminate",
   },
   {
     name: "Mattress & Bed Frame",
     text: "Experience the ultimate in comfort and support with our premium mattress and bed frame collection. Designed to cater to all sleeping styles, our products ensure a restful night's sleep.",
     img: "mattress.png",
+    link: "/mattress",
   },
 ];
 
-const Projects: React.FC = () => {
+const Product: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   return (
@@ -52,8 +58,8 @@ const Projects: React.FC = () => {
       <div className="flex flex-col md:flex-row gap-12 items-start">
         {/* SISI KIRI: CROSS-FADE IMAGE */}
         <div className="w-full md:w-1/2 sticky top-10">
-          <div className="relative overflow-hidden rounded-2xl aspect-[4/5] shadow-lg bg-[#162a1c]">
-             {/* Background gelap/brand agar tidak ada putih saat transisi pertama kali */}
+          <div className="relative overflow-hidden rounded-2xl aspect-[4/5] shadow-lg bg-[#660000]">
+            {/* Background gelap/brand agar tidak ada putih saat transisi pertama kali */}
             <AnimatePresence initial={false}>
               <motion.img
                 key={activeIndex}
@@ -81,10 +87,9 @@ const Projects: React.FC = () => {
                 onClick={() => setActiveIndex(idx)}
               >
                 <div className="flex justify-between items-center py-6 group">
-                  <span 
-                    className={`text-2xl transition-all duration-300 ${
-                      isActive ? "text-[#220905] font-medium" : "text-gray-400 font-light"
-                    }`}
+                  <span
+                    className={`text-2xl transition-all duration-300 ${isActive ? "text-[#220905] font-medium" : "text-gray-400 font-light"
+                      }`}
                   >
                     {item.name}
                   </span>
@@ -92,13 +97,15 @@ const Projects: React.FC = () => {
                 </div>
 
                 <div
-                  className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                    isActive ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0"
-                  }`}
+                  className={`overflow-hidden transition-all duration-500 ease-in-out ${isActive ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0"
+                    }`}
                 >
                   <p className="text-gray-600 leading-relaxed max-w-lg">
                     {item.text}
                   </p>
+                  <button className="mt-10 bg-[#660000] text-white px-8 py-3 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-[#bd0d11] transition-colors">
+                    Learn more <MoveRight size={16} />
+                  </button>
                 </div>
               </div>
             );
@@ -109,4 +116,4 @@ const Projects: React.FC = () => {
   );
 };
 
-export default Projects;
+export default Product;

@@ -13,7 +13,7 @@ export const CTA = () => {
             Book a free consultation to speak with a carbon expert and discuss
             your goals. Let's build a smarter, greener future for your business.
           </p>
-          <button className="bg-[#162a1c] text-white px-10 py-5 rounded-full font-medium flex items-center gap-2 mx-auto md:mx-0 hover:bg-[#23422c] transition-all">
+          <button className="bg-[#660000] text-white px-10 py-5 rounded-full font-medium flex items-center gap-2 mx-auto md:mx-0 hover:bg-[#bd0d11] transition-all">
             Book my free consultation <MoveRight size={20} />
           </button>
         </div>

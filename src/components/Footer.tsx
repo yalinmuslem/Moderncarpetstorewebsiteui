@@ -4,12 +4,12 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#162a1c] text-white pt-24 pb-12 px-6 rounded-t-[3.5rem]">
+    <footer className="bg-[#660000] text-white pt-24 pb-12 px-6 rounded-t-[3.5rem]">
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-16 mb-20">
         <div className="col-span-2">
           <div className="flex items-center gap-2 mb-8">
             <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
-              <div className="w-3 h-3 bg-[#162a1c] rounded-tr-full"></div>
+              <div className="w-3 h-3 bg-[#660000] rounded-tr-full"></div>
             </div>
             <span className="text-2xl font-bold tracking-tight">Greenleaf</span>
           </div>
