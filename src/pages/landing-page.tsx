@@ -10,6 +10,7 @@ import GradualBlurMemo from "@/components/GradualBlur";
 import { Services } from "@/components/Services";
 import { CTA } from "@/components/CTA";
 import Products from "@/components/Projects";
+import Chip from "@/components/Chip";
 
 const GreenleafLanding: React.FC = () => {
   return (
@@ -22,13 +23,14 @@ const GreenleafLanding: React.FC = () => {
           {/* 2. HERO SECTION */}
           <Hero />
 
+          <Products />
+
           {/* 3. BENTO GRID IMAGES */}
-          <BentoGrid />
+          {/* <BentoGrid /> */}
 
           {/* 4. ABOUT SECTION (With BlurText Animation) */}
           <About />
 
-          <Products />
 
           {/* 5. SERVICES SECTION */}
           <Services />

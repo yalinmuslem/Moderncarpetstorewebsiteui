@@ -2,6 +2,7 @@ import React from "react";
 import AnimatedContent from "./AnimatedContent";
 
 export default function BentoGrid() {
+
   return (
     <AnimatedContent
       distance={50}

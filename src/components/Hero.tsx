@@ -1,85 +1,51 @@
-import React from "react";
-import { MoveRight } from "lucide-react";
-import AnimatedContent from "./AnimatedContent";
-import Magnet from "./Magnet";
+import React, { useEffect, useState } from "react";
 
 const Hero: React.FC = () => {
-  return (
-    <section className="text-center pt-6 pb-28 px-6 flex items-center flex-col">
-      <AnimatedContent
-        distance={100}
-        direction="vertical"
-        reverse
-        duration={2}
-        ease="power3.out"
-        initialOpacity={0}
-        animateOpacity
-        scale={1}
-        threshold={0.1}
-        delay={0}
-      >
-        <div className="flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-full px-4 py-2 text-xs font-medium mb-8">
-          <span className="relative flex size-3">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#bd0d11] opacity-75"></span>
-            <span className="relative inline-flex size-3 rounded-full bg-[#bd0d11]"></span>
-          </span>
-          1 spot left this month
+  const images = ["home/image-1.png", "home/image-2.png", "home/image-3.png"];
+
+  const ImageSlider: React.FC<{ images: string[]; interval?: number }> = ({ images, interval = 4000 }) => {
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+      if (!images || images.length <= 1) return;
+      const id = setInterval(() => {
+        setIndex((i) => (i + 1) % images.length);
+      }, interval);
+      return () => clearInterval(id);
+    }, [images, interval]);
+
+    if (!images || images.length === 0) return null;
+
+    const srcFor = (p: string) => (p.startsWith("/") ? p : `/${p}`);
+
+      return (
+      <div className="w-full mx-auto">
+  <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[600px] overflow-hidden">
+          {images.map((img, i) => {
+            const active = i === index;
+            return (
+              <img
+                key={img + i}
+                src={srcFor(img)}
+                alt={`slide-${i}`}
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-out transform transition-transform ${
+                  active ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+                }`}
+                style={{
+                  willChange: "opacity, transform",
+                }}
+              />
+            );
+          })}
         </div>
-      </AnimatedContent>
+      </div>
+    );
+  };
 
-      <AnimatedContent
-        distance={100}
-        direction="vertical"
-        reverse
-        duration={2}
-        ease="power3.out"
-        initialOpacity={0}
-        animateOpacity
-        scale={1}
-        threshold={0.1}
-        delay={0.2}
-      >
-        <h1 className="text-5xl md:text-7xl  tracking-tight leading-[1.1] mb-8 text-[#220905]">
-          Carbon consultants <br /> for savvy SMEs
-        </h1>
-      </AnimatedContent>
-
-      <AnimatedContent
-        distance={100}
-        direction="vertical"
-        reverse
-        duration={2}
-        ease="power3.out"
-        initialOpacity={0}
-        animateOpacity
-        scale={1}
-        threshold={0.1}
-        delay={0.4}
-      >
-        <p className="text-gray-500 font-light text-md md:text-lg max-w-2xl mx-auto mb-12">
-          We help small and growing businesses cut carbon, boost credibility,
-          and move forward with confidence. Your low-carbon journey starts here.
-        </p>
-      </AnimatedContent>
-
-      <AnimatedContent
-        distance={100}
-        direction="vertical"
-        reverse
-        duration={2}
-        ease="power3.out"
-        initialOpacity={0}
-        animateOpacity
-        scale={1}
-        threshold={0.1}
-        delay={0.6}
-      >
-        <Magnet padding={10} disabled={false} magnetStrength={2}>
-          <button className="cursor-pointer bg-[#162a1c] text-white px-8 py-4 rounded-full font-medium hover:bg-[#bd0d11] transition-all shadow-xl shadow-green-900/10 flex items-center gap-2">
-            Book my free consultation <MoveRight size={20} />
-          </button>
-        </Magnet>
-      </AnimatedContent>
+  return (
+    <section className="text-center flex items-center flex-col">
+      <h2 className="sr-only">Hero</h2>
+      <ImageSlider images={images} interval={4500} />
     </section>
   );
 };

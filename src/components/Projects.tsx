@@ -11,24 +11,29 @@ interface Product {
 
 const products: Product[] = [
   {
-    name: "Kitchens",
-    text: "Expand your living space with a seamless home extension. Whether you need a bigger kitchen, a new living area, or a multi-purpose space, Refit provides expertly crafted extensions.",
-    img: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=1000",
+    name: "Carpet",
+    text: "Experience the ultimate in comfort and style with our premium carpet collection. From plush textures to vibrant colors, our carpets are designed to transform your space into a cozy haven.",
+    img: "carpet.png",
   },
   {
-    name: "Loft Conversions",
-    text: "Turn your unused attic into a functional room. Our loft conversions are designed to maximize space and add significant value to your home.",
-    img: "https://images.unsplash.com/photo-1513584684374-8bdb7489feef?auto=format&fit=crop&q=80&w=1000",
+    name: "Vinyl Flooring",
+    text: "Discover the perfect blend of durability and design with our vinyl flooring options. Whether you're looking for a sleek modern look or a classic wood finish, our vinyl flooring is built to withstand the demands of everyday life while elevating your home's aesthetic.",
+    img: "vinyl.png",
   },
   {
-    name: "Bathrooms",
-    text: "Transform your bathroom into a personal sanctuary. From modern minimalist designs to classic luxury, we handle every detail of your renovation.",
-    img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&q=80&w=1000",
+    name: "Luxury Vinyl Tiles",
+    text: "Elevate your space with our luxury vinyl tiles, offering the perfect combination of style and resilience. With a wide range of designs that mimic natural materials, our LVT flooring provides a sophisticated look while being easy to maintain and ideal for high-traffic areas.",
+    img: "lvt.png",
   },
   {
-    name: "Extensions",
-    text: "Expand your living space with a seamless home extension. Refit provides expertly crafted extensions designed to enhance your home's flow and usability.",
-    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1000",
+    name: "Laminate Flooring",
+    text: "Transform your home with our laminate flooring, designed to provide the beauty of hardwood at a fraction of the cost. Our laminate options are not only visually stunning but also durable and easy to install, making them the perfect choice for any room in your house.",
+    img: "laminated.png",
+  },
+  {
+    name: "Mattress & Bed Frame",
+    text: "Experience the ultimate in comfort and support with our premium mattress and bed frame collection. Designed to cater to all sleeping styles, our products ensure a restful night's sleep.",
+    img: "mattress.png",
   },
 ];
 
@@ -38,9 +43,9 @@ const Projects: React.FC = () => {
   return (
     <section className="py-20 px-6 max-w-7xl mx-auto bg-white">
       <div className="text-center mb-16">
-        <Chip>Projects</Chip>
+        <Chip>Products</Chip>
         <h2 className="text-5xl font-medium mt-6 text-[#220905]">
-          What we offer
+          Explore Our Products
         </h2>
       </div>
 
