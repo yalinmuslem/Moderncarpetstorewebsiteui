@@ -41,7 +41,7 @@ const GreenleafLanding: React.FC = () => {
           {/* <Portofolio /> */}
 
           {/* 7. FAQ SECTION */}
-          <FAQ />
+          {/* <FAQ /> */}
 
           {/* 8. CTA SECTION */}
           <CTA />
