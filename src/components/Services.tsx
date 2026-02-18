@@ -1,5 +1,6 @@
 import React from "react";
 import Chip from "./Chip";
+import { MoveRight } from "lucide-react";
 
 interface ServiceItem {
   title: string;
@@ -9,26 +10,19 @@ interface ServiceItem {
 
 const SERVICES_DATA: ServiceItem[] = [
   {
-    title: "Carbon footprinting & reporting",
+    title: "Free Home Survey & Measurement",
     description:
-      "Measure your emissions with clarity—laying the foundation for smarter action.",
+      "Our experts will visit your home to assess your flooring needs, take precise measurements, and provide personalized recommendations for the best carpet solutions.",
     image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80",
+      "home/service-1.png",
   },
   {
-    title: "Sustainability Strategy",
+    title: "Professional Carpet & Flooring Installation",
     description:
-      "Tailored roadmaps to help your business thrive in a low-carbon economy.",
+      "Our skilled team ensures a seamless installation process, transforming your space with precision and care.",
     image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80",
-  },
-  {
-    title: "Impact Communication",
-    description:
-      "Share your journey authentically with stakeholders and customers alike.",
-    image:
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80",
-  },
+      "home/service-2.png",
+  }
 ];
 
 const ServiceCard: React.FC<ServiceItem> = ({ title, description, image }) => {
@@ -54,13 +48,14 @@ export const Services: React.FC = () => {
         <Chip>Services</Chip>
 
         <h2 className="text-5xl font-medium mt-6 mb-8 text-[#220905] leading-[1.1]">
-          Your guide for <br /> the road ahead
+          Comprehensive Flooring Solutions Tailored to Your Needs
         </h2>
         <p className="text-gray-500 text-lg max-w-md">
-          We help small and mid-sized businesses navigate the path to
-          sustainability. Whether you're setting out or refining your route,
-          we'll guide you every step of the way.
+          From consultation to installation, we provide comprehensive services to ensure your flooring project is a success. Our team of experts is here to guide you every step of the way, making the process seamless and stress-free.
         </p>
+        <button className="mt-10 bg-[#660000] text-white px-8 py-3 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-[#bd0d11] transition-colors">
+          Learn more <MoveRight size={16} />
+        </button>
       </div>
 
       <div className="space-y-20">
