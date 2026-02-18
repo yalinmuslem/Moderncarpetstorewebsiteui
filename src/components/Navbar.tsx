@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
         </span> */}
       </div>
       <div className="hidden md:flex space-x-10 text-sm font-medium text-gray-500">
-        {["Home", "Services", "About", "Blog", "Contact"].map((item) => (
+        {['Home', 'Product', 'Project', 'Services', 'About'].map((item) => (
           <a
             key={item}
             href="#"
@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
           </a>
         ))}
       </div>
-      <button className="p-2 text-[#220905]" aria-label="Search">
+      {/* <button className="p-2 text-[#220905]" aria-label="Search">
         <svg
           className="w-5 h-5"
           fill="none"
@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
           />
         </svg>
-      </button>
+      </button> */}
     </nav>
   );
 };

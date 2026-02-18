@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useAnimationControls } from "framer-motion";
 import Chip from "./Chip";
 
 interface Testimonial {
@@ -38,22 +38,46 @@ const TestimonialCard = ({ item }: { item: Testimonial }) => (
 
 const ScrollingRow = ({ items, direction = "left" }: { items: Testimonial[], direction?: "left" | "right" }) => {
   const isLeft = direction === "left";
-  
   // Tips: Ulangi array 4 kali untuk memastikan layar lebar (Ultrawide) tetap terisi penuh
   const duplicatedItems = [...items, ...items, ...items, ...items];
+
+  const controls = useAnimationControls();
+
+  const startAnimation = () => {
+    controls.start({
+      x: isLeft ? "-50%" : "0%",
+      transition: {
+        duration: 30,
+        ease: "linear",
+        repeat: Infinity,
+      },
+    });
+  };
+
+  React.useEffect(() => {
+    // kick off the continuous animation when component mounts
+    // initial position depends on direction so we set it first then start
+    controls.set({ x: isLeft ? "0%" : "-50%" });
+    startAnimation();
+    // cleanup: stop animations on unmount
+    return () => controls.stop();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isLeft]);
 
   return (
     <div className="flex overflow-hidden mb-8 relative">
       <motion.div
         className="flex gap-8 px-4"
-        initial={{ x: isLeft ? "0%" : "-50%" }}
-        animate={{
-          x: isLeft ? "-50%" : "0%",
+        // start from the set position and then rely on controls
+        animate={controls}
+        initial={false}
+        onMouseEnter={() => {
+          // pause the animation when mouse hovers anywhere on the row
+          controls.stop();
         }}
-        transition={{
-          duration: 30,
-          ease: "linear",
-          repeat: Infinity,
+        onMouseLeave={() => {
+          // resume the animation when mouse leaves
+          startAnimation();
         }}
       >
         {duplicatedItems.map((item, idx) => (

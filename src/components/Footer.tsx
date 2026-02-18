@@ -5,16 +5,14 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-[#660000] text-white pt-24 pb-12 px-6 rounded-t-[3.5rem]">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-16 mb-20">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-16 mb-16">
         <div className="col-span-2">
           <div className="flex items-center gap-2 mb-8">
-            <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
-              <div className="w-3 h-3 bg-[#660000] rounded-tr-full"></div>
-            </div>
-            <span className="text-2xl font-bold tracking-tight">Greenleaf</span>
+            {/* Use the logo from public/ as the site brand */}
+            <img src="/logo.png" alt="GreenLeaf logo" className="w-28 h-auto" />
           </div>
           <p className="text-gray-400 mb-8 max-w-xs">
-            Konsultan karbon untuk UKM yang cerdas dan berwawasan ke depan.
+            Standard Carpet - Your go-to solution for high-quality carpets.
           </p>
           <div className="flex gap-4">
             {['X', 'In', 'Ig'].map((social) => (
@@ -32,7 +30,7 @@ const Footer: React.FC = () => {
         <div>
           <h4 className="font-medium mb-6">Pages</h4>
           <ul className="space-y-4 text-gray-400 text-sm">
-            {['Home', 'About', 'Services', 'Blog'].map((link) => (
+            {['Home', 'Product', 'Project', 'Services', 'About'].map((link) => (
               <li key={link}>
                 <a href="#" className="hover:text-white transition-colors">{link}</a>
               </li>
@@ -52,12 +50,8 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4">
-        <p>© {currentYear} GreenLeaf, All rights reserved</p>
-        <div className="flex gap-8">
-          <p>Built by James Hicks</p>
-          <p>Made in Framer</p>
-        </div>
+      <div className="max-w-7xl mx-auto pt-8 pb-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4">
+        <p>© {currentYear} Standard Carpet, All rights reserved</p>
       </div>
     </footer>
   );
