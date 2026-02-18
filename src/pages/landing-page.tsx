@@ -11,6 +11,7 @@ import { Services } from "@/components/Services";
 import { CTA } from "@/components/CTA";
 import Products from "@/components/Product";
 import Chip from "@/components/Chip";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const GreenleafLanding: React.FC = () => {
   return (
@@ -41,6 +42,8 @@ const GreenleafLanding: React.FC = () => {
           {/* <Portofolio /> */}
 
           {/* 7. FAQ SECTION */}
+          {/* Floating WhatsApp button (phone number optional) */}
+          <WhatsAppButton phone="6281234567890" />
           {/* <FAQ /> */}
 
           {/* 8. CTA SECTION */}
