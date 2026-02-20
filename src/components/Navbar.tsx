@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
         </span> */}
       </div>
       <div className="hidden md:flex space-x-10 text-sm font-medium text-gray-500">
-        {['Home', 'Product', 'Project', 'Services', 'About'].map((item) => (
+        {["Home", "Product", "About", "Project", "Services"].map((item) => (
           <a
             key={item}
             href={`/#${item.toLowerCase()}`}

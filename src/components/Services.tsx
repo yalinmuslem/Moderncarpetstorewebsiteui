@@ -50,7 +50,7 @@ const ServiceCard: React.FC<ServiceItem> = ({ title, description, image }) => {
 
 export const Services: React.FC = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-20 relative">
+    <section id="services" className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-20 relative">
       <div className="md:sticky md:top-20 h-fit">
         <Chip>Services</Chip>
 

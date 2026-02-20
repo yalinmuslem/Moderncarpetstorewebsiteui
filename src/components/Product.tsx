@@ -48,7 +48,7 @@ const Product: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   return (
-    <section className="py-20 px-6 max-w-7xl mx-auto bg-white">
+    <section id="product" className="py-20 px-6 max-w-7xl mx-auto bg-white">
       <div className="text-center mb-16">
         <Chip>Products</Chip>
         <h2 className="text-5xl font-medium mt-6 text-[#220905]">

@@ -11,7 +11,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section className="text-center py-32 bg-white flex flex-col items-center">
+    <section id="about" className="text-center py-32 bg-white flex flex-col items-center">
       <Chip>Why Choose Standard Carpets?</Chip>
       <div className="text-3xl md:text-3xl font-normal max-w-4xl mx-auto mt-8 leading-tight text-[#220905]">
         {lines.map((line, idx) => (
