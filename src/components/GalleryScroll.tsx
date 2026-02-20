@@ -64,7 +64,9 @@ export default function CarpetShowcase() {
           <div
             key={item.id}
             data-id={item.id}
-            ref={(el) => (sectionRefs.current[index] = el)}
+            ref={(el) => {
+              sectionRefs.current[index] = el;
+            }}
             className="h-screen relative"
           >
             {/* Image 1: Sticky Tile */}
@@ -78,7 +80,7 @@ export default function CarpetShowcase() {
             
             {/* Label Informasi */}
             <div className="p-10 relative z-10">
-              <h3 className="text-xs tracking-[0.2em] uppercase font-medium text-gray-500">
+              <h3 className="text-lg tracking-[0.2em] uppercase font-medium text-gray-500">
                 {item.title}
               </h3>
             </div>

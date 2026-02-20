@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
         {['Home', 'Product', 'Project', 'Services', 'About'].map((item) => (
           <a
             key={item}
-            href="#"
+            href={`/#${item.toLowerCase()}`}
             className="hover:text-[#220905] transition-colors"
           >
             {item}
