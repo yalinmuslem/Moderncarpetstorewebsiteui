@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Plus, Minus, MoveRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Chip from "./Chip";
+import { Link } from "react-router";
 
 interface Product {
   name: string;
@@ -88,8 +89,11 @@ const Product: React.FC = () => {
               >
                 <div className="flex justify-between items-center py-6 group">
                   <span
-                    className={`text-2xl transition-all duration-300 ${isActive ? "text-[#220905] font-medium" : "text-gray-400 font-light"
-                      }`}
+                    className={`text-2xl transition-all duration-300 ${
+                      isActive
+                        ? "text-[#220905] font-medium"
+                        : "text-gray-400 font-light"
+                    }`}
                   >
                     {item.name}
                   </span>
@@ -97,15 +101,18 @@ const Product: React.FC = () => {
                 </div>
 
                 <div
-                  className={`overflow-hidden transition-all duration-500 ease-in-out ${isActive ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0"
-                    }`}
+                  className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                    isActive ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0"
+                  }`}
                 >
                   <p className="text-gray-600 leading-relaxed max-w-lg">
                     {item.text}
                   </p>
-                  <button className="mt-10 bg-[#660000] text-white px-8 py-3 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-[#bd0d11] transition-colors">
-                    Learn more <MoveRight size={16} />
-                  </button>
+                  <Link to={item.link}>
+                    <button className="cursor-pointer mt-10 bg-[#660000] text-white px-8 py-3 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-[#bd0d11] transition-colors">
+                      See more <MoveRight size={16} />
+                    </button>
+                  </Link>
                 </div>
               </div>
             );

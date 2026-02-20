@@ -2,15 +2,15 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import FAQ from "@/components/FAQ";
+// import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import Testimonials from "@/components/Testimonials";
-import BentoGrid from "@/components/BentoGrid";
+// import BentoGrid from "@/components/BentoGrid";
 import GradualBlurMemo from "@/components/GradualBlur";
 import { Services } from "@/components/Services";
 import { CTA } from "@/components/CTA";
 import Products from "@/components/Product";
-import Chip from "@/components/Chip";
+// import Chip from "@/components/Chip";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 const GreenleafLanding: React.FC = () => {
