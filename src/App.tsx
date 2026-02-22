@@ -3,6 +3,7 @@ import LandingPage from "./pages/landing-page";
 import GalleryPage from "./pages/gallery-page";
 import { useEffect } from "react";
 import Lenis from "lenis";
+import { CARPET_DATA, LVT_DATA } from "./configs/products";
 
 function App() {
   const { pathname } = useLocation();
@@ -19,10 +20,15 @@ function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
-      <Route path="/carpet" element={<GalleryPage />} />
+      <Route
+        path="/carpet"
+        element={<GalleryPage productsList={CARPET_DATA} />}
+      />
+      <Route path="/lvt" element={<GalleryPage productsList={LVT_DATA} />} />
     </Routes>
   );
 }
