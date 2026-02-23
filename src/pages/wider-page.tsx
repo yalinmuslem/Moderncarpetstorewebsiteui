@@ -3,7 +3,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GradualBlurMemo from "@/components/GradualBlur";
 import GalleryScroll from "@/components/GalleryScroll";
-import { CORMAR_CARPET_BRAND, type Product } from "@/configs/products";
+import {
+  CORMAR_CARPET_BRAND,
+  FURLONG_FLOORING_SOUTHERN_CARPET_BRAND,
+  type Product,
+} from "@/configs/products";
 import FlowingMenu from "@/components/FlowingMenu";
 import WiderGrid from "@/components/WiderGrid";
 
@@ -56,13 +60,14 @@ const WiderPage: React.FC<{ productsList: Product[] }> = ({
         <section className="max-w-7xl mx-auto">
           <div className="flex flex-row flex-wrap justify-between gap-4 p-4">
             <p className="w-1/4">
-              Style meets comfort with our Fairisle wool loop range—durable,
-              elegant, and made for the home.
+              From long-lasting hallway carpets to luxury bedroom carpets,
+              explore our award-winning carpet ranges designed for style,
+              comfort, and durability.
             </p>
             <h2 className="text-6xl font-bold">Furlong Flooring Southern</h2>
           </div>
 
-          <WiderGrid items={CORMAR_CARPET_BRAND} />
+          <WiderGrid items={FURLONG_FLOORING_SOUTHERN_CARPET_BRAND} />
         </section>
 
         <section className="max-w-7xl mx-auto">

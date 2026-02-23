@@ -82,3 +82,34 @@ export const CORMAR_CARPET_BRAND: WiderGridBrand[] = [
     imageUrl: "/tiles/carpet/category/sensation.webp",
   },
 ];
+
+export const FURLONG_FLOORING_SOUTHERN_CARPET_BRAND: WiderGridBrand[] = [
+  {
+    id: 1,
+    title: "Bliss Saxony",
+    description:
+      "Bliss is a deep, luxurious saxony carpet that truly lives up to its name. Made from 100% polypropylene, it’s built to handle the demands of busy households while maintaining its rich, plush feel underfoot. Perfect for bedrooms and living spaces alike, Bliss creates a warm, cosy atmosphere and adds a touch of everyday indulgence to any room.",
+    imageUrl: "/tiles/carpet/category/inglewood-saxony.webp",
+  },
+  {
+    id: 2,
+    title: "Trident Twist",
+    description:
+      "Our market-leading range has a sister range - the Trident Tweed. It is made using 2-ply yarn and a 1/10-gauge construction, providing a durable and low-maintenance twist. The range comes in a new patterned tweed design, with a mix of warm, cool, and bold colors, making it suitable for both domestic and commercial use.",
+    imageUrl: "/tiles/carpet/category/primo-textures.webp",
+  },
+  {
+    id: 3,
+    title: "Fairway",
+    description:
+      "Our Fairway carpet is part of our Regency carpet range that is manufactured in our production facility in Belfast. This quality carpet is available in both soft warm and vibrant on-trend colours that are perfect for every room. It consists of stain resistant fibres, is easy to clean and has the added benefit of being bleach cleanable.",
+    imageUrl: "/tiles/carpet/category/sensation.webp",
+  },
+  {
+    id: 4,
+    title: "Elegance",
+    description:
+      "Our Fairway carpet is part of our Regency carpet range that is manufactured in our production facility in Belfast. This quality carpet is available in both soft warm and vibrant on-trend colours that are perfect for every room. It consists of stain resistant fibres, is easy to clean and has the added benefit of being bleach cleanable.",
+    imageUrl: "/tiles/carpet/category/sensation.webp",
+  },
+];
