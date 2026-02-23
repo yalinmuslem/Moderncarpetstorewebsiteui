@@ -4,6 +4,30 @@ import Footer from "@/components/Footer";
 import GradualBlurMemo from "@/components/GradualBlur";
 import GalleryScroll from "@/components/GalleryScroll";
 import type { Product } from "@/configs/products";
+import FlowingMenu from "@/components/FlowingMenu";
+
+const demoItems = [
+  {
+    link: "#",
+    text: "Mojave",
+    image: "https://picsum.photos/600/400?random=1",
+  },
+  {
+    link: "#",
+    text: "Sonoma",
+    image: "https://picsum.photos/600/400?random=2",
+  },
+  {
+    link: "#",
+    text: "Monterey",
+    image: "https://picsum.photos/600/400?random=3",
+  },
+  {
+    link: "#",
+    text: "Sequoia",
+    image: "https://picsum.photos/600/400?random=4",
+  },
+];
 
 const GalleryPage: React.FC<{ productsList: Product[] }> = ({
   productsList,
