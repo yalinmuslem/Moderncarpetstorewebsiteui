@@ -4,6 +4,7 @@ import GalleryPage from "./pages/gallery-page";
 import { useEffect } from "react";
 import Lenis from "lenis";
 import { CARPET_DATA, LVT_DATA } from "./configs/products";
+import WiderPage from "./pages/wider-page";
 
 function App() {
   const { pathname } = useLocation();
@@ -26,6 +27,18 @@ function App() {
       <Route path="/" element={<LandingPage />} />
       <Route
         path="/carpet"
+        element={<WiderPage productsList={CARPET_DATA} />}
+      />
+      <Route
+        path="/carpet/inglewood-saxony"
+        element={<GalleryPage productsList={CARPET_DATA} />}
+      />
+      <Route
+        path="/carpet/primo-texture"
+        element={<GalleryPage productsList={CARPET_DATA} />}
+      />
+      <Route
+        path="/carpet/sensation"
         element={<GalleryPage productsList={CARPET_DATA} />}
       />
       <Route path="/lvt" element={<GalleryPage productsList={LVT_DATA} />} />

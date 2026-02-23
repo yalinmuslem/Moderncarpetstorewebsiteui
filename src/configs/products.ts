@@ -6,18 +6,18 @@ export type Product = {
 }
 
 export const CARPET_DATA: Product[] = [
-    { id: 1, title: "Ebony", tileImg: "/tiles/carpet/ebony.jpg", roomImg: "https://picsum.photos/seed/c1/1200/800" },
-    { id: 2, title: "Marble", tileImg: "/tiles/carpet/marble.jpg", roomImg: "https://picsum.photos/seed/c2/1200/800" },
-    { id: 3, title: "Ivory", tileImg: "/tiles/carpet/ivory.jpg", roomImg: "https://picsum.photos/seed/c3/1200/800" },
-    { id: 4, title: "Sheffield", tileImg: "/tiles/carpet/sheffield.jpg", roomImg: "https://picsum.photos/seed/c4/1200/800" },
-    { id: 5, title: "Sisal", tileImg: "/tiles/carpet/sisal.jpg", roomImg: "https://picsum.photos/seed/c5/1200/800" },
-    { id: 6, title: "Zinc", tileImg: "/tiles/carpet/zinc.jpg", roomImg: "https://picsum.photos/seed/c6/1200/800" },
-    { id: 7, title: "Flint", tileImg: "/tiles/carpet/flint.jpg", roomImg: "https://picsum.photos/seed/c7/1200/800" },
-    { id: 8, title: "Chalk", tileImg: "/tiles/carpet/chalk.jpg", roomImg: "https://picsum.photos/seed/c8/1200/800" },
-    { id: 9, title: "Graphite", tileImg: "/tiles/carpet/graphite.jpg", roomImg: "https://picsum.photos/seed/c9/1200/800" },
-    { id: 10, title: "Copper", tileImg: "/tiles/carpet/copper.jpg", roomImg: "https://picsum.photos/seed/c10/1200/800" },
-    { id: 11, title: "Bronze", tileImg: "/tiles/carpet/bronze.jpg", roomImg: "https://picsum.photos/seed/c11/1200/800" },
-    { id: 12, title: "Quick Silver", tileImg: "/tiles/carpet/quicksilver.jpg", roomImg: "https://picsum.photos/seed/c12/1200/800" }
+    { id: 1, title: "Ebony", tileImg: "/tiles/carpet/ebony.jpg", roomImg: "/tiles/carpet/ebony-preview.png" },
+    { id: 2, title: "Marble", tileImg: "/tiles/carpet/marble.jpg", roomImg: "/tiles/carpet/marble-preview.png" },
+    { id: 3, title: "Ivory", tileImg: "/tiles/carpet/ivory.jpg", roomImg: "/tiles/carpet/ivory-preview.png" },
+    { id: 4, title: "Sheffield", tileImg: "/tiles/carpet/sheffield.jpg", roomImg: "/tiles/carpet/sheffield-preview.png" },
+    { id: 5, title: "Sisal", tileImg: "/tiles/carpet/sisal.jpg", roomImg: "/tiles/carpet/sisal-preview.png" },
+    { id: 6, title: "Zinc", tileImg: "/tiles/carpet/zinc.jpg", roomImg: "/tiles/carpet/zinc-preview.png" },
+    { id: 7, title: "Flint", tileImg: "/tiles/carpet/flint.jpg", roomImg: "/tiles/carpet/flint-preview.png" },
+    { id: 8, title: "Chalk", tileImg: "/tiles/carpet/chalk.jpg", roomImg: "/tiles/carpet/chalk-preview.png" },
+    { id: 9, title: "Graphite", tileImg: "/tiles/carpet/graphite.jpg", roomImg: "/tiles/carpet/graphite-preview.png" },
+    { id: 10, title: "Copper", tileImg: "/tiles/carpet/copper.jpg", roomImg: "/tiles/carpet/copper-preview.png" },
+    { id: 11, title: "Bronze", tileImg: "/tiles/carpet/bronze.jpg", roomImg: "/tiles/carpet/bronze-preview.png" },
+    { id: 12, title: "Quick Silver", tileImg: "/tiles/carpet/quicksilver.jpg", roomImg: "/tiles/carpet/quicksilver-preview.png" }
 ];
 
 export const LVT_DATA: Product[] = [
@@ -48,4 +48,37 @@ export const LVT_DATA: Product[] = [
     { id: 210, title: "Shadow Oak (Parquet)", tileImg: "/tiles/lvt/shadow-oak-parquet.jpg", roomImg: "https://picsum.photos/seed/lp10/1200/800" },
     { id: 211, title: "Monument (Parquet)", tileImg: "/tiles/lvt/monument-parquet.jpg", roomImg: "https://picsum.photos/seed/lp11/1200/800" },
     { id: 212, title: "English Oak (Parquet)", tileImg: "/tiles/lvt/english-oak-parquet.jpg", roomImg: "https://picsum.photos/seed/lp12/1200/800" }
+];
+
+
+
+export interface WiderGridBrand {
+  id: number;
+  title: string;
+  description: string;
+  imageUrl: string;
+}
+
+export const CORMAR_CARPET_BRAND: WiderGridBrand[] = [
+  {
+    id: 1,
+    title: "Inglewood Saxony",
+    description:
+      "With a palette of 15 heather colors, the Inglewood Saxony carpet is built to last. It features a 10-year Stain and Wear Warranty and is fully compatible with bleach cleaning for effortless maintenance.",
+    imageUrl: "/tiles/carpet/category/inglewood-saxony.webp",
+  },
+  {
+    id: 2,
+    title: "Primo Texture",
+    description:
+      "Experience the classic aesthetic of wool without the maintenance. Primo Textures offers a premium, three-fold yarn loop pile that combines high-end style with the everyday practicality of an easy-to-clean surface. Available in two of our most sought-after designs.",
+    imageUrl: "/tiles/carpet/category/primo-textures.webp",
+  },
+  {
+    id: 3,
+    title: "Sensation",
+    description:
+      "Step into the comfort of the country’s most loved deep-pile carpet. The Sensation collection offers effortless maintenance with its bleach-cleanable, stain-resistant fibers. Choose between the classic 'Original' feel or the unrivaled luxury of the all-new, extra-heavyweight 'Ultimate Sensation'—both backed by a 10-year warranty.",
+    imageUrl: "/tiles/carpet/category/sensation.webp",
+  },
 ];
