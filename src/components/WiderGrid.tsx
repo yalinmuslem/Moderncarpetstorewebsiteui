@@ -8,7 +8,7 @@ const WiderGrid: React.FC<{ items: WiderGridBrand[] }> = ({ items }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex h-screen w-full overflow-hidden gap-2 p-4">
+    <div className="flex w-full overflow-hidden gap-2 p-4">
       {items.map((item) => (
         <motion.div
           onClick={() =>
@@ -30,8 +30,8 @@ const WiderGrid: React.FC<{ items: WiderGridBrand[] }> = ({ items }) => {
             animate={{
               filter:
                 hoveredId === item.id
-                  ? "brightness(80%)"
-                  : "brightness(30%) grayscale(50%)",
+                  ? "brightness(100%)"
+                  : "brightness(80%) grayscale(10%)",
               scale: hoveredId === item.id ? 1.1 : 1,
             }}
             transition={{ duration: 0.8 }}

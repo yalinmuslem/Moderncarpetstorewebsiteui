@@ -63,23 +63,20 @@ export const CORMAR_CARPET_BRAND: WiderGridBrand[] = [
   {
     id: 1,
     title: "Inglewood Saxony",
-    description:
-      "With a palette of 15 heather colors, the Inglewood Saxony carpet is built to last. It features a 10-year Stain and Wear Warranty and is fully compatible with bleach cleaning for effortless maintenance.",
-    imageUrl: "/tiles/carpet/category/inglewood-saxony.webp",
+    description: "A durable, bleach-cleanable carpet available in 15 heather colors with a 10-year stain and wear warranty.",
+    imageUrl: "/tiles/carpet/cormar-carpets/inglewood-saxony.png",
   },
   {
     id: 2,
     title: "Primo Texture",
-    description:
-      "Experience the classic aesthetic of wool without the maintenance. Primo Textures offers a premium, three-fold yarn loop pile that combines high-end style with the everyday practicality of an easy-to-clean surface. Available in two of our most sought-after designs.",
-    imageUrl: "/tiles/carpet/category/primo-textures.webp",
+    description: "A premium, easy-to-clean loop pile carpet that delivers a classic wool aesthetic with high-end practicality.",
+    imageUrl: "/tiles/carpet/cormar-carpets/primo-textures.png",
   },
   {
     id: 3,
     title: "Sensation",
-    description:
-      "Step into the comfort of the country’s most loved deep-pile carpet. The Sensation collection offers effortless maintenance with its bleach-cleanable, stain-resistant fibers. Choose between the classic 'Original' feel or the unrivaled luxury of the all-new, extra-heavyweight 'Ultimate Sensation'—both backed by a 10-year warranty.",
-    imageUrl: "/tiles/carpet/category/sensation.webp",
+    description: "The UK's favorite deep-pile carpet collection, offering unrivaled luxury and stain-resistant performance with a 10-year warranty.",
+    imageUrl: "/tiles/carpet/cormar-carpets/sensation.png",
   },
 ];
 
@@ -87,29 +84,78 @@ export const FURLONG_FLOORING_SOUTHERN_CARPET_BRAND: WiderGridBrand[] = [
   {
     id: 1,
     title: "Bliss Saxony",
-    description:
-      "Bliss is a deep, luxurious saxony carpet that truly lives up to its name. Made from 100% polypropylene, it’s built to handle the demands of busy households while maintaining its rich, plush feel underfoot. Perfect for bedrooms and living spaces alike, Bliss creates a warm, cosy atmosphere and adds a touch of everyday indulgence to any room.",
-    imageUrl: "/tiles/carpet/category/inglewood-saxony.webp",
+    description: "A deep, plush saxony carpet made from 100% polypropylene for a warm, cozy feel in busy households.",
+    imageUrl: "/tiles/carpet/furlong/bliss-saxony.png",
   },
   {
     id: 2,
     title: "Trident Twist",
-    description:
-      "Our market-leading range has a sister range - the Trident Tweed. It is made using 2-ply yarn and a 1/10-gauge construction, providing a durable and low-maintenance twist. The range comes in a new patterned tweed design, with a mix of warm, cool, and bold colors, making it suitable for both domestic and commercial use.",
-    imageUrl: "/tiles/carpet/category/primo-textures.webp",
+    description: "A durable, low-maintenance 2-ply yarn twist available in a stylish patterned tweed for domestic and commercial use.",
+    imageUrl: "/tiles/carpet/furlong/trident-twist.png",
   },
   {
     id: 3,
     title: "Fairway",
-    description:
-      "Our Fairway carpet is part of our Regency carpet range that is manufactured in our production facility in Belfast. This quality carpet is available in both soft warm and vibrant on-trend colours that are perfect for every room. It consists of stain resistant fibres, is easy to clean and has the added benefit of being bleach cleanable.",
-    imageUrl: "/tiles/carpet/category/sensation.webp",
+    description: "A quality, bleach-cleanable carpet featuring vibrant on-trend colors and stain-resistant fibers for every room.",
+    imageUrl: "/tiles/carpet/furlong/fairway.png",
   },
   {
     id: 4,
     title: "Elegance",
-    description:
-      "Our Fairway carpet is part of our Regency carpet range that is manufactured in our production facility in Belfast. This quality carpet is available in both soft warm and vibrant on-trend colours that are perfect for every room. It consists of stain resistant fibres, is easy to clean and has the added benefit of being bleach cleanable.",
-    imageUrl: "/tiles/carpet/category/sensation.webp",
+    description: "A premium 2-ply twist pile carpet that combines a natural wool look with the durability of bleach-cleanable fibers.",
+    imageUrl: "/tiles/carpet/furlong/elegance.png",
   },
+];
+
+export const ABINGDONG_FLOORING_CARPET_BRAND: WiderGridBrand[] = [
+  {
+    id: 1,
+    title: "Stain Free Captivation",
+    description: "Capture elegance and comfort with the enchanting, stain-resistant allure of this sophisticated collection.",
+    imageUrl: "/tiles/carpet/abingdon/captivation.png",
+  },
+  {
+    id: 2,
+    title: "Stain Free Cares",
+    description: "Inspire your inner designer with a wide array of vibrant colors designed for creative and practical living.",
+    imageUrl: "/tiles/carpet/abingdon/cares.png",
+  },
+  {
+    id: 3,
+    title: "Love Story Soft Whisper",
+    description: "An elegant and plush Saxony carpet meticulously crafted for enduring beauty and soft comfort.",
+    imageUrl: "/tiles/carpet/abingdon/soft-whisper.png",
+  }, 
+];
+
+// Associated Weavers
+export const ASSOCIATED_WEAVERS_CARPET_BRAND: WiderGridBrand[] = [
+  {
+    id: 1,
+    title: "Yukon",
+    description: "A captivating carpet designed to evoke deep comfort and visual enchantment in any modern space.",
+    imageUrl: "/tiles/carpet/associated-weavers/yukon.png",
+  },
+  {
+    id: 2,
+    title: "Magnificus",
+    description: "Unleash your creativity with a magnificent palette of colors and a soft, luxurious finish.",
+    imageUrl: "/tiles/carpet/associated-weavers/magnificus.png",
+  }, 
+];
+
+// Lewis Abbott
+export const LEWIS_ABBOTT_CARPET_BRAND: WiderGridBrand[] = [
+  {
+    id: 1,
+    title: "Flat Weaves Herringbone",
+    description: "An extremely durable woven collection featuring contemporary shades in an elegant, fashionable herringbone pattern.",
+    imageUrl: "/tiles/carpet/lewis-abbott/herringbone.png",
+  },
+  {
+    id: 2,
+    title: "Flat Weaves Gatsby",
+    description: "A striking collection of muted tones crafted from stain-resistant polypropylene for a modern, durable home.",
+    imageUrl: "/tiles/carpet/lewis-abbott/gatsby.png",
+  }, 
 ];
