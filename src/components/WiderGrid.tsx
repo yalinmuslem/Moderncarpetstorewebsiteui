@@ -11,9 +11,7 @@ const WiderGrid: React.FC<{ items: WiderGridBrand[] }> = ({ items }) => {
     <div className="flex w-full overflow-hidden gap-2 p-4">
       {items.map((item) => (
         <motion.div
-          onClick={() =>
-            navigate(item.title.replaceAll(" ", "-").toLowerCase())
-          }
+          onClick={() => navigate(item.path)}
           key={item.id}
           className="relative h-[500px] cursor-pointer overflow-hidden rounded-2xl"
           onMouseEnter={() => setHoveredId(item.id)}

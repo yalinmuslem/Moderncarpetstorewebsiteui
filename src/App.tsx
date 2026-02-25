@@ -3,8 +3,25 @@ import LandingPage from "./pages/landing-page";
 import GalleryPage from "./pages/gallery-page";
 import { useEffect } from "react";
 import Lenis from "lenis";
-import { CARPET_DATA, LVT_DATA } from "./configs/products";
+import {
+  ABINGDONG_LOVE_STORY_SOFT_WHISPER_CARPET_DATA,
+  ABINGDONG_STAIN_FREE_CAPTIVATION_CARPET_DATA,
+  ABINGDONG_STAIN_FREE_CARES_CARPET_DATA,
+  ASSOCIATED_WEAVERS_MAGNIFICUS_CARPET_DATA,
+  ASSOCIATED_WEAVERS_YUKON_CARPET_DATA,
+  CORMAR_INGLEWOOD_SAXONY_CARPET_DATA,
+  CORMAR_PRIMO_TEXTURE_CARPET_DATA,
+  CORMAR_SENSATION_CARPET_DATA,
+  FURLONG_BLISS_SAXONY_CARPET_DATA,
+  FURLONG_ELEGANCE_CARPET_DATA,
+  FURLONG_FAIRWAY_CARPET_DATA,
+  FURLONG_TRIDENT_TWIST_CARPET_DATA,
+  LEWIS_ABBOTT_FLAT_WEAVES_GATSBY_CARPET_DATA,
+  LEWIS_ABBOTT_FLAT_WEAVES_HERRINGBONE_CARPET_DATA,
+  LVT_DATA,
+} from "./configs/products";
 import WiderPage from "./pages/wider-page";
+import { CARPET_BRAND_SECTIONS, VINYL_BRAND_SECTIONS } from "./configs/brands";
 
 function App() {
   const { pathname } = useLocation();
@@ -27,21 +44,113 @@ function App() {
       <Route path="/" element={<LandingPage />} />
       <Route
         path="/carpet"
-        element={<WiderPage productsList={CARPET_DATA} />}
+        element={<WiderPage brandList={CARPET_BRAND_SECTIONS} />}
+      />
+
+      {/* CORMAR CARPETS */}
+      <Route
+        path="/carpet/cormar-inglewood-saxony"
+        element={
+          <GalleryPage productsList={CORMAR_INGLEWOOD_SAXONY_CARPET_DATA} />
+        }
       />
       <Route
-        path="/carpet/inglewood-saxony"
-        element={<GalleryPage productsList={CARPET_DATA} />}
+        path="/carpet/cormar-primo-texture"
+        element={
+          <GalleryPage productsList={CORMAR_PRIMO_TEXTURE_CARPET_DATA} />
+        }
       />
       <Route
-        path="/carpet/primo-texture"
-        element={<GalleryPage productsList={CARPET_DATA} />}
+        path="/carpet/cormar-sensation"
+        element={<GalleryPage productsList={CORMAR_SENSATION_CARPET_DATA} />}
+      />
+
+      {/* FURLONG FLOORING */}
+      <Route
+        path="/carpet/furlong-bliss-saxony"
+        element={
+          <GalleryPage productsList={FURLONG_BLISS_SAXONY_CARPET_DATA} />
+        }
       />
       <Route
-        path="/carpet/sensation"
-        element={<GalleryPage productsList={CARPET_DATA} />}
+        path="/carpet/furlong-trident-twist"
+        element={
+          <GalleryPage productsList={FURLONG_TRIDENT_TWIST_CARPET_DATA} />
+        }
       />
+      <Route
+        path="/carpet/furlong-fairway"
+        element={<GalleryPage productsList={FURLONG_FAIRWAY_CARPET_DATA} />}
+      />
+      <Route
+        path="/carpet/furlong-elegance"
+        element={<GalleryPage productsList={FURLONG_ELEGANCE_CARPET_DATA} />}
+      />
+
+      {/* ABINGDON FLOORING */}
+      <Route
+        path="/carpet/abingdon-stain-free-captivation"
+        element={
+          <GalleryPage
+            productsList={ABINGDONG_STAIN_FREE_CAPTIVATION_CARPET_DATA}
+          />
+        }
+      />
+      <Route
+        path="/carpet/abingdon-stain-free-cares"
+        element={
+          <GalleryPage productsList={ABINGDONG_STAIN_FREE_CARES_CARPET_DATA} />
+        }
+      />
+      <Route
+        path="/carpet/abingdon-love-story-soft-whisper"
+        element={
+          <GalleryPage
+            productsList={ABINGDONG_LOVE_STORY_SOFT_WHISPER_CARPET_DATA}
+          />
+        }
+      />
+
+      {/* ASSOCIATED WEAVERS */}
+      <Route
+        path="/carpet/associated-weavers-yukon"
+        element={
+          <GalleryPage productsList={ASSOCIATED_WEAVERS_YUKON_CARPET_DATA} />
+        }
+      />
+      <Route
+        path="/carpet/associated-weavers-magnificus"
+        element={
+          <GalleryPage
+            productsList={ASSOCIATED_WEAVERS_MAGNIFICUS_CARPET_DATA}
+          />
+        }
+      />
+
+      {/* LEWIS ABBOTT */}
+      <Route
+        path="/carpet/lewis-abbott-flat-weaves-herringbone"
+        element={
+          <GalleryPage
+            productsList={LEWIS_ABBOTT_FLAT_WEAVES_HERRINGBONE_CARPET_DATA}
+          />
+        }
+      />
+      <Route
+        path="/carpet/lewis-abbott-flat-weaves-gatsby"
+        element={
+          <GalleryPage
+            productsList={LEWIS_ABBOTT_FLAT_WEAVES_GATSBY_CARPET_DATA}
+          />
+        }
+      />
+
       <Route path="/lvt" element={<GalleryPage productsList={LVT_DATA} />} />
+
+      <Route
+        path="/vinyl"
+        element={<WiderPage brandList={VINYL_BRAND_SECTIONS} />}
+      />
     </Routes>
   );
 }
