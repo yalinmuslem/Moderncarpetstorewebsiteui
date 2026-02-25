@@ -574,7 +574,7 @@ export const LEWIS_ABBOTT_CARPET_BRAND: WiderGridBrand[] = [
 
 // ===== VINYL =====
 
-export const ESSENTIAL_II_VINYL_BRAND: WiderGridBrand[] = [
+export const VINYL_BRAND: WiderGridBrand[] = [
   {
     id: 1,
     title: "Essential II",
@@ -589,6 +589,60 @@ export const ESSENTIAL_II_VINYL_BRAND: WiderGridBrand[] = [
     description: "Exceptional style without compromising functionality.",
     imageUrl:
       "https://www.abingdonflooring.co.uk/wp-content/uploads/Endurance-Featured-Image-1.jpg",
+    path: "/carpet/cormar-primo-texture",
+  },
+];
+
+// ===== LVT =====
+
+export const LVT_BRAND: WiderGridBrand[] = [
+  {
+    id: 1,
+    title: "Invictus Maximus Click",
+    description: "Lorem ipsum lorem ipsum lorem ipsum.",
+    imageUrl:
+      "https://www.furlongflooring.com/_next/image?url=https%3A%2F%2Ffiles.mutualcdn.com%2Ffurlong-flooring%2Fimages%2Fcn_essential_main.jpg%3Fdate%3D2023-11-17T15%3A48%3A04%2B00%3A00&w=1920&q=75",
+    path: "/carpet/cormar-inglewood-saxony",
+  },
+  {
+    id: 2,
+    title: "Artisan Click Abingdon",
+    description:
+      "Bring timeless elegance and lasting performance to your space with Artisan, a premium collection designed to impress.",
+    imageUrl:
+      "https://www.abingdonflooring.co.uk/wp-content/uploads/Artisan-Dryback-Featured-Image-1.jpg",
+    path: "/carpet/cormar-primo-texture",
+  },
+];
+
+// ===== LEMINATE =====
+
+export const LEMINATE_BRAND: WiderGridBrand[] = [
+  {
+    id: 1,
+    title: "Urban 8mm",
+    description:
+      "Urban laminate flooring is a top-quality 8mm laminate that offers a perfect combination of price, decors and availability. The market-leading Uniclic® click system is incorporated into the flooring, making the installation process quicker and simpler.",
+    imageUrl:
+      "https://www.furlongflooring.com/_next/image?url=https%3A%2F%2Ffiles.mutualcdn.com%2Ffurlong-flooring%2Fimages%2Fcn_urban_main.jpg%3Fdate%3D2023-11-17T15%3A39%3A33%2B00%3A00&w=1920&q=75",
+    path: "/carpet/cormar-inglewood-saxony",
+  },
+  {
+    id: 2,
+    title: "River water resistant 8mm",
+    description:
+      "Hardwearing and sustainably sourced with a Uniclic® system for faster fitting, River delivers on price, quality and aesthetic. The on trend decors range from light to dark and are inspired by authentic wood types – plus with its 72 hour water resistance, River really is the perfect hardflooring choice.",
+    imageUrl:
+      "https://www.furlongflooring.com/_next/image?url=https%3A%2F%2Ffiles.mutualcdn.com%2Ffurlong-flooring%2Fimages%2FFRV008-ERNE-OAK-1-LR.jpg%3Fdate%3D2024-02-07T15%3A31%3A41%2B00%3A00&w=1920&q=75",
+    path: "/carpet/cormar-primo-texture",
+  },
+  {
+    id: 3,
+    title: "Elite XL 10mm",
+    description:
+      "Furlong Flooring's Elite XL is an exclusive 12mm laminate range that is strong, hard-wearing, and environmentally sustainable. It has an AC5 rating, making it highly durable and suitable for commercial settings. Available in 8 trendy decors that are specifically designed for the UK market, Elite XL offers unbeatable value for money. ",
+    imageUrl:
+      "https://www.furlongflooring.com/_next/image?url=https%3A%2F%2Ffiles.mutualcdn.com%2Ffurlong-flooring%2Fimages%2Fcn_elite-xl_main.jpg%3Fdate%3D2023-11-17T09%3A07%3A24%2B00%3A00&w=1920&q=75",
     path: "/carpet/cormar-primo-texture",
   },
 ];

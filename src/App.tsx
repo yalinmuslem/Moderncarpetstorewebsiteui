@@ -21,7 +21,12 @@ import {
   LVT_DATA,
 } from "./configs/products";
 import WiderPage from "./pages/wider-page";
-import { CARPET_BRAND_SECTIONS, VINYL_BRAND_SECTIONS } from "./configs/brands";
+import {
+  CARPET_BRAND_SECTIONS,
+  LEMINATE_BRAND_SECTIONS,
+  LVT_BRAND_SECTIONS,
+  VINYL_BRAND_SECTIONS,
+} from "./configs/brands";
 
 function App() {
   const { pathname } = useLocation();
@@ -46,7 +51,6 @@ function App() {
         path="/carpet"
         element={<WiderPage brandList={CARPET_BRAND_SECTIONS} />}
       />
-
       {/* CORMAR CARPETS */}
       <Route
         path="/carpet/cormar-inglewood-saxony"
@@ -64,7 +68,6 @@ function App() {
         path="/carpet/cormar-sensation"
         element={<GalleryPage productsList={CORMAR_SENSATION_CARPET_DATA} />}
       />
-
       {/* FURLONG FLOORING */}
       <Route
         path="/carpet/furlong-bliss-saxony"
@@ -86,7 +89,6 @@ function App() {
         path="/carpet/furlong-elegance"
         element={<GalleryPage productsList={FURLONG_ELEGANCE_CARPET_DATA} />}
       />
-
       {/* ABINGDON FLOORING */}
       <Route
         path="/carpet/abingdon-stain-free-captivation"
@@ -110,7 +112,6 @@ function App() {
           />
         }
       />
-
       {/* ASSOCIATED WEAVERS */}
       <Route
         path="/carpet/associated-weavers-yukon"
@@ -126,7 +127,6 @@ function App() {
           />
         }
       />
-
       {/* LEWIS ABBOTT */}
       <Route
         path="/carpet/lewis-abbott-flat-weaves-herringbone"
@@ -144,12 +144,17 @@ function App() {
           />
         }
       />
-
-      <Route path="/lvt" element={<GalleryPage productsList={LVT_DATA} />} />
-
       <Route
         path="/vinyl"
         element={<WiderPage brandList={VINYL_BRAND_SECTIONS} />}
+      />
+      <Route
+        path="/lvt"
+        element={<WiderPage brandList={LVT_BRAND_SECTIONS} />}
+      />
+      <Route
+        path="/laminate"
+        element={<WiderPage brandList={LEMINATE_BRAND_SECTIONS} />}
       />
     </Routes>
   );

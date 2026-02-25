@@ -2,11 +2,12 @@ import {
   ABINGDONG_FLOORING_CARPET_BRAND,
   ASSOCIATED_WEAVERS_CARPET_BRAND,
   CORMAR_CARPET_BRAND,
-  ESSENTIAL_II_VINYL_BRAND,
+  VINYL_BRAND,
   FURLONG_FLOORING_SOUTHERN_CARPET_BRAND,
   LEWIS_ABBOTT_CARPET_BRAND,
-  type Product,
   type WiderGridBrand,
+  LVT_BRAND,
+  LEMINATE_BRAND,
 } from "@/configs/products";
 
 export interface BrandSection {
@@ -57,7 +58,27 @@ export const VINYL_BRAND_SECTIONS: BrandSection[] = [
   {
     title: "Vinyl",
     description: "This vinyl range is affordable and competitively priced.",
-    items: ESSENTIAL_II_VINYL_BRAND,
+    items: VINYL_BRAND,
+    reverse: true,
+  },
+];
+
+export const LVT_BRAND_SECTIONS: BrandSection[] = [
+  {
+    title: "LVT",
+    description:
+      "LVT is ideal for customers who want a high-end look with low maintenance — a modern flooring solution built to last.",
+    items: LVT_BRAND,
+    reverse: true,
+  },
+];
+
+export const LEMINATE_BRAND_SECTIONS: BrandSection[] = [
+  {
+    title: "Leminate",
+    description:
+      "Laminate flooring is a stylish and cost-effective solution for modern homes and busy spaces.",
+    items: LEMINATE_BRAND,
     reverse: true,
   },
 ];
