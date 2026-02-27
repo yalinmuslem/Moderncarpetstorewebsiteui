@@ -8,6 +8,10 @@ import {
   type WiderGridBrand,
   LVT_BRAND,
   LEMINATE_BRAND,
+  HEADBOARDS_MATRESE_BED_FRAME_BRAND,
+  FRAMES_MATRESE_BED_FRAME_BRAND,
+  MATTRESS_MATRESE_BED_FRAME_BRAND,
+  DIVAN_BASES_MATRESE_BED_FRAME_BRAND,
 } from "@/configs/products";
 
 export interface BrandSection {
@@ -79,6 +83,33 @@ export const LEMINATE_BRAND_SECTIONS: BrandSection[] = [
     description:
       "Laminate flooring is a stylish and cost-effective solution for modern homes and busy spaces.",
     items: LEMINATE_BRAND,
+    reverse: true,
+  },
+];
+
+export const MATRESE_BED_FRAME_BRAND_SECTIONS: BrandSection[] = [
+  {
+    title: "Divan Bases",
+    description: "Lorem ipsum",
+    items: DIVAN_BASES_MATRESE_BED_FRAME_BRAND,
+    reverse: true,
+  },
+  {
+    title: "Mattresses",
+    description: "Lorem ipsum",
+    items: MATTRESS_MATRESE_BED_FRAME_BRAND,
+    reverse: true,
+  },
+  {
+    title: "Frames",
+    description: "Lorem ipsum",
+    items: FRAMES_MATRESE_BED_FRAME_BRAND,
+    reverse: true,
+  },
+  {
+    title: "Headborads",
+    description: "Lorem ipsum",
+    items: HEADBOARDS_MATRESE_BED_FRAME_BRAND,
     reverse: true,
   },
 ];

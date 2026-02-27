@@ -119,6 +119,7 @@ export const CORMAR_PRIMO_TEXTURE_CARPET_DATA: Product[] = [
     roomImg: "/tiles/carpet/lewis-abbott/herringbone/ebony-preview.png",
   },
 ];
+
 export const CORMAR_SENSATION_CARPET_DATA: Product[] = [
   {
     id: 1,
@@ -644,5 +645,91 @@ export const LEMINATE_BRAND: WiderGridBrand[] = [
     imageUrl:
       "https://www.furlongflooring.com/_next/image?url=https%3A%2F%2Ffiles.mutualcdn.com%2Ffurlong-flooring%2Fimages%2Fcn_elite-xl_main.jpg%3Fdate%3D2023-11-17T09%3A07%3A24%2B00%3A00&w=1920&q=75",
     path: "/carpet/cormar-primo-texture",
+  },
+];
+
+// ===== Mattrese & Bed Frame =====
+
+export const DIVAN_BASES_MATRESE_BED_FRAME_BRAND: WiderGridBrand[] = [
+  {
+    id: 1,
+    title: "Divan Bases",
+    description: "Lorem ipsum",
+    imageUrl:
+      "https://k1furnishings.com/wp-content/uploads/2020/07/Langdale-Base-Deep-Quilt-Mattress-resize.jpg",
+    path: "/carpet/cormar-inglewood-saxony",
+  },
+];
+
+export const MATTRESS_MATRESE_BED_FRAME_BRAND: WiderGridBrand[] = [
+  {
+    id: 1,
+    title: "Deep Quilt Mattress",
+    description: "Lorem ipsum",
+    imageUrl:
+      "https://k1furnishings.com/wp-content/uploads/2020/07/Deep-Quilt-Mattress-resize.jpg",
+    path: "/carpet/cormar-inglewood-saxony",
+  },
+  {
+    id: 2,
+    title: "1500 Pcket Sprung Mattress",
+    description: "Lorem ipsum",
+    imageUrl:
+      "https://k1furnishings.com/wp-content/uploads/2020/08/1500-Pkt-Mattress-resize.jpg",
+    path: "/carpet/cormar-inglewood-saxony",
+  },
+  {
+    id: 3,
+    title: "Crown Orthopedic Mattress",
+    description: "Lorem ipsum",
+    imageUrl:
+      "https://k1furnishings.com/wp-content/uploads/2020/07/Crown-Ortopaedic-Mattress-resize.jpg",
+    path: "/carpet/cormar-inglewood-saxony",
+  },
+];
+
+export const FRAMES_MATRESE_BED_FRAME_BRAND: WiderGridBrand[] = [
+  {
+    id: 1,
+    title: "LONDON FRAME",
+    description: "Lorem ipsum",
+    imageUrl:
+      "https://k1furnishings.com/wp-content/uploads/2018/06/London-Double.jpg",
+    path: "/carpet/cormar-inglewood-saxony",
+  },
+  {
+    id: 2,
+    title: "CHUNKY HONEY/CHERRY BUNK BED",
+    description: "Lorem ipsum",
+    imageUrl:
+      "https://k1furnishings.com/wp-content/uploads/2018/06/Bunkbed-Chunky-Honey.jpg",
+    path: "/carpet/cormar-inglewood-saxony",
+  },
+  {
+    id: 3,
+    title: "MISSION CHILDRENS BUNK BED",
+    description: "Lorem ipsum",
+    imageUrl:
+      "https://k1furnishings.com/wp-content/uploads/2020/08/Mission-Short-Children-Bunkbed-K1.jpg",
+    path: "/carpet/cormar-inglewood-saxony",
+  },
+];
+
+export const HEADBOARDS_MATRESE_BED_FRAME_BRAND: WiderGridBrand[] = [
+  {
+    id: 1,
+    title: "Flat PVC 20 Inch",
+    description: "Lorem ipsum",
+    imageUrl:
+      "https://k1furnishings.com/wp-content/uploads/2020/07/ALL-PVC-HB.jpg",
+    path: "/carpet/cormar-inglewood-saxony",
+  },
+  {
+    id: 2,
+    title: 'PREMIUM HEADBOARDS (optional material) DESIGNS 30"',
+    description: "Lorem ipsum",
+    imageUrl:
+      "https://k1furnishings.com/wp-content/uploads/2020/08/Headboards-All-K1.jpg",
+    path: "/carpet/cormar-inglewood-saxony",
   },
 ];

@@ -25,6 +25,7 @@ import {
   CARPET_BRAND_SECTIONS,
   LEMINATE_BRAND_SECTIONS,
   LVT_BRAND_SECTIONS,
+  MATRESE_BED_FRAME_BRAND_SECTIONS,
   VINYL_BRAND_SECTIONS,
 } from "./configs/brands";
 
@@ -155,6 +156,10 @@ function App() {
       <Route
         path="/laminate"
         element={<WiderPage brandList={LEMINATE_BRAND_SECTIONS} />}
+      />
+      <Route
+        path="/mattress"
+        element={<WiderPage brandList={MATRESE_BED_FRAME_BRAND_SECTIONS} />}
       />
     </Routes>
   );
