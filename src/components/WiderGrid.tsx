@@ -20,7 +20,7 @@ const WiderGrid: React.FC<{ items: WiderGridBrand[] }> = ({ items }) => {
           animate={{
             flex: hoveredId === item.id ? 3 : 1,
           }}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }} // Cubic-bezier untuk gerakan elegan
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
           {/* Background Image */}
           <motion.div

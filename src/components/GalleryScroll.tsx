@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { Product } from "@/configs/products";
 
-export default function CarpetShowcase({
+export default function GalleryScroll({
   productsList,
 }: {
   productsList: Product[];

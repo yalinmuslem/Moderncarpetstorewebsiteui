@@ -2,21 +2,29 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GradualBlurMemo from "@/components/GradualBlur";
-import GalleryScroll from "@/components/GalleryScroll";
 import type { Product } from "@/configs/products";
+import GalleryTilePreview from "@/components/GalleryTilePreview";
 
-const GalleryPage: React.FC<{
+interface GalleryTilePreviewProps {
+  title: string;
+  description: string;
+  heroImage: string;
   productsList: Product[];
-}> = ({ productsList }) => {
+}
+
+const TilesPage: React.FC<GalleryTilePreviewProps> = (props) => {
   return (
     <>
       <div className="min-h-screen bg-white text-[#220905] font-sans selection:bg-[#660000] selection:text-white">
-        {/* 1. HEADER & NAVIGATION */}
         <Navbar />
 
-        <GalleryScroll productsList={productsList} />
+        <GalleryTilePreview
+          title={props.title}
+          description={props.description}
+          heroImage={props.heroImage}
+          productsList={props.productsList}
+        />
 
-        {/* 9. FOOTER SECTION */}
         <Footer />
       </div>
 
@@ -34,4 +42,4 @@ const GalleryPage: React.FC<{
   );
 };
 
-export default GalleryPage;
+export default TilesPage;

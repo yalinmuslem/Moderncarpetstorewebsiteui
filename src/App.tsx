@@ -18,7 +18,6 @@ import {
   FURLONG_TRIDENT_TWIST_CARPET_DATA,
   LEWIS_ABBOTT_FLAT_WEAVES_GATSBY_CARPET_DATA,
   LEWIS_ABBOTT_FLAT_WEAVES_HERRINGBONE_CARPET_DATA,
-  LVT_DATA,
 } from "./configs/products";
 import WiderPage from "./pages/wider-page";
 import {
@@ -28,6 +27,7 @@ import {
   MATRESE_BED_FRAME_BRAND_SECTIONS,
   VINYL_BRAND_SECTIONS,
 } from "./configs/brands";
+import TilesPage from "./pages/tiles-page";
 
 function App() {
   const { pathname } = useLocation();
@@ -94,7 +94,10 @@ function App() {
       <Route
         path="/carpet/abingdon-stain-free-captivation"
         element={
-          <GalleryPage
+          <TilesPage
+            title="Abingdon - Captivation"
+            description="Engage your emotions with the enchanting allure of Captivation."
+            heroImage="/tiles/carpet/abingdon/captivation.png"
             productsList={ABINGDONG_STAIN_FREE_CAPTIVATION_CARPET_DATA}
           />
         }
@@ -102,13 +105,21 @@ function App() {
       <Route
         path="/carpet/abingdon-stain-free-cares"
         element={
-          <GalleryPage productsList={ABINGDONG_STAIN_FREE_CARES_CARPET_DATA} />
+          <TilesPage
+            title="Abingdon - Caress"
+            description="Set your inner designer free with an abundance of colour."
+            heroImage="/tiles/carpet/abingdon/cares.png"
+            productsList={ABINGDONG_STAIN_FREE_CARES_CARPET_DATA}
+          />
         }
       />
       <Route
         path="/carpet/abingdon-love-story-soft-whisper"
         element={
-          <GalleryPage
+          <TilesPage
+            title="Abingdon - Soft Whisper"
+            description="A Saxony carpet that’s elegant, plush, and crafted for lasting beauty."
+            heroImage="/tiles/carpet/abingdon/soft-whisper.png"
             productsList={ABINGDONG_LOVE_STORY_SOFT_WHISPER_CARPET_DATA}
           />
         }
@@ -140,7 +151,10 @@ function App() {
       <Route
         path="/carpet/lewis-abbott-flat-weaves-gatsby"
         element={
-          <GalleryPage
+          <TilesPage
+            title="Lewis Abbott - Gatsby"
+            description="A beautiful collection of muted tones in two striking fashionable woven designs."
+            heroImage="/tiles/carpet/abingdon/soft-whisper.png"
             productsList={LEWIS_ABBOTT_FLAT_WEAVES_GATSBY_CARPET_DATA}
           />
         }

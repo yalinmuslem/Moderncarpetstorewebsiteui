@@ -2,7 +2,7 @@ export type Product = {
   id: number;
   title: string;
   tileImg: string;
-  roomImg: string;
+  roomImg?: string;
 };
 
 export const CORMAR_INGLEWOOD_SAXONY_CARPET_DATA: Product[] = [
@@ -19,7 +19,7 @@ export const CORMAR_INGLEWOOD_SAXONY_CARPET_DATA: Product[] = [
     title: "Ganache",
     tileImg: "/tiles/carpet/cormar-carpets/inglewood-saxony/ganache.webp",
     roomImg:
-      "/tiles/carpet/cormar-carpets/inglewood-saxony/ganache-preview.png",
+      "/tiles/carpet/cormar-carpets/inglewood-saxony/ganache-preview.webp",
   },
   {
     id: 3,
@@ -114,93 +114,1006 @@ export const CORMAR_INGLEWOOD_SAXONY_CARPET_DATA: Product[] = [
 export const CORMAR_PRIMO_TEXTURE_CARPET_DATA: Product[] = [
   {
     id: 1,
-    title: "Ebony",
-    tileImg: "/tiles/carpet/lewis-abbott/herringbone/ebony.jpg",
-    roomImg: "/tiles/carpet/lewis-abbott/herringbone/ebony-preview.png",
+    title: "Canvas",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/canvas.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/primo-textures/canvas-preview.png",
+  },
+  {
+    id: 2,
+    title: "Pale Linen",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/pale-linen.jpg",
+    roomImg:
+      "/tiles/carpet/cormar-carpets/primo-textures/pale-linen-preview.png",
+  },
+  {
+    id: 3,
+    title: "Tapestry",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/tapestry.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/primo-textures/tapestry-preview.png",
+  },
+  {
+    id: 4,
+    title: "Chalice",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/chalice.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/primo-textures/chalice-preview.png",
+  },
+  {
+    id: 5,
+    title: "Elk",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/elk.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/primo-textures/elk-preview.png",
+  },
+  {
+    id: 6,
+    title: "River Cane",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/river-cane.jpg",
+    roomImg:
+      "/tiles/carpet/cormar-carpets/primo-textures/river-cane-preview.png",
+  },
+  {
+    id: 7,
+    title: "Pear Tree",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/pear-tree.jpg",
+    roomImg:
+      "/tiles/carpet/cormar-carpets/primo-textures/pear-tree-preview.png",
+  },
+  {
+    id: 8,
+    title: "Thread",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/thread.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/primo-textures/thread-preview.png",
+  },
+  {
+    id: 9,
+    title: "Cobblestone",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/cobblestone.jpg",
+    roomImg:
+      "/tiles/carpet/cormar-carpets/primo-textures/cobblestone-preview.png",
+  },
+  {
+    id: 10,
+    title: "Moon Mist",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/moon-mist.jpg",
+    roomImg:
+      "/tiles/carpet/cormar-carpets/primo-textures/moon-mist-preview.png",
+  },
+  {
+    id: 11,
+    title: "Amulet",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/amulet.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/primo-textures/amulet-preview.png",
+  },
+  {
+    id: 12,
+    title: "Sesame Seed",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/sesame-seed.jpg",
+    roomImg:
+      "/tiles/carpet/cormar-carpets/primo-textures/sesame-seed-preview.png",
+  },
+  {
+    id: 13,
+    title: "Sea Shale",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/sea-shale.jpg",
+    roomImg:
+      "/tiles/carpet/cormar-carpets/primo-textures/sea-shale-preview.png",
+  },
+  {
+    id: 14,
+    title: "Porcini",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/porcini.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/primo-textures/porcini-preview.png",
+  },
+  {
+    id: 15,
+    title: "Hemp",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/hemp.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/primo-textures/hemp-preview.png",
+  },
+  {
+    id: 16,
+    title: "Flint",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/flint.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/primo-textures/flint-preview.png",
+  },
+  {
+    id: 17,
+    title: "Flaxseed",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/flaxseed.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/primo-textures/flaxseed-preview.png",
+  },
+  {
+    id: 18,
+    title: "Cornish Clay",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/cornish-clay.jpg",
+    roomImg:
+      "/tiles/carpet/cormar-carpets/primo-textures/cornish-clay-preview.png",
+  },
+  {
+    id: 19,
+    title: "Boulder",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/boulder.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/primo-textures/boulder-preview.png",
+  },
+  {
+    id: 20,
+    title: "Antelope",
+    tileImg: "/tiles/carpet/cormar-carpets/primo-textures/antelope.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/primo-textures/antelope-preview.png",
   },
 ];
 
 export const CORMAR_SENSATION_CARPET_DATA: Product[] = [
   {
     id: 1,
-    title: "Ebony",
-    tileImg: "/tiles/carpet/lewis-abbott/herringbone/ebony.jpg",
-    roomImg: "/tiles/carpet/lewis-abbott/herringbone/ebony-preview.png",
+    title: "Ventura Opal",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/ventura-opal.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/ventura-opal-preview.png",
+  },
+  {
+    id: 2,
+    title: "Latte",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/latte.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/latte-preview.png",
+  },
+  {
+    id: 3,
+    title: "Soft Orchid",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/soft-orchid.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/soft-orchid-preview.png",
+  },
+  {
+    id: 4,
+    title: "Mother of Pearl",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/mother-of-pearl.jpg",
+    roomImg:
+      "/tiles/carpet/cormar-carpets/sensation/mother-of-pearl-preview.png",
+  },
+  {
+    id: 5,
+    title: "Ammonite",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/ammonite.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/ammonite-preview.png",
+  },
+  {
+    id: 6,
+    title: "Icing Sugar",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/icing-sugar.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/icing-sugar-preview.png",
+  },
+  {
+    id: 7,
+    title: "Cambrian Stone",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/cambrian-stone.jpg",
+    roomImg:
+      "/tiles/carpet/cormar-carpets/sensation/cambrian-stone-preview.png",
+  },
+  {
+    id: 8,
+    title: "Arctic Grey",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/arctic-grey.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/arctic-grey-preview.png",
+  },
+  {
+    id: 9,
+    title: "Shale Grey",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/shale-grey.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/shale-grey-preview.png",
+  },
+  {
+    id: 10,
+    title: "Lone Star",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/lone-star.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/lone-star-preview.png",
+  },
+  {
+    id: 11,
+    title: "Cape Diamond",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/cape-diamond.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/cape-diamond-preview.png",
+  },
+  {
+    id: 12,
+    title: "Light Taupe",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/light-taupe.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/light-taupe-preview.png",
+  },
+  {
+    id: 13,
+    title: "Laguna",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/laguna.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/laguna-preview.png",
+  },
+  {
+    id: 14,
+    title: "Greystone",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/greystone.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/greystone-preview.png",
+  },
+  {
+    id: 15,
+    title: "Monterey Sand",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/monterey-sand.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/monterey-sand-preview.png",
+  },
+  {
+    id: 16,
+    title: "Gazelle",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/gazelle.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/gazelle-preview.png",
+  },
+  {
+    id: 17,
+    title: "Eau De Nil",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/eau-de-nil.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/eau-de-nil-preview.png",
+  },
+  {
+    id: 18,
+    title: "Radiance",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/radiance.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/radiance-preview.png",
+  },
+  {
+    id: 19,
+    title: "Wedgwood",
+    tileImg: "/tiles/carpet/cormar-carpets/sensation/wedgwood.jpg",
+    roomImg: "/tiles/carpet/cormar-carpets/sensation/wedgwood-preview.png",
   },
 ];
 
 export const FURLONG_BLISS_SAXONY_CARPET_DATA: Product[] = [
   {
     id: 1,
-    title: "Ebony",
-    tileImg: "/tiles/carpet/lewis-abbott/herringbone/ebony.jpg",
-    roomImg: "/tiles/carpet/lewis-abbott/herringbone/ebony-preview.png",
+    title: "Foggy Night 2551",
+    tileImg: "/tiles/carpet/furlong/bliss/foggy-night-2551.jpg",
+    roomImg: "/tiles/carpet/furlong/bliss/foggy-night-2551-preview.png",
+  },
+  {
+    id: 2,
+    title: "Pebble Beach 2552",
+    tileImg: "/tiles/carpet/furlong/bliss/pebble-beach-2552.jpg",
+    roomImg: "/tiles/carpet/furlong/bliss/pebble-beach-2552-preview.png",
+  },
+  {
+    id: 3,
+    title: "Sienna 2553",
+    tileImg: "/tiles/carpet/furlong/bliss/sienna-2553.jpg",
+    roomImg: "/tiles/carpet/furlong/bliss/sienna-2553-preview.png",
+  },
+  {
+    id: 4,
+    title: "Tuscan 2554",
+    tileImg: "/tiles/carpet/furlong/bliss/tuscan-2554.jpg",
+    roomImg: "/tiles/carpet/furlong/bliss/tuscan-2554-preview.png",
+  },
+  {
+    id: 5,
+    title: "Coral Reef 2555",
+    tileImg: "/tiles/carpet/furlong/bliss/coral-reef-2555.jpg",
+    roomImg: "/tiles/carpet/furlong/bliss/coral-reef-2555-preview.png",
+  },
+  {
+    id: 6,
+    title: "Granola 2556",
+    tileImg: "/tiles/carpet/furlong/bliss/granola-2556.jpg",
+    roomImg: "/tiles/carpet/furlong/bliss/granola-2556-preview.png",
+  },
+  {
+    id: 7,
+    title: "Oat Milk 2557",
+    tileImg: "/tiles/carpet/furlong/bliss/oat-milk-2557.jpg",
+    roomImg: "/tiles/carpet/furlong/bliss/oat-milk-2557-preview.png",
+  },
+  {
+    id: 8,
+    title: "Meringue 2558",
+    tileImg: "/tiles/carpet/furlong/bliss/meringue-2558.jpg",
+    roomImg: "/tiles/carpet/furlong/bliss/meringue-2558-preview.png",
+  },
+  {
+    id: 9,
+    title: "French Grey 2559",
+    tileImg: "/tiles/carpet/furlong/bliss/french-grey-2559.jpg",
+    roomImg: "/tiles/carpet/furlong/bliss/french-grey-2559-preview.png",
+  },
+  {
+    id: 10,
+    title: "Silk Shadow 2560",
+    tileImg: "/tiles/carpet/furlong/bliss/silk-shadow-2560.jpg",
+    roomImg: "/tiles/carpet/furlong/bliss/silk-shadow-2560-preview.png",
+  },
+  {
+    id: 11,
+    title: "Skylight 2561",
+    tileImg: "/tiles/carpet/furlong/bliss/skylight-2561.jpg",
+    roomImg: "/tiles/carpet/furlong/bliss/skylight-2561-preview.png",
+  },
+  {
+    id: 12,
+    title: "Misty Morning 2562",
+    tileImg: "/tiles/carpet/furlong/bliss/misty-morning-2562.jpg",
+    roomImg: "/tiles/carpet/furlong/bliss/misty-morning-2562-preview.png",
   },
 ];
+
 export const FURLONG_TRIDENT_TWIST_CARPET_DATA: Product[] = [
   {
     id: 1,
-    title: "Ebony",
-    tileImg: "/tiles/carpet/lewis-abbott/herringbone/ebony.jpg",
-    roomImg: "/tiles/carpet/lewis-abbott/herringbone/ebony-preview.png",
+    title: "Obsidian 1750",
+    tileImg: "/tiles/carpet/furlong/trident-twist/obsidian-1750.jpg",
+    roomImg: "/tiles/carpet/furlong/trident-twist/obsidian-1750-preview.png",
+  },
+  {
+    id: 2,
+    title: "Winter Barley 1751",
+    tileImg: "/tiles/carpet/furlong/trident-twist/winter-barley-1751.jpg",
+    roomImg:
+      "/tiles/carpet/furlong/trident-twist/winter-barley-1751-preview.png",
+  },
+  {
+    id: 3,
+    title: "Honey Mustard 1752",
+    tileImg: "/tiles/carpet/furlong/trident-twist/honey-mustard-1752.jpg",
+    roomImg:
+      "/tiles/carpet/furlong/trident-twist/honey-mustard-1752-preview.png",
+  },
+  {
+    id: 4,
+    title: "Old Grouse 1753",
+    tileImg: "/tiles/carpet/furlong/trident-twist/old-grouse-1753.jpg",
+    roomImg: "/tiles/carpet/furlong/trident-twist/old-grouse-1753-preview.png",
+  },
+  {
+    id: 5,
+    title: "Coldstream 1754",
+    tileImg: "/tiles/carpet/furlong/trident-twist/coldstream-1754.jpg",
+    roomImg: "/tiles/carpet/furlong/trident-twist/coldstream-1754-preview.png",
+  },
+  {
+    id: 6,
+    title: "Loch Inver 1755",
+    tileImg: "/tiles/carpet/furlong/trident-twist/loch-inver-1755.jpg",
+    roomImg: "/tiles/carpet/furlong/trident-twist/loch-inver-1755-preview.png",
+  },
+  {
+    id: 7,
+    title: "Saltire 1756",
+    tileImg: "/tiles/carpet/furlong/trident-twist/saltire-1756.jpg",
+    roomImg: "/tiles/carpet/furlong/trident-twist/saltire-1756-preview.png",
+  },
+  {
+    id: 8,
+    title: "Iona 1757",
+    tileImg: "/tiles/carpet/furlong/trident-twist/iona-1757.jpg",
+    roomImg: "/tiles/carpet/furlong/trident-twist/iona-1757-preview.png",
+  },
+  {
+    id: 9,
+    title: "Moraine 1758",
+    tileImg: "/tiles/carpet/furlong/trident-twist/moraine-1758.jpg",
+    roomImg: "/tiles/carpet/furlong/trident-twist/moraine-1758-preview.png",
+  },
+  {
+    id: 10,
+    title: "Thistle 1759",
+    tileImg: "/tiles/carpet/furlong/trident-twist/thistle-1759.jpg",
+    roomImg: "/tiles/carpet/furlong/trident-twist/thistle-1759-preview.png",
+  },
+  {
+    id: 11,
+    title: "Shieling 1760",
+    tileImg: "/tiles/carpet/furlong/trident-twist/shieling-1760.jpg",
+    roomImg: "/tiles/carpet/furlong/trident-twist/shieling-1760-preview.png",
+  },
+  {
+    id: 12,
+    title: "Tundra 1761",
+    tileImg: "/tiles/carpet/furlong/trident-twist/tundra-1761.jpg",
+    roomImg: "/tiles/carpet/furlong/trident-twist/tundra-1761-preview.png",
   },
 ];
+
 export const FURLONG_FAIRWAY_CARPET_DATA: Product[] = [
   {
     id: 1,
-    title: "Ebony",
-    tileImg: "/tiles/carpet/lewis-abbott/herringbone/ebony.jpg",
-    roomImg: "/tiles/carpet/lewis-abbott/herringbone/ebony-preview.png",
+    title: "Grey Wolf 237",
+    tileImg: "/tiles/carpet/furlong/fairway/grey-wolf-237.jpg",
+    roomImg: "/tiles/carpet/furlong/fairway/grey-wolf-237-preview.jpg",
+  },
+  {
+    id: 2,
+    title: "Ginger Nut 243",
+    tileImg: "/tiles/carpet/furlong/fairway/ginger-nut-243.jpg",
+    roomImg: "/tiles/carpet/furlong/fairway/ginger-nut-243-preview.jpg",
+  },
+  {
+    id: 3,
+    title: "Moondust 246",
+    tileImg: "/tiles/carpet/furlong/fairway/moondust-246.jpg",
+    roomImg: "/tiles/carpet/furlong/fairway/moondust-246-preview.jpg",
+  },
+  {
+    id: 4,
+    title: "Panther 247",
+    tileImg: "/tiles/carpet/furlong/fairway/panther-247.jpg",
+    roomImg: "/tiles/carpet/furlong/fairway/panther-247-preview.jpg",
+  },
+  {
+    id: 5,
+    title: "Starlight 248",
+    tileImg: "/tiles/carpet/furlong/fairway/starlight-248.jpg",
+    roomImg: "/tiles/carpet/furlong/fairway/starlight-248-preview.jpg",
+  },
+  {
+    id: 6,
+    title: "Sand Dune 249",
+    tileImg: "/tiles/carpet/furlong/fairway/sand-dune-249.jpg",
+    roomImg: "/tiles/carpet/furlong/fairway/sand-dune-249-preview.jpg",
+  },
+  {
+    id: 7,
+    title: "Light Taupe 250",
+    tileImg: "/tiles/carpet/furlong/fairway/light-taupe-250.jpg",
+    roomImg: "/tiles/carpet/furlong/fairway/light-taupe-250-preview.jpg",
+  },
+  {
+    id: 8,
+    title: "Biscotti 251",
+    tileImg: "/tiles/carpet/furlong/fairway/biscotti-251.jpg",
+    roomImg: "/tiles/carpet/furlong/fairway/biscotti-251-preview.jpg",
   },
 ];
+
 export const FURLONG_ELEGANCE_CARPET_DATA: Product[] = [
   {
     id: 1,
-    title: "Ebony",
-    tileImg: "/tiles/carpet/lewis-abbott/herringbone/ebony.jpg",
-    roomImg: "/tiles/carpet/lewis-abbott/herringbone/ebony-preview.png",
+    title: "Ammonite 1102",
+    tileImg: "/tiles/carpet/furlong/elegance/ammonite-1102.jpg",
+    roomImg: "/tiles/carpet/furlong/elegance/ammonite-1102-preview.jpg",
+  },
+  {
+    id: 2,
+    title: "Magna Carta 517",
+    tileImg: "/tiles/carpet/furlong/elegance/magna-carta-517.jpg",
+    roomImg: "/tiles/carpet/furlong/elegance/magna-carta-517-preview.jpg",
+  },
+  {
+    id: 3,
+    title: "Creme Fraiche 1113",
+    tileImg: "/tiles/carpet/furlong/elegance/creme-fraiche-1113.jpg",
+    roomImg: "/tiles/carpet/furlong/elegance/creme-fraiche-1113-preview.jpg",
+  },
+  {
+    id: 4,
+    title: "Portland Stone 1100",
+    tileImg: "/tiles/carpet/furlong/elegance/portland-stone-1100.jpg",
+    roomImg: "/tiles/carpet/furlong/elegance/portland-stone-1100-preview.jpg",
+  },
+  {
+    id: 5,
+    title: "Snow Leopard 1104",
+    tileImg: "/tiles/carpet/furlong/elegance/snow-leopard-1104.jpg",
+    roomImg: "/tiles/carpet/furlong/elegance/snow-leopard-1104-preview.jpg",
+  },
+  {
+    id: 6,
+    title: "Travertine 1114",
+    tileImg: "/tiles/carpet/furlong/elegance/travertine-1114.jpg",
+    roomImg: "/tiles/carpet/furlong/elegance/travertine-1114-preview.jpg",
+  },
+  {
+    id: 7,
+    title: "Fresh Mint 1115",
+    tileImg: "/tiles/carpet/furlong/elegance/fresh-mint-1115.jpg",
+    roomImg: "/tiles/carpet/furlong/elegance/fresh-mint-1115-preview.jpg",
+  },
+  {
+    id: 8,
+    title: "Powder Sky 1116",
+    tileImg: "/tiles/carpet/furlong/elegance/powder-sky-1116.jpg",
+    roomImg: "/tiles/carpet/furlong/elegance/powder-sky-1116-preview.jpg",
+  },
+  {
+    id: 9,
+    title: "Storm Lantern 1109",
+    tileImg: "/tiles/carpet/furlong/elegance/storm-lantern-1109.jpg",
+    roomImg: "/tiles/carpet/furlong/elegance/storm-lantern-1109-preview.jpg",
+  },
+  {
+    id: 10,
+    title: "Excalibur 1103",
+    tileImg: "/tiles/carpet/furlong/elegance/excalibur-1103.jpg",
+    roomImg: "/tiles/carpet/furlong/elegance/excalibur-1103-preview.jpg",
+  },
+  {
+    id: 11,
+    title: "Druids Circle 519",
+    tileImg: "/tiles/carpet/furlong/elegance/druids-circle-519.jpg",
+    roomImg: "/tiles/carpet/furlong/elegance/druids-circle-519-preview.jpg",
+  },
+  {
+    id: 12,
+    title: "Chaume 511",
+    tileImg: "/tiles/carpet/furlong/elegance/chaume-511.jpg",
+    roomImg: "/tiles/carpet/furlong/elegance/chaume-511-preview.jpg",
+  },
+  {
+    id: 13,
+    title: "Cotswold Stone 1117",
+    tileImg: "/tiles/carpet/furlong/elegance/cotswold-stone-1117.jpg",
+    roomImg: "/tiles/carpet/furlong/elegance/cotswold-stone-1117-preview.jpg",
+  },
+  {
+    id: 14,
+    title: "Flax 1118",
+    tileImg: "/tiles/carpet/furlong/elegance/flax-1118.jpg",
+    roomImg: "/tiles/carpet/furlong/elegance/flax-1118-preview.jpg",
+  },
+  {
+    id: 15,
+    title: "Chantilly 1119",
+    tileImg: "/tiles/carpet/furlong/elegance/chantilly-1119.jpg",
+    roomImg: "/tiles/carpet/furlong/elegance/chantilly-1119-preview.jpg",
+  },
+  {
+    id: 16,
+    title: "Bone China 1120",
+    tileImg: "/tiles/carpet/furlong/elegance/bone-china-1120.jpg",
+    roomImg: "/tiles/carpet/furlong/elegance/bone-china-1120-preview.jpg",
   },
 ];
 
 export const ABINGDONG_STAIN_FREE_CAPTIVATION_CARPET_DATA: Product[] = [
   {
     id: 1,
-    title: "Ebony",
-    tileImg: "/tiles/carpet/lewis-abbott/herringbone/ebony.jpg",
-    roomImg: "/tiles/carpet/lewis-abbott/herringbone/ebony-preview.png",
+    title: "Black Raven",
+    tileImg: "/tiles/carpet/abingdon/captivation/black-raven.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/black-raven-preview.png",
+  },
+  {
+    id: 2,
+    title: "Sapphire",
+    tileImg: "/tiles/carpet/abingdon/captivation/sapphire.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/sapphire-preview.png",
+  },
+  {
+    id: 3,
+    title: "Frosted Steel",
+    tileImg: "/tiles/carpet/abingdon/captivation/frosted-steel.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/frosted-steel-preview.png",
+  },
+  {
+    id: 4,
+    title: "Tundra Frost",
+    tileImg: "/tiles/carpet/abingdon/captivation/tundra-frost.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/tundra-frost-preview.png",
+  },
+  {
+    id: 5,
+    title: "Jewel",
+    tileImg: "/tiles/carpet/abingdon/captivation/jewel.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/jewel-preview.png",
+  },
+  {
+    id: 6,
+    title: "Nimbus Cloud",
+    tileImg: "/tiles/carpet/abingdon/captivation/nimbus-cloud.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/nimbus-cloud-preview.png",
+  },
+  {
+    id: 7,
+    title: "Snowfall",
+    tileImg: "/tiles/carpet/abingdon/captivation/snowfall.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/snowfall-preview.png",
+  },
+  {
+    id: 8,
+    title: "Turtle Dove",
+    tileImg: "/tiles/carpet/abingdon/captivation/turtle-dove.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/turtle-dove-preview.png",
+  },
+  {
+    id: 9,
+    title: "Moon Cloud",
+    tileImg: "/tiles/carpet/abingdon/captivation/moon-cloud.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/moon-cloud-preview.png",
+  },
+  {
+    id: 10,
+    title: "Seneca Rock",
+    tileImg: "/tiles/carpet/abingdon/captivation/seneca-rock.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/seneca-rock-preview.png",
+  },
+  {
+    id: 11,
+    title: "Cloudy Dreams",
+    tileImg: "/tiles/carpet/abingdon/captivation/cloudy-dreams.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/cloudy-dreams-preview.png",
+  },
+  {
+    id: 12,
+    title: "Linen Wash",
+    tileImg: "/tiles/carpet/abingdon/captivation/linen-wash.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/linen-wash-preview.png",
+  },
+  {
+    id: 13,
+    title: "Oceanside",
+    tileImg: "/tiles/carpet/abingdon/captivation/oceanside.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/oceanside-preview.png",
+  },
+  {
+    id: 14,
+    title: "Pentland",
+    tileImg: "/tiles/carpet/abingdon/captivation/pentland.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/pentland-preview.png",
+  },
+  {
+    id: 15,
+    title: "Putting Green",
+    tileImg: "/tiles/carpet/abingdon/captivation/putting-green.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/putting-green-preview.png",
+  },
+  {
+    id: 16,
+    title: "Treasure Isle",
+    tileImg: "/tiles/carpet/abingdon/captivation/treasure-isle.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/treasure-isle-preview.png",
+  },
+  {
+    id: 17,
+    title: "Dock Blue",
+    tileImg: "/tiles/carpet/abingdon/captivation/dock-blue.jpg",
+    roomImg: "/tiles/carpet/abingdon/captivation/dock-blue-preview.png",
   },
 ];
+
 export const ABINGDONG_STAIN_FREE_CARES_CARPET_DATA: Product[] = [
   {
     id: 1,
+    title: "Pink Whisper",
+    tileImg: "/tiles/carpet/abingdon/caress/pink-whisper.jpg",
+  },
+  {
+    id: 2,
+    title: "Deep Blue",
+    tileImg: "/tiles/carpet/abingdon/caress/deep-blue.jpg",
+  },
+  {
+    id: 3,
+    title: "Old Gold",
+    tileImg: "/tiles/carpet/abingdon/caress/old-gold.jpg",
+  },
+  {
+    id: 4,
+    title: "Fir Green",
+    tileImg: "/tiles/carpet/abingdon/caress/fir-green.jpg",
+  },
+  {
+    id: 5,
+    title: "Terracotta",
+    tileImg: "/tiles/carpet/abingdon/caress/terracotta.jpg",
+  },
+  {
+    id: 6,
+    title: "Bourneville",
+    tileImg: "/tiles/carpet/abingdon/caress/bourneville.jpg",
+  },
+  {
+    id: 7,
+    title: "Rioja",
+    tileImg: "/tiles/carpet/abingdon/caress/rioja.jpg",
+  },
+  {
+    id: 8,
+    title: "Azure",
+    tileImg: "/tiles/carpet/abingdon/caress/azure.jpg",
+  },
+  {
+    id: 9,
+    title: "Sapphire",
+    tileImg: "/tiles/carpet/abingdon/caress/sapphire.jpg",
+  },
+  {
+    id: 10,
     title: "Ebony",
-    tileImg: "/tiles/carpet/lewis-abbott/herringbone/ebony.jpg",
-    roomImg: "/tiles/carpet/lewis-abbott/herringbone/ebony-preview.png",
+    tileImg: "/tiles/carpet/abingdon/caress/ebony.jpg",
+  },
+  {
+    id: 11,
+    title: "Titanium",
+    tileImg: "/tiles/carpet/abingdon/caress/titanium.jpg",
+  },
+  {
+    id: 12,
+    title: "Mocha",
+    tileImg: "/tiles/carpet/abingdon/caress/mocha.jpg",
+  },
+  {
+    id: 13,
+    title: "Latte",
+    tileImg: "/tiles/carpet/abingdon/caress/latte.jpg",
+  },
+  {
+    id: 14,
+    title: "Cotton",
+    tileImg: "/tiles/carpet/abingdon/caress/cotton.jpg",
+  },
+  {
+    id: 15,
+    title: "Champagne",
+    tileImg: "/tiles/carpet/abingdon/caress/champagne.jpg",
+  },
+  {
+    id: 16,
+    title: "Suede",
+    tileImg: "/tiles/carpet/abingdon/caress/suede.jpg",
+  },
+  {
+    id: 17,
+    title: "Silver",
+    tileImg: "/tiles/carpet/abingdon/caress/silver.jpg",
+  },
+  {
+    id: 18,
+    title: "Platinum",
+    tileImg: "/tiles/carpet/abingdon/caress/platinum.jpg",
   },
 ];
+
 export const ABINGDONG_LOVE_STORY_SOFT_WHISPER_CARPET_DATA: Product[] = [
   {
     id: 1,
-    title: "Ebony",
-    tileImg: "/tiles/carpet/lewis-abbott/herringbone/ebony.jpg",
-    roomImg: "/tiles/carpet/lewis-abbott/herringbone/ebony-preview.png",
+    title: "Blue Eclipse",
+    tileImg: "/tiles/carpet/abingdon/soft-whisper/blue-eclipse.jpg",
+    roomImg: "/tiles/carpet/abingdon/soft-whisper/blue-eclipse-preview.png",
+  },
+  {
+    id: 2,
+    title: "Oasis",
+    tileImg: "/tiles/carpet/abingdon/soft-whisper/oasis.jpg",
+    roomImg: "/tiles/carpet/abingdon/soft-whisper/oasis-preview.png",
+  },
+  {
+    id: 3,
+    title: "Autumn Flame",
+    tileImg: "/tiles/carpet/abingdon/soft-whisper/autumn-flame.jpg",
+    roomImg: "/tiles/carpet/abingdon/soft-whisper/autumn-flame-preview.png",
+  },
+  {
+    id: 4,
+    title: "Soft Sandstone",
+    tileImg: "/tiles/carpet/abingdon/soft-whisper/soft-sandstone.jpg",
+    roomImg: "/tiles/carpet/abingdon/soft-whisper/soft-sandstone-preview.png",
+  },
+  {
+    id: 5,
+    title: "Honey Dew",
+    tileImg: "/tiles/carpet/abingdon/soft-whisper/honey-dew.jpg",
+    roomImg: "/tiles/carpet/abingdon/soft-whisper/honey-dew-preview.png",
+  },
+  {
+    id: 6,
+    title: "Caramel Cream",
+    tileImg: "/tiles/carpet/abingdon/soft-whisper/caramel-cream.jpg",
+    roomImg: "/tiles/carpet/abingdon/soft-whisper/caramel-cream-preview.png",
+  },
+  {
+    id: 7,
+    title: "Velvet Taupe",
+    tileImg: "/tiles/carpet/abingdon/soft-whisper/velvet-taupe.jpg",
+    roomImg: "/tiles/carpet/abingdon/soft-whisper/velvet-taupe-preview.png",
+  },
+  {
+    id: 8,
+    title: "Tapestry",
+    tileImg: "/tiles/carpet/abingdon/soft-whisper/tapestry.jpg",
+    roomImg: "/tiles/carpet/abingdon/soft-whisper/tapestry-preview.png",
+  },
+  {
+    id: 9,
+    title: "Chiffon",
+    tileImg: "/tiles/carpet/abingdon/soft-whisper/chiffon.jpg",
+    roomImg: "/tiles/carpet/abingdon/soft-whisper/chiffon-preview.png",
+  },
+  {
+    id: 10,
+    title: "Twilight",
+    tileImg: "/tiles/carpet/abingdon/soft-whisper/twilight.jpg",
+    roomImg: "/tiles/carpet/abingdon/soft-whisper/twilight-preview.png",
+  },
+  {
+    id: 11,
+    title: "Anthracite",
+    tileImg: "/tiles/carpet/abingdon/soft-whisper/anthracite.jpg",
+    roomImg: "/tiles/carpet/abingdon/soft-whisper/anthracite-preview.png",
+  },
+  {
+    id: 12,
+    title: "Shale",
+    tileImg: "/tiles/carpet/abingdon/soft-whisper/shale.jpg",
+    roomImg: "/tiles/carpet/abingdon/soft-whisper/shale-preview.png",
+  },
+  {
+    id: 13,
+    title: "Harbour",
+    tileImg: "/tiles/carpet/abingdon/soft-whisper/harbour.jpg",
+    roomImg: "/tiles/carpet/abingdon/soft-whisper/harbour-preview.png",
+  },
+  {
+    id: 14,
+    title: "Frost",
+    tileImg: "/tiles/carpet/abingdon/soft-whisper/frost.jpg",
+    roomImg: "/tiles/carpet/abingdon/soft-whisper/frost-preview.png",
   },
 ];
 
 export const ASSOCIATED_WEAVERS_YUKON_CARPET_DATA: Product[] = [
   {
     id: 1,
-    title: "Ebony",
-    tileImg: "/tiles/carpet/lewis-abbott/herringbone/ebony.jpg",
-    roomImg: "/tiles/carpet/lewis-abbott/herringbone/ebony-preview.png",
+    title: "Vanilla",
+    tileImg: "/tiles/carpet/associated-weavers/yukon/vanilla.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/yukon/vanilla-preview.png",
+  },
+  {
+    id: 2,
+    title: "Sage Green",
+    tileImg: "/tiles/carpet/associated-weavers/yukon/sage-green.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/yukon/sage-green-preview.png",
+  },
+  {
+    id: 3,
+    title: "Blanched Almond",
+    tileImg: "/tiles/carpet/associated-weavers/yukon/blanched-almond.jpg",
+    roomImg:
+      "/tiles/carpet/associated-weavers/yukon/blanched-almond-preview.png",
+  },
+  {
+    id: 4,
+    title: "Barbados",
+    tileImg: "/tiles/carpet/associated-weavers/yukon/barbados.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/yukon/barbados-preview.png",
+  },
+  {
+    id: 5,
+    title: "Attic",
+    tileImg: "/tiles/carpet/associated-weavers/yukon/attic.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/yukon/attic-preview.png",
+  },
+  {
+    id: 6,
+    title: "Lavender",
+    tileImg: "/tiles/carpet/associated-weavers/yukon/lavender.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/yukon/lavender-preview.png",
+  },
+  {
+    id: 7,
+    title: "Safari",
+    tileImg: "/tiles/carpet/associated-weavers/yukon/safari.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/yukon/safari-preview.png",
+  },
+  {
+    id: 8,
+    title: "Midnight",
+    tileImg: "/tiles/carpet/associated-weavers/yukon/midnight.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/yukon/midnight-preview.png",
+  },
+  {
+    id: 9,
+    title: "Aragon",
+    tileImg: "/tiles/carpet/associated-weavers/yukon/aragon.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/yukon/aragon-preview.png",
+  },
+  {
+    id: 10,
+    title: "Pearl",
+    tileImg: "/tiles/carpet/associated-weavers/yukon/pearl.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/yukon/pearl-preview.png",
+  },
+  {
+    id: 11,
+    title: "Morning Mist",
+    tileImg: "/tiles/carpet/associated-weavers/yukon/morning-mist.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/yukon/morning-mist-preview.png",
+  },
+  {
+    id: 12,
+    title: "Shoreline",
+    tileImg: "/tiles/carpet/associated-weavers/yukon/shoreline.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/yukon/shoreline-preview.png",
+  },
+  {
+    id: 13,
+    title: "Baltic Sea",
+    tileImg: "/tiles/carpet/associated-weavers/yukon/baltic-sea.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/yukon/baltic-sea-preview.png",
+  },
+  {
+    id: 14,
+    title: "Raven",
+    tileImg: "/tiles/carpet/associated-weavers/yukon/raven.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/yukon/raven-preview.png",
   },
 ];
+
 export const ASSOCIATED_WEAVERS_MAGNIFICUS_CARPET_DATA: Product[] = [
   {
     id: 1,
-    title: "Ebony",
-    tileImg: "/tiles/carpet/lewis-abbott/herringbone/ebony.jpg",
-    roomImg: "/tiles/carpet/lewis-abbott/herringbone/ebony-preview.png",
+    title: "Cream",
+    tileImg: "/tiles/carpet/associated-weavers/magnificus/cream.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/magnificus/cream-preview.png",
+  },
+  {
+    id: 2,
+    title: "Granola",
+    tileImg: "/tiles/carpet/associated-weavers/magnificus/granola.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/magnificus/granola-preview.png",
+  },
+  {
+    id: 3,
+    title: "Silkworm",
+    tileImg: "/tiles/carpet/associated-weavers/magnificus/silkworm.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/magnificus/silkworm-preview.png",
+  },
+  {
+    id: 4,
+    title: "Shortbread",
+    tileImg: "/tiles/carpet/associated-weavers/magnificus/shortbread.jpg",
+    roomImg:
+      "/tiles/carpet/associated-weavers/magnificus/shortbread-preview.png",
+  },
+  {
+    id: 5,
+    title: "Cotswold Stone",
+    tileImg: "/tiles/carpet/associated-weavers/magnificus/cotswold-stone.jpg",
+    roomImg:
+      "/tiles/carpet/associated-weavers/magnificus/cotswold-stone-preview.png",
+  },
+  {
+    id: 6,
+    title: "Sandcastle",
+    tileImg: "/tiles/carpet/associated-weavers/magnificus/sandcastle.jpg",
+    roomImg:
+      "/tiles/carpet/associated-weavers/magnificus/sandcastle-preview.png",
+  },
+  {
+    id: 7,
+    title: "Latte",
+    tileImg: "/tiles/carpet/associated-weavers/magnificus/latte.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/magnificus/latte-preview.png",
+  },
+  {
+    id: 8,
+    title: "Silver Moon",
+    tileImg: "/tiles/carpet/associated-weavers/magnificus/silver-moon.jpg",
+    roomImg:
+      "/tiles/carpet/associated-weavers/magnificus/silver-moon-preview.png",
+  },
+  {
+    id: 9,
+    title: "Steel Grey",
+    tileImg: "/tiles/carpet/associated-weavers/magnificus/steel-grey.jpg",
+    roomImg:
+      "/tiles/carpet/associated-weavers/magnificus/steel-grey-preview.png",
+  },
+  {
+    id: 10,
+    title: "Slate",
+    tileImg: "/tiles/carpet/associated-weavers/magnificus/slate.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/magnificus/slate-preview.png",
+  },
+  {
+    id: 11,
+    title: "Pewter",
+    tileImg: "/tiles/carpet/associated-weavers/magnificus/pewter.jpg",
+    roomImg: "/tiles/carpet/associated-weavers/magnificus/pewter-preview.png",
+  },
+  {
+    id: 12,
+    title: "Deep Cavern",
+    tileImg: "/tiles/carpet/associated-weavers/magnificus/deep-cavern.jpg",
+    roomImg:
+      "/tiles/carpet/associated-weavers/magnificus/deep-cavern-preview.png",
   },
 ];
 
@@ -278,12 +1191,81 @@ export const LEWIS_ABBOTT_FLAT_WEAVES_HERRINGBONE_CARPET_DATA: Product[] = [
     roomImg: "/tiles/carpet/lewis-abbott/herringbone/quicksilver-preview.png",
   },
 ];
+
 export const LEWIS_ABBOTT_FLAT_WEAVES_GATSBY_CARPET_DATA: Product[] = [
+  // Row 1: Linear / Ribbed Patterns
   {
     id: 1,
-    title: "Ebony",
-    tileImg: "/tiles/carpet/lewis-abbott/herringbone/ebony.jpg",
-    roomImg: "/tiles/carpet/lewis-abbott/herringbone/ebony-preview.png",
+    title: "Myrtle",
+    tileImg: "/tiles/carpet/lewis-abbott/gatsby/myrtle.jpg",
+    roomImg: "/tiles/carpet/lewis-abbott/gatsby/myrtle-preview.png",
+  },
+  {
+    id: 2,
+    title: "Jazz Age",
+    tileImg: "/tiles/carpet/lewis-abbott/gatsby/jazz-age.jpg",
+    roomImg: "/tiles/carpet/lewis-abbott/gatsby/jazz-age-preview.png",
+  },
+  {
+    id: 3,
+    title: "Daisy",
+    tileImg: "/tiles/carpet/lewis-abbott/gatsby/daisy.jpg",
+    roomImg: "/tiles/carpet/lewis-abbott/gatsby/daisy-preview.png",
+  },
+  {
+    id: 4,
+    title: "Chicago",
+    tileImg: "/tiles/carpet/lewis-abbott/gatsby/chicago.jpg",
+    roomImg: "/tiles/carpet/lewis-abbott/gatsby/chicago-preview.png",
+  },
+  {
+    id: 5,
+    title: "Carraway",
+    tileImg: "/tiles/carpet/lewis-abbott/gatsby/carraway.jpg",
+    roomImg: "/tiles/carpet/lewis-abbott/gatsby/carraway-preview.png",
+  },
+  {
+    id: 6,
+    title: "Buchanan",
+    tileImg: "/tiles/carpet/lewis-abbott/gatsby/buchanan.jpg",
+    roomImg: "/tiles/carpet/lewis-abbott/gatsby/buchanan-preview.png",
+  },
+  // Row 2: gatsby Patterns
+  {
+    id: 7,
+    title: "Minnesota",
+    tileImg: "/tiles/carpet/lewis-abbott/gatsby/minnesota.jpg",
+    roomImg: "/tiles/carpet/lewis-abbott/gatsby/minnesota-preview.png",
+  },
+  {
+    id: 8,
+    title: "Long Island",
+    tileImg: "/tiles/carpet/lewis-abbott/gatsby/long-island.jpg",
+    roomImg: "/tiles/carpet/lewis-abbott/gatsby/long-island-preview.png",
+  },
+  {
+    id: 9,
+    title: "Oxford",
+    tileImg: "/tiles/carpet/lewis-abbott/gatsby/oxford.jpg",
+    roomImg: "/tiles/carpet/lewis-abbott/gatsby/oxford-preview.png",
+  },
+  {
+    id: 10,
+    title: "Midwest",
+    tileImg: "/tiles/carpet/lewis-abbott/gatsby/midwest.jpg",
+    roomImg: "/tiles/carpet/lewis-abbott/gatsby/midwest-preview.png",
+  },
+  {
+    id: 11,
+    title: "New York",
+    tileImg: "/tiles/carpet/lewis-abbott/gatsby/new-york.jpg",
+    roomImg: "/tiles/carpet/lewis-abbott/gatsby/new-york-preview.png",
+  },
+  {
+    id: 12,
+    title: "Roaring Twenties",
+    tileImg: "/tiles/carpet/lewis-abbott/gatsby/roaring-twenties.jpg",
+    roomImg: "/tiles/carpet/lewis-abbott/gatsby/roaring-twenties-preview.png",
   },
 ];
 
