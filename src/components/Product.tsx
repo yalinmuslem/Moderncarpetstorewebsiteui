@@ -40,7 +40,7 @@ const products: Product[] = [
     name: "Mattress & Bed Frame",
     text: "Experience the ultimate in comfort and support with our premium mattress and bed frame collection. Designed to cater to all sleeping styles, our products ensure a restful night's sleep.",
     img: "mattress.png",
-    link: "/mattress",
+    link: "/mattress-bed",
   },
 ];
 

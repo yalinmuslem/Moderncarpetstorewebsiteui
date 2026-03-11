@@ -1,5 +1,4 @@
 import { MoveRight } from "lucide-react";
-import React from "react";
 
 export const CTA = () => {
   return (
@@ -10,7 +9,8 @@ export const CTA = () => {
             Contact us
           </h2>
           <p className="text-gray-500 text-lg mb-10">
-            Personal consultation for home or office projects — practical solutions from planning to installation.
+            Personal consultation for home or office projects — practical
+            solutions from planning to installation.
           </p>
           <button className="bg-[#660000] text-white px-10 py-5 rounded-full font-medium flex items-center gap-2 mx-auto md:mx-0 hover:bg-[#bd0d11] transition-all">
             Let's Talk <MoveRight size={20} />

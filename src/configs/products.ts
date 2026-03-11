@@ -1269,153 +1269,635 @@ export const LEWIS_ABBOTT_FLAT_WEAVES_GATSBY_CARPET_DATA: Product[] = [
   },
 ];
 
-export const LVT_DATA: Product[] = [
-  // Classical Series
-  {
-    id: 101,
-    title: "Honey Oak (Classical)",
-    tileImg: "/tiles/lvt/honey-oak-classical.jpg",
-    roomImg: "https://picsum.photos/seed/l1/1200/800",
-  },
-  {
-    id: 102,
-    title: "Country Oak (Classical)",
-    tileImg: "/tiles/lvt/country-oak-classical.jpg",
-    roomImg: "https://picsum.photos/seed/l2/1200/800",
-  },
-  {
-    id: 103,
-    title: "Bare Oak (Classical)",
-    tileImg: "/tiles/lvt/bare-oak-classical.jpg",
-    roomImg: "https://picsum.photos/seed/l3/1200/800",
-  },
-  {
-    id: 104,
-    title: "English Oak (Classical)",
-    tileImg: "/tiles/lvt/english-oak-classical.jpg",
-    roomImg: "https://picsum.photos/seed/l4/1200/800",
-  },
-  {
-    id: 105,
-    title: "Monument (Classical)",
-    tileImg: "/tiles/lvt/monument-classical.jpg",
-    roomImg: "https://picsum.photos/seed/l5/1200/800",
-  },
-  {
-    id: 106,
-    title: "Shadow Oak (Classical)",
-    tileImg: "/tiles/lvt/shadow-oak-classical.jpg",
-    roomImg: "https://picsum.photos/seed/l6/1200/800",
-  },
-  {
-    id: 107,
-    title: "Dovewing (Classical)",
-    tileImg: "/tiles/lvt/dovewing-classical.jpg",
-    roomImg: "https://picsum.photos/seed/l7/1200/800",
-  },
-  {
-    id: 108,
-    title: "Arctic Oak (Classical)",
-    tileImg: "/tiles/lvt/arctic-oak-classical.jpg",
-    roomImg: "https://picsum.photos/seed/l8/1200/800",
-  },
-  {
-    id: 109,
-    title: "City Oak (Classical)",
-    tileImg: "/tiles/lvt/city-oak-classical.jpg",
-    roomImg: "https://picsum.photos/seed/l9/1200/800",
-  },
-  {
-    id: 110,
-    title: "Loft Oak (Classical)",
-    tileImg: "/tiles/lvt/loft-oak-classical.jpg",
-    roomImg: "https://picsum.photos/seed/l10/1200/800",
-  },
-  {
-    id: 111,
-    title: "Heritage Oak (Classical)",
-    tileImg: "/tiles/lvt/heritage-oak-classical.jpg",
-    roomImg: "https://picsum.photos/seed/l11/1200/800",
-  },
-  {
-    id: 112,
-    title: "Smoke Oak (Classical)",
-    tileImg: "/tiles/lvt/smoke-oak-classical.jpg",
-    roomImg: "https://picsum.photos/seed/l12/1200/800",
-  },
+// export const LVT_DATA: Product[] = [
+//   // Classical Series
+//   {
+//     id: 101,
+//     title: "Honey Oak (Classical)",
+//     tileImg: "/tiles/lvt/honey-oak-classical.jpg",
+//     roomImg: "https://picsum.photos/seed/l1/1200/800",
+//   },
+//   {
+//     id: 102,
+//     title: "Country Oak (Classical)",
+//     tileImg: "/tiles/lvt/country-oak-classical.jpg",
+//     roomImg: "https://picsum.photos/seed/l2/1200/800",
+//   },
+//   {
+//     id: 103,
+//     title: "Bare Oak (Classical)",
+//     tileImg: "/tiles/lvt/bare-oak-classical.jpg",
+//     roomImg: "https://picsum.photos/seed/l3/1200/800",
+//   },
+//   {
+//     id: 104,
+//     title: "English Oak (Classical)",
+//     tileImg: "/tiles/lvt/english-oak-classical.jpg",
+//     roomImg: "https://picsum.photos/seed/l4/1200/800",
+//   },
+//   {
+//     id: 105,
+//     title: "Monument (Classical)",
+//     tileImg: "/tiles/lvt/monument-classical.jpg",
+//     roomImg: "https://picsum.photos/seed/l5/1200/800",
+//   },
+//   {
+//     id: 106,
+//     title: "Shadow Oak (Classical)",
+//     tileImg: "/tiles/lvt/shadow-oak-classical.jpg",
+//     roomImg: "https://picsum.photos/seed/l6/1200/800",
+//   },
+//   {
+//     id: 107,
+//     title: "Dovewing (Classical)",
+//     tileImg: "/tiles/lvt/dovewing-classical.jpg",
+//     roomImg: "https://picsum.photos/seed/l7/1200/800",
+//   },
+//   {
+//     id: 108,
+//     title: "Arctic Oak (Classical)",
+//     tileImg: "/tiles/lvt/arctic-oak-classical.jpg",
+//     roomImg: "https://picsum.photos/seed/l8/1200/800",
+//   },
+//   {
+//     id: 109,
+//     title: "City Oak (Classical)",
+//     tileImg: "/tiles/lvt/city-oak-classical.jpg",
+//     roomImg: "https://picsum.photos/seed/l9/1200/800",
+//   },
+//   {
+//     id: 110,
+//     title: "Loft Oak (Classical)",
+//     tileImg: "/tiles/lvt/loft-oak-classical.jpg",
+//     roomImg: "https://picsum.photos/seed/l10/1200/800",
+//   },
+//   {
+//     id: 111,
+//     title: "Heritage Oak (Classical)",
+//     tileImg: "/tiles/lvt/heritage-oak-classical.jpg",
+//     roomImg: "https://picsum.photos/seed/l11/1200/800",
+//   },
+//   {
+//     id: 112,
+//     title: "Smoke Oak (Classical)",
+//     tileImg: "/tiles/lvt/smoke-oak-classical.jpg",
+//     roomImg: "https://picsum.photos/seed/l12/1200/800",
+//   },
 
-  // Parquet Series
+//   // Parquet Series
+//   {
+//     id: 201,
+//     title: "Honey Oak (Parquet)",
+//     tileImg: "/tiles/lvt/honey-oak-parquet.jpg",
+//     roomImg: "https://picsum.photos/seed/lp1/1200/800",
+//   },
+//   {
+//     id: 202,
+//     title: "Country Oak (Parquet)",
+//     tileImg: "/tiles/lvt/country-oak-parquet.jpg",
+//     roomImg: "https://picsum.photos/seed/lp2/1200/800",
+//   },
+//   {
+//     id: 203,
+//     title: "Bare Oak (Parquet)",
+//     tileImg: "/tiles/lvt/bare-oak-parquet.jpg",
+//     roomImg: "https://picsum.photos/seed/lp3/1200/800",
+//   },
+//   {
+//     id: 204,
+//     title: "Smoked Oak (Parquet)",
+//     tileImg: "/tiles/lvt/smoked-oak-parquet.jpg",
+//     roomImg: "https://picsum.photos/seed/lp4/1200/800",
+//   },
+//   {
+//     id: 205,
+//     title: "Heritage Oak (Parquet)",
+//     tileImg: "/tiles/lvt/heritage-oak-parquet.jpg",
+//     roomImg: "https://picsum.photos/seed/lp5/1200/800",
+//   },
+//   {
+//     id: 206,
+//     title: "Loft Oak (Parquet)",
+//     tileImg: "/tiles/lvt/loft-oak-parquet.jpg",
+//     roomImg: "https://picsum.photos/seed/lp6/1200/800",
+//   },
+//   {
+//     id: 207,
+//     title: "City Oak (Parquet)",
+//     tileImg: "/tiles/lvt/city-oak-parquet.jpg",
+//     roomImg: "https://picsum.photos/seed/lp7/1200/800",
+//   },
+//   {
+//     id: 208,
+//     title: "Arctic Oak (Parquet)",
+//     tileImg: "/tiles/lvt/arctic-oak-parquet.jpg",
+//     roomImg: "https://picsum.photos/seed/lp8/1200/800",
+//   },
+//   {
+//     id: 209,
+//     title: "Dovewing (Parquet)",
+//     tileImg: "/tiles/lvt/dovewing-parquet.jpg",
+//     roomImg: "https://picsum.photos/seed/lp9/1200/800",
+//   },
+//   {
+//     id: 210,
+//     title: "Shadow Oak (Parquet)",
+//     tileImg: "/tiles/lvt/shadow-oak-parquet.jpg",
+//     roomImg: "https://picsum.photos/seed/lp10/1200/800",
+//   },
+//   {
+//     id: 211,
+//     title: "Monument (Parquet)",
+//     tileImg: "/tiles/lvt/monument-parquet.jpg",
+//     roomImg: "https://picsum.photos/seed/lp11/1200/800",
+//   },
+//   {
+//     id: 212,
+//     title: "English Oak (Parquet)",
+//     tileImg: "/tiles/lvt/english-oak-parquet.jpg",
+//     roomImg: "https://picsum.photos/seed/lp12/1200/800",
+//   },
+// ];
+
+// LVT
+export const INVICTUS_LVT_DATA: Product[] = [
   {
-    id: 201,
-    title: "Honey Oak (Parquet)",
-    tileImg: "/tiles/lvt/honey-oak-parquet.jpg",
-    roomImg: "https://picsum.photos/seed/lp1/1200/800",
+    id: 1,
+    title: "Cotton Oak Parquet - Sandalwood",
+    tileImg: "/tiles/lvt/invictus/cotton-oak-parquet-sandalwood.jpg",
+    roomImg: "/tiles/lvt/invictus/cotton-oak-parquet-sandalwood-preview.png",
   },
   {
-    id: 202,
-    title: "Country Oak (Parquet)",
-    tileImg: "/tiles/lvt/country-oak-parquet.jpg",
-    roomImg: "https://picsum.photos/seed/lp2/1200/800",
+    id: 2,
+    title: "Bella Noce Parquet - Walnut",
+    tileImg: "/tiles/lvt/invictus/bella-noce-parquet-walnut.jpg",
+    roomImg: "/tiles/lvt/invictus/bella-noce-parquet-walnut-preview.png",
   },
   {
-    id: 203,
-    title: "Bare Oak (Parquet)",
-    tileImg: "/tiles/lvt/bare-oak-parquet.jpg",
-    roomImg: "https://picsum.photos/seed/lp3/1200/800",
+    id: 3,
+    title: "Sienna Oak Parquet - Orchid",
+    tileImg: "/tiles/lvt/invictus/sienna-oak-parquet-orchid.jpg",
+    roomImg: "/tiles/lvt/invictus/sienna-oak-parquet-orchid-preview.png",
   },
   {
-    id: 204,
-    title: "Smoked Oak (Parquet)",
-    tileImg: "/tiles/lvt/smoked-oak-parquet.jpg",
-    roomImg: "https://picsum.photos/seed/lp4/1200/800",
+    id: 4,
+    title: "Majestic Oak Parquet - Vista",
+    tileImg: "/tiles/lvt/invictus/majestic-oak-parquet-vista.jpg",
+    roomImg: "/tiles/lvt/invictus/majestic-oak-parquet-vista-preview.png",
   },
   {
-    id: 205,
-    title: "Heritage Oak (Parquet)",
-    tileImg: "/tiles/lvt/heritage-oak-parquet.jpg",
-    roomImg: "https://picsum.photos/seed/lp5/1200/800",
+    id: 5,
+    title: "Velvet Oak Parquet - Olivia",
+    tileImg: "/tiles/lvt/invictus/velvet-oak-parquet-olivia.jpg",
+    roomImg: "/tiles/lvt/invictus/velvet-oak-parquet-olivia-preview.png",
   },
   {
-    id: 206,
-    title: "Loft Oak (Parquet)",
-    tileImg: "/tiles/lvt/loft-oak-parquet.jpg",
-    roomImg: "https://picsum.photos/seed/lp6/1200/800",
+    id: 6,
+    title: "Cabin Oak Parquet - Whitehaven",
+    tileImg: "/tiles/lvt/invictus/cabin-oak-parquet-whitehaven.jpg",
+    roomImg: "/tiles/lvt/invictus/cabin-oak-parquet-whitehaven-preview.png",
   },
   {
-    id: 207,
-    title: "City Oak (Parquet)",
-    tileImg: "/tiles/lvt/city-oak-parquet.jpg",
-    roomImg: "https://picsum.photos/seed/lp7/1200/800",
+    id: 7,
+    title: "Barn Oak Parquet - Saddle",
+    tileImg: "/tiles/lvt/invictus/barn-oak-parquet-saddle.jpg",
+    roomImg: "/tiles/lvt/invictus/barn-oak-parquet-saddle-preview.png",
   },
   {
-    id: 208,
-    title: "Arctic Oak (Parquet)",
-    tileImg: "/tiles/lvt/arctic-oak-parquet.jpg",
-    roomImg: "https://picsum.photos/seed/lp8/1200/800",
+    id: 8,
+    title: "Belrose Oak Parquet - Sesame",
+    tileImg: "/tiles/lvt/invictus/belrose-oak-parquet-sesame.jpg",
+    roomImg: "/tiles/lvt/invictus/belrose-oak-parquet-sesame-preview.png",
   },
   {
-    id: 209,
-    title: "Dovewing (Parquet)",
-    tileImg: "/tiles/lvt/dovewing-parquet.jpg",
-    roomImg: "https://picsum.photos/seed/lp9/1200/800",
+    id: 9,
+    title: "Heritage Oak Chevron - Sandringham",
+    tileImg: "/tiles/lvt/invictus/heritage-oak-chevron-sandringham.jpg",
+    roomImg: "/tiles/lvt/invictus/heritage-oak-chevron-sandringham-preview.png",
   },
   {
-    id: 210,
-    title: "Shadow Oak (Parquet)",
-    tileImg: "/tiles/lvt/shadow-oak-parquet.jpg",
-    roomImg: "https://picsum.photos/seed/lp10/1200/800",
+    id: 10,
+    title: "Regency Oak Parquet - Scone",
+    tileImg: "/tiles/lvt/invictus/regency-oak-parquet-scone.jpg",
+    roomImg: "/tiles/lvt/invictus/regency-oak-parquet-scone-preview.png",
   },
   {
-    id: 211,
-    title: "Monument (Parquet)",
-    tileImg: "/tiles/lvt/monument-parquet.jpg",
-    roomImg: "https://picsum.photos/seed/lp11/1200/800",
+    id: 11,
+    title: "Highland Oak Parquet - Classic",
+    tileImg: "/tiles/lvt/invictus/highland-oak-parquet-classic.jpg",
+    roomImg: "/tiles/lvt/invictus/highland-oak-parquet-classic-preview.png",
   },
   {
-    id: 212,
-    title: "English Oak (Parquet)",
-    tileImg: "/tiles/lvt/english-oak-parquet.jpg",
-    roomImg: "https://picsum.photos/seed/lp12/1200/800",
+    id: 12,
+    title: "Divine Oak Parquet - Pure",
+    tileImg: "/tiles/lvt/invictus/divine-oak-parquet-pure.jpg",
+    roomImg: "/tiles/lvt/invictus/divine-oak-parquet-pure-preview.png",
+  },
+  {
+    id: 13,
+    title: "Groovy Granite Parquet - Alabaster",
+    tileImg: "/tiles/lvt/invictus/groovy-granite-parquet-alabaster.jpg",
+    roomImg: "/tiles/lvt/invictus/groovy-granite-parquet-alabaster-preview.png",
+  },
+  {
+    id: 14,
+    title: "Highland Oak Parquet - Sunrise",
+    tileImg: "/tiles/lvt/invictus/highland-oak-parquet-sunrise.jpg",
+    roomImg: "/tiles/lvt/invictus/highland-oak-parquet-sunrise-preview.png",
+  },
+  {
+    id: 15,
+    title: "French Oak Parquet - Polar",
+    tileImg: "/tiles/lvt/invictus/french-oak-parquet-polar.jpg",
+    roomImg: "/tiles/lvt/invictus/french-oak-parquet-polar-preview.png",
+  },
+  {
+    id: 16,
+    title: "New England Oak Parquet - Sand",
+    tileImg: "/tiles/lvt/invictus/new-england-oak-parquet-sand.jpg",
+    roomImg: "/tiles/lvt/invictus/new-england-oak-parquet-sand-preview.png",
+  },
+  {
+    id: 17,
+    title: "Royal Oak Parquet - Blonde",
+    tileImg: "/tiles/lvt/invictus/royal-oak-parquet-blonde.jpg",
+    roomImg: "/tiles/lvt/invictus/royal-oak-parquet-blonde-preview.png",
+  },
+];
+
+export const ABINGDON_LVT_DATA: Product[] = [
+  {
+    id: 1,
+    title: "Antique Walnut",
+    tileImg: "/tiles/lvt/abingdon/antique-walnut.jpg",
+    roomImg: "/tiles/lvt/abingdon/antique-walnut-preview.png",
+  },
+  {
+    id: 2,
+    title: "Chestnut",
+    tileImg: "/tiles/lvt/abingdon/chestnut.jpg",
+    roomImg: "/tiles/lvt/abingdon/chestnut-preview.png",
+  },
+  {
+    id: 3,
+    title: "Weathered Cedar",
+    tileImg: "/tiles/lvt/abingdon/weathered-cedar.jpg",
+    roomImg: "/tiles/lvt/abingdon/weathered-cedar-preview.png",
+  },
+  {
+    id: 4,
+    title: "Urban Grey",
+    tileImg: "/tiles/lvt/abingdon/urban-grey.jpg",
+    roomImg: "/tiles/lvt/abingdon/urban-grey-preview.png",
+  },
+  {
+    id: 5,
+    title: "Smokey Oak",
+    tileImg: "/tiles/lvt/abingdon/smokey-oak.jpg",
+    roomImg: "/tiles/lvt/abingdon/smokey-oak-preview.png",
+  },
+  {
+    id: 6,
+    title: "Brushed Oak",
+    tileImg: "/tiles/lvt/abingdon/brushed-oak.jpg",
+    roomImg: "/tiles/lvt/abingdon/brushed-oak-preview.png",
+  },
+];
+
+// Vinyl
+
+export const FURLONG_ESSENTIAL_II_VINYLs_DATA: Product[] = [
+  {
+    id: 1,
+    title: "Ashridge ER101",
+    tileImg: "/tiles/vinyl/furlong/essential-ii/ashridge-er101.jpg",
+    roomImg: "/tiles/vinyl/furlong/essential-ii/ashridge-er101-preview.png",
+  },
+  {
+    id: 2,
+    title: "Bisham ER102",
+    tileImg: "/tiles/vinyl/furlong/essential-ii/bisham-er102.jpg",
+    roomImg: "/tiles/vinyl/furlong/essential-ii/bisham-er102-preview.png",
+  },
+  {
+    id: 3,
+    title: "Bowdown ER103",
+    tileImg: "/tiles/vinyl/furlong/essential-ii/bowdown-er103.jpg",
+    roomImg: "/tiles/vinyl/furlong/essential-ii/bowdown-er103-preview.png",
+  },
+  {
+    id: 4,
+    title: "Winterly ER104",
+    tileImg: "/tiles/vinyl/furlong/essential-ii/winterly-er104.jpg",
+    roomImg: "/tiles/vinyl/furlong/essential-ii/winterly-er104-preview.png",
+  },
+  {
+    id: 5,
+    title: "Enborne ER105",
+    tileImg: "/tiles/vinyl/furlong/essential-ii/enborne-er105.jpg",
+    roomImg: "/tiles/vinyl/furlong/essential-ii/enborne-er105-preview.png",
+  },
+  {
+    id: 6,
+    title: "Brampton ER107",
+    tileImg: "/tiles/vinyl/furlong/essential-ii/brampton-er107.jpg",
+    roomImg: "/tiles/vinyl/furlong/essential-ii/brampton-er107-preview.png",
+  },
+  {
+    id: 7,
+    title: "Coombe ER113",
+    tileImg: "/tiles/vinyl/furlong/essential-ii/coombe-er113.jpg",
+    roomImg: "/tiles/vinyl/furlong/essential-ii/coombe-er113-preview.png",
+  },
+  {
+    id: 8,
+    title: "Catmore ER114",
+    tileImg: "/tiles/vinyl/furlong/essential-ii/catmore-er114.jpg",
+    roomImg: "/tiles/vinyl/furlong/essential-ii/catmore-er114-preview.png",
+  },
+  {
+    id: 9,
+    title: "Brunton ER115",
+    tileImg: "/tiles/vinyl/furlong/essential-ii/brunton-er115.jpg",
+    roomImg: "/tiles/vinyl/furlong/essential-ii/brunton-er115-preview.png",
+  },
+  {
+    id: 10,
+    title: "Eccleston ER116",
+    tileImg: "/tiles/vinyl/furlong/essential-ii/eccleston-er116.jpg",
+    roomImg: "/tiles/vinyl/furlong/essential-ii/eccleston-er116-preview.png",
+  },
+  {
+    id: 11,
+    title: "Gillow ER117",
+    tileImg: "/tiles/vinyl/furlong/essential-ii/gillow-er117.jpg",
+    roomImg: "/tiles/vinyl/furlong/essential-ii/gillow-er117-preview.png",
+  },
+  {
+    id: 12,
+    title: "Kirkby ER118",
+    tileImg: "/tiles/vinyl/furlong/essential-ii/kirkby-er118.jpg",
+    roomImg: "/tiles/vinyl/furlong/essential-ii/kirkby-er118-preview.png",
+  },
+  {
+    id: 13,
+    title: "Pinkney ER119",
+    tileImg: "/tiles/vinyl/furlong/essential-ii/pinkney-er119.jpg",
+    roomImg: "/tiles/vinyl/furlong/essential-ii/pinkney-er119-preview.png",
+  },
+];
+
+export const FURLONG_ENDURANCE_VINYLs_DATA: Product[] = [
+  {
+    id: 1,
+    title: "Parma",
+    tileImg: "/tiles/vinyl/furlong/endurance/parma.jpg",
+    roomImg: "/tiles/vinyl/furlong/endurance/parma-preview.png",
+  },
+  {
+    id: 2,
+    title: "Florence",
+    tileImg: "/tiles/vinyl/furlong/endurance/florence.jpg",
+    roomImg: "/tiles/vinyl/furlong/endurance/florence-preview.png",
+  },
+  {
+    id: 3,
+    title: "Milan",
+    tileImg: "/tiles/vinyl/furlong/endurance/milan.jpg",
+    roomImg: "/tiles/vinyl/furlong/endurance/milan-preview.png",
+  },
+  {
+    id: 4,
+    title: "Verona",
+    tileImg: "/tiles/vinyl/furlong/endurance/verona.jpg",
+    roomImg: "/tiles/vinyl/furlong/endurance/verona-preview.png",
+  },
+  {
+    id: 5,
+    title: "Pisa",
+    tileImg: "/tiles/vinyl/furlong/endurance/pisa.jpg",
+    roomImg: "/tiles/vinyl/furlong/endurance/pisa-preview.png",
+  },
+  {
+    id: 6,
+    title: "Turin",
+    tileImg: "/tiles/vinyl/furlong/endurance/turin.jpg",
+    roomImg: "/tiles/vinyl/furlong/endurance/turin-preview.png",
+  },
+  {
+    id: 7,
+    title: "Venice",
+    tileImg: "/tiles/vinyl/furlong/endurance/venice.jpg",
+    roomImg: "/tiles/vinyl/furlong/endurance/venice-preview.png",
+  },
+  {
+    id: 8,
+    title: "Bologna",
+    tileImg: "/tiles/vinyl/furlong/endurance/bologna.jpg",
+    roomImg: "/tiles/vinyl/furlong/endurance/bologna-preview.png",
+  },
+];
+
+// LEMINATE
+
+export const LEMINATE_URBAN_DATA: Product[] = [
+  {
+    id: 1,
+    title: "Oslo AU017",
+    tileImg: "/tiles/leminate/urban/oslo-au017.jpg",
+    roomImg: "/tiles/leminate/urban/oslo-au017-preview.png",
+  },
+  {
+    id: 2,
+    title: "Paris AU007",
+    tileImg: "/tiles/leminate/urban/paris-au007.jpg",
+    roomImg: "/tiles/leminate/urban/paris-au007-preview.png",
+  },
+  {
+    id: 3,
+    title: "Nairobi FU016",
+    tileImg: "/tiles/leminate/urban/nairobi-fu016.jpg",
+    roomImg: "/tiles/leminate/urban/nairobi-fu016-preview.png",
+  },
+  {
+    id: 4,
+    title: "Copenhagen AU020",
+    tileImg: "/tiles/leminate/urban/copenhagen-au020.jpg",
+    roomImg: "/tiles/leminate/urban/copenhagen-au020-preview.png",
+  },
+  {
+    id: 5,
+    title: "Kartaca FU018",
+    tileImg: "/tiles/leminate/urban/kartaca-fu018.jpg",
+    roomImg: "/tiles/leminate/urban/kartaca-fu018-preview.png",
+  },
+  {
+    id: 6,
+    title: "Tokyo FU006",
+    tileImg: "/tiles/leminate/urban/tokyo-fu006.jpg",
+    roomImg: "/tiles/leminate/urban/tokyo-fu006-preview.png",
+  },
+  {
+    id: 7,
+    title: "Peking FU007",
+    tileImg: "/tiles/leminate/urban/peking-fu007.jpg",
+    roomImg: "/tiles/leminate/urban/peking-fu007-preview.png",
+  },
+  {
+    id: 8,
+    title: "Prague AU015",
+    tileImg: "/tiles/leminate/urban/prague-au015.jpg",
+    roomImg: "/tiles/leminate/urban/prague-au015-preview.png",
+  },
+];
+
+export const LEMINATE_RIVER_DATA: Product[] = [
+  {
+    id: 1,
+    title: "Danube Oak",
+    tileImg: "/tiles/leminate/river/danube-oak.jpg",
+    roomImg: "/tiles/leminate/river/danube-oak-preview.png",
+  },
+  {
+    id: 2,
+    title: "Tigris Oak",
+    tileImg: "/tiles/leminate/river/tigris-oak.jpg",
+    roomImg: "/tiles/leminate/river/tigris-oak-preview.png",
+  },
+  {
+    id: 3,
+    title: "Delaware Oak",
+    tileImg: "/tiles/leminate/river/delaware-oak.jpg",
+    roomImg: "/tiles/leminate/river/delaware-oak-preview.png",
+  },
+  {
+    id: 4,
+    title: "Ganges Oak",
+    tileImg: "/tiles/leminate/river/ganges-oak.jpg",
+    roomImg: "/tiles/leminate/river/ganges-oak-preview.png",
+  },
+  {
+    id: 5,
+    title: "Thames Oak",
+    tileImg: "/tiles/leminate/river/thames-oak.jpg",
+    roomImg: "/tiles/leminate/river/thames-oak-preview.png",
+  },
+  {
+    id: 6,
+    title: "Nile Oak",
+    tileImg: "/tiles/leminate/river/nile-oak.jpg",
+    roomImg: "/tiles/leminate/river/nile-oak-preview.png",
+  },
+  {
+    id: 7,
+    title: "Trent Oak",
+    tileImg: "/tiles/leminate/river/trent-oak.jpg",
+    roomImg: "/tiles/leminate/river/trent-oak-preview.png",
+  },
+  {
+    id: 8,
+    title: "Erne Oak",
+    tileImg: "/tiles/leminate/river/erne-oak.jpg",
+    roomImg: "/tiles/leminate/river/erne-oak-preview.png",
+  },
+];
+
+export const LEMINATE_ELITE_XL_DATA: Product[] = [
+  {
+    id: 1,
+    title: "Ankara FXL015",
+    tileImg: "/tiles/leminate/elite-xl/ankara-fxl015.jpg",
+    roomImg: "/tiles/leminate/elite-xl/ankara-fxl015-preview.png",
+  },
+  {
+    id: 2,
+    title: "Brussels FXL030",
+    tileImg: "/tiles/leminate/elite-xl/brussels-fxl030.jpg",
+    roomImg: "/tiles/leminate/elite-xl/brussels-fxl030-preview.png",
+  },
+  {
+    id: 3,
+    title: "Lisbon FXL012",
+    tileImg: "/tiles/leminate/elite-xl/lisbon-fxl012.jpg",
+    roomImg: "/tiles/leminate/elite-xl/lisbon-fxl012-preview.png",
+  },
+  {
+    id: 4,
+    title: "London FXL026",
+    tileImg: "/tiles/leminate/elite-xl/london-fxl026.jpg",
+    roomImg: "/tiles/leminate/elite-xl/london-fxl026-preview.png",
+  },
+  {
+    id: 5,
+    title: "Manila FXL021",
+    tileImg: "/tiles/leminate/elite-xl/manila-fxl021.jpg",
+    roomImg: "/tiles/leminate/elite-xl/manila-fxl021-preview.png",
+  },
+  {
+    id: 6,
+    title: "Vienna FXL029",
+    tileImg: "/tiles/leminate/elite-xl/vienna-fxl029.jpg",
+    roomImg: "/tiles/leminate/elite-xl/vienna-fxl029-preview.png",
+  },
+  {
+    id: 7,
+    title: "Samsun FXL038",
+    tileImg: "/tiles/leminate/elite-xl/samsun-fxl038.jpg",
+    roomImg: "/tiles/leminate/elite-xl/samsun-fxl038-preview.png",
+  },
+  {
+    id: 8,
+    title: "Derin FC088",
+    tileImg: "/tiles/leminate/elite-xl/derin-fc088.jpg",
+    roomImg: "/tiles/leminate/elite-xl/derin-fc088-preview.png",
+  },
+];
+
+export const MATRESE_BED_BEDSET_DATA: Product[] = [
+  {
+    id: 1,
+    title: "Divan Bases",
+    tileImg: "/tiles/mattress-bed/divan-bases.jpg",
+    roomImg: "/tiles/mattress-bed/divan-bases-preview.png",
+  },
+];
+
+export const MATRESE_BED_MATTRESSES_DATA: Product[] = [
+  {
+    id: 1,
+    title: "Deep Quilt Mattress",
+    tileImg: "/tiles/mattress-bed/deep-quilt-mattress.jpg",
+    roomImg: "/tiles/mattress-bed/deep-quilt-mattress-preview.png",
+  },
+  {
+    id: 1,
+    title: "1500 Pcket Sprung Mattress",
+    tileImg: "/tiles/mattress-bed/1500-pcket-sprung-mattress.jpg",
+    roomImg: "/tiles/mattress-bed/1500-pcket-sprung-mattress-preview.png",
+  },
+  {
+    id: 1,
+    title: "Crown Orthopedic Mattress",
+    tileImg: "/tiles/mattress-bed/crown-orthopedic-mattress.jpg",
+    roomImg: "/tiles/mattress-bed/crown-orthopedic-mattress-preview.png",
+  },
+];
+
+export const MATRESE_BED_FRAMES_DATA: Product[] = [
+  {
+    id: 1,
+    title: "Divan Bases",
+    tileImg: "/tiles/mattress-bed/divan-bases.jpg",
+    roomImg: "/tiles/mattress-bed/divan-bases-preview.png",
+  },
+];
+
+export const MATRESE_BED_HEADBOARDS_DATA: Product[] = [
+  {
+    id: 1,
+    title: "Divan Bases",
+    tileImg: "/tiles/mattress-bed/divan-bases.jpg",
+    roomImg: "/tiles/mattress-bed/divan-bases-preview.png",
   },
 ];
 
@@ -1564,7 +2046,7 @@ export const VINYL_BRAND: WiderGridBrand[] = [
     description: "This vinyl range is affordable and competitively priced.",
     imageUrl:
       "https://www.furlongflooring.com/_next/image?url=https%3A%2F%2Ffiles.mutualcdn.com%2Ffurlong-flooring%2Fimages%2Fcn_essential_main.jpg%3Fdate%3D2023-11-17T15%3A48%3A04%2B00%3A00&w=1920&q=75",
-    path: "/carpet/cormar-inglewood-saxony",
+    path: "/vinyl/furlong-essential-ii",
   },
   {
     id: 2,
@@ -1572,7 +2054,7 @@ export const VINYL_BRAND: WiderGridBrand[] = [
     description: "Exceptional style without compromising functionality.",
     imageUrl:
       "https://www.abingdonflooring.co.uk/wp-content/uploads/Endurance-Featured-Image-1.jpg",
-    path: "/carpet/cormar-primo-texture",
+    path: "/vinyl/abingdon-endurance",
   },
 ];
 
@@ -1583,18 +2065,16 @@ export const LVT_BRAND: WiderGridBrand[] = [
     id: 1,
     title: "Invictus Maximus Click",
     description: "Lorem ipsum lorem ipsum lorem ipsum.",
-    imageUrl:
-      "https://www.furlongflooring.com/_next/image?url=https%3A%2F%2Ffiles.mutualcdn.com%2Ffurlong-flooring%2Fimages%2Fcn_essential_main.jpg%3Fdate%3D2023-11-17T15%3A48%3A04%2B00%3A00&w=1920&q=75",
-    path: "/carpet/cormar-inglewood-saxony",
+    imageUrl: "/tiles/lvt/invictus/cotton-oak-parquet-sandalwood-preview.png",
+    path: "/lvt/invictus-maximus-click",
   },
   {
     id: 2,
     title: "Artisan Click Abingdon",
     description:
       "Bring timeless elegance and lasting performance to your space with Artisan, a premium collection designed to impress.",
-    imageUrl:
-      "https://www.abingdonflooring.co.uk/wp-content/uploads/Artisan-Dryback-Featured-Image-1.jpg",
-    path: "/carpet/cormar-primo-texture",
+    imageUrl: "/tiles/lvt/abingdon/antique-walnut-preview.png",
+    path: "/lvt/artisan-click-abingdon",
   },
 ];
 
@@ -1606,27 +2086,24 @@ export const LEMINATE_BRAND: WiderGridBrand[] = [
     title: "Urban 8mm",
     description:
       "Urban laminate flooring is a top-quality 8mm laminate that offers a perfect combination of price, decors and availability. The market-leading Uniclic® click system is incorporated into the flooring, making the installation process quicker and simpler.",
-    imageUrl:
-      "https://www.furlongflooring.com/_next/image?url=https%3A%2F%2Ffiles.mutualcdn.com%2Ffurlong-flooring%2Fimages%2Fcn_urban_main.jpg%3Fdate%3D2023-11-17T15%3A39%3A33%2B00%3A00&w=1920&q=75",
-    path: "/carpet/cormar-inglewood-saxony",
+    imageUrl: "/tiles/leminate/urban/kartaca-fu018-preview.png",
+    path: "/leminate/urban-8mm",
   },
   {
     id: 2,
     title: "River water resistant 8mm",
     description:
       "Hardwearing and sustainably sourced with a Uniclic® system for faster fitting, River delivers on price, quality and aesthetic. The on trend decors range from light to dark and are inspired by authentic wood types – plus with its 72 hour water resistance, River really is the perfect hardflooring choice.",
-    imageUrl:
-      "https://www.furlongflooring.com/_next/image?url=https%3A%2F%2Ffiles.mutualcdn.com%2Ffurlong-flooring%2Fimages%2FFRV008-ERNE-OAK-1-LR.jpg%3Fdate%3D2024-02-07T15%3A31%3A41%2B00%3A00&w=1920&q=75",
-    path: "/carpet/cormar-primo-texture",
+    imageUrl: "/tiles/leminate/river/danube-oak-preview.png",
+    path: "/leminate/river-water-resistant-8mm",
   },
   {
     id: 3,
     title: "Elite XL 10mm",
     description:
       "Furlong Flooring's Elite XL is an exclusive 12mm laminate range that is strong, hard-wearing, and environmentally sustainable. It has an AC5 rating, making it highly durable and suitable for commercial settings. Available in 8 trendy decors that are specifically designed for the UK market, Elite XL offers unbeatable value for money. ",
-    imageUrl:
-      "https://www.furlongflooring.com/_next/image?url=https%3A%2F%2Ffiles.mutualcdn.com%2Ffurlong-flooring%2Fimages%2Fcn_elite-xl_main.jpg%3Fdate%3D2023-11-17T09%3A07%3A24%2B00%3A00&w=1920&q=75",
-    path: "/carpet/cormar-primo-texture",
+    imageUrl: "/tiles/leminate/elite-xl/ankara-fxl015-preview.png",
+    path: "/leminate/elite-xl-10mm",
   },
 ];
 
@@ -1635,83 +2112,41 @@ export const LEMINATE_BRAND: WiderGridBrand[] = [
 export const DIVAN_BASES_MATRESE_BED_FRAME_BRAND: WiderGridBrand[] = [
   {
     id: 1,
-    title: "Divan Bases",
+    title: "Bed",
     description: "Lorem ipsum",
-    imageUrl:
-      "https://k1furnishings.com/wp-content/uploads/2020/07/Langdale-Base-Deep-Quilt-Mattress-resize.jpg",
-    path: "/carpet/cormar-inglewood-saxony",
+    imageUrl: "/tiles/mattress-bed/divan-bases-preview.png",
+    path: "/mattress-bed/bed",
   },
 ];
 
 export const MATTRESS_MATRESE_BED_FRAME_BRAND: WiderGridBrand[] = [
   {
     id: 1,
-    title: "Deep Quilt Mattress",
+    title: "Mattresses",
     description: "Lorem ipsum",
-    imageUrl:
-      "https://k1furnishings.com/wp-content/uploads/2020/07/Deep-Quilt-Mattress-resize.jpg",
-    path: "/carpet/cormar-inglewood-saxony",
-  },
-  {
-    id: 2,
-    title: "1500 Pcket Sprung Mattress",
-    description: "Lorem ipsum",
-    imageUrl:
-      "https://k1furnishings.com/wp-content/uploads/2020/08/1500-Pkt-Mattress-resize.jpg",
-    path: "/carpet/cormar-inglewood-saxony",
-  },
-  {
-    id: 3,
-    title: "Crown Orthopedic Mattress",
-    description: "Lorem ipsum",
-    imageUrl:
-      "https://k1furnishings.com/wp-content/uploads/2020/07/Crown-Ortopaedic-Mattress-resize.jpg",
-    path: "/carpet/cormar-inglewood-saxony",
+    imageUrl: "/tiles/mattress-bed/1500-pcket-sprung-mattress-preview.png",
+    path: "/mattress-bed/mattress",
   },
 ];
 
 export const FRAMES_MATRESE_BED_FRAME_BRAND: WiderGridBrand[] = [
   {
     id: 1,
-    title: "LONDON FRAME",
+    title: "Bed Frames",
     description: "Lorem ipsum",
     imageUrl:
       "https://k1furnishings.com/wp-content/uploads/2018/06/London-Double.jpg",
-    path: "/carpet/cormar-inglewood-saxony",
-  },
-  {
-    id: 2,
-    title: "CHUNKY HONEY/CHERRY BUNK BED",
-    description: "Lorem ipsum",
-    imageUrl:
-      "https://k1furnishings.com/wp-content/uploads/2018/06/Bunkbed-Chunky-Honey.jpg",
-    path: "/carpet/cormar-inglewood-saxony",
-  },
-  {
-    id: 3,
-    title: "MISSION CHILDRENS BUNK BED",
-    description: "Lorem ipsum",
-    imageUrl:
-      "https://k1furnishings.com/wp-content/uploads/2020/08/Mission-Short-Children-Bunkbed-K1.jpg",
-    path: "/carpet/cormar-inglewood-saxony",
+    path: "/mattress-bed/frame",
   },
 ];
 
 export const HEADBOARDS_MATRESE_BED_FRAME_BRAND: WiderGridBrand[] = [
   {
     id: 1,
-    title: "Flat PVC 20 Inch",
+    title: "Headboards",
     description: "Lorem ipsum",
     imageUrl:
       "https://k1furnishings.com/wp-content/uploads/2020/07/ALL-PVC-HB.jpg",
-    path: "/carpet/cormar-inglewood-saxony",
-  },
-  {
-    id: 2,
-    title: 'PREMIUM HEADBOARDS (optional material) DESIGNS 30"',
-    description: "Lorem ipsum",
-    imageUrl:
-      "https://k1furnishings.com/wp-content/uploads/2020/08/Headboards-All-K1.jpg",
-    path: "/carpet/cormar-inglewood-saxony",
+    path: "/mattress-bed/headboards",
   },
 ];

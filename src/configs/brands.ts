@@ -89,7 +89,7 @@ export const LEMINATE_BRAND_SECTIONS: BrandSection[] = [
 
 export const MATRESE_BED_FRAME_BRAND_SECTIONS: BrandSection[] = [
   {
-    title: "Divan Bases",
+    title: "Bed",
     description: "Lorem ipsum",
     items: DIVAN_BASES_MATRESE_BED_FRAME_BRAND,
     reverse: true,
