@@ -39,6 +39,13 @@ import {
   VINYL_BRAND_SECTIONS,
 } from "./configs/brands";
 import TilesPage from "./pages/tiles-page";
+import {
+  CARPET_DESCRIPTION,
+  LAMINATE_DESCRIPTION,
+  LVT_DESCRIPTION,
+  MATTRESS_BED_DESCRIPTION,
+  VINYL_DESCRIPTION,
+} from "./configs/description";
 
 function App() {
   const { pathname } = useLocation();
@@ -61,7 +68,12 @@ function App() {
       <Route path="/" element={<LandingPage />} />
       <Route
         path="/carpet"
-        element={<WiderPage brandList={CARPET_BRAND_SECTIONS} />}
+        element={
+          <WiderPage
+            headerContent={CARPET_DESCRIPTION}
+            brandList={CARPET_BRAND_SECTIONS}
+          />
+        }
       />
       {/* CORMAR CARPETS */}
       <Route
@@ -172,7 +184,12 @@ function App() {
       />
       <Route
         path="/vinyl"
-        element={<WiderPage brandList={VINYL_BRAND_SECTIONS} />}
+        element={
+          <WiderPage
+            brandList={VINYL_BRAND_SECTIONS}
+            headerContent={VINYL_DESCRIPTION}
+          />
+        }
       />
       <Route
         path="/vinyl/furlong-essential-ii"
@@ -187,7 +204,12 @@ function App() {
       {/* ========== LVT ========== */}
       <Route
         path="/lvt"
-        element={<WiderPage brandList={LVT_BRAND_SECTIONS} />}
+        element={
+          <WiderPage
+            brandList={LVT_BRAND_SECTIONS}
+            headerContent={LVT_DESCRIPTION}
+          />
+        }
       />
       <Route
         path="/lvt/invictus-maximus-click"
@@ -200,7 +222,12 @@ function App() {
       {/* ========== LEMINATE ========== */}
       <Route
         path="/laminate"
-        element={<WiderPage brandList={LEMINATE_BRAND_SECTIONS} />}
+        element={
+          <WiderPage
+            brandList={LEMINATE_BRAND_SECTIONS}
+            headerContent={LAMINATE_DESCRIPTION}
+          />
+        }
       />
       <Route
         path="/leminate/urban-8mm"
@@ -217,7 +244,12 @@ function App() {
       {/* ========== MATTRESS ========== */}
       <Route
         path="/mattress-bed"
-        element={<WiderPage brandList={MATRESE_BED_FRAME_BRAND_SECTIONS} />}
+        element={
+          <WiderPage
+            brandList={MATRESE_BED_FRAME_BRAND_SECTIONS}
+            headerContent={MATTRESS_BED_DESCRIPTION}
+          />
+        }
       />
       <Route
         path="/mattress-bed/bed"

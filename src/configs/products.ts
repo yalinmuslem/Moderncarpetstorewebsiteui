@@ -1886,9 +1886,23 @@ export const MATRESE_BED_MATTRESSES_DATA: Product[] = [
 export const MATRESE_BED_FRAMES_DATA: Product[] = [
   {
     id: 1,
-    title: "Divan Bases",
-    tileImg: "/tiles/mattress-bed/divan-bases.jpg",
-    roomImg: "/tiles/mattress-bed/divan-bases-preview.png",
+    title: "LONDON FRAME",
+    tileImg: "/tiles/mattress-bed/frames/london-frame.jpg",
+    roomImg: "/tiles/mattress-bed/frames/london-frame-preview.png",
+  },
+  {
+    id: 2,
+    title: "CHUNKY HONEY/CHERRY BUNK BED",
+    tileImg: "/tiles/mattress-bed/frames/chunky-honey-cherry-bunk-bed.jpg",
+    roomImg:
+      "/tiles/mattress-bed/frames/chunky-honey-cherry-bunk-bed-preview.png",
+  },
+  {
+    id: 3,
+    title: "MISSION CHILDRENS BUNK BED",
+    tileImg: "/tiles/mattress-bed/frames/mission-childrens-bunk-bed.jpg",
+    roomImg:
+      "/tiles/mattress-bed/frames/mission-childrens-bunk-bed-preview.png",
   },
 ];
 
@@ -1896,8 +1910,16 @@ export const MATRESE_BED_HEADBOARDS_DATA: Product[] = [
   {
     id: 1,
     title: "Divan Bases",
-    tileImg: "/tiles/mattress-bed/divan-bases.jpg",
-    roomImg: "/tiles/mattress-bed/divan-bases-preview.png",
+    tileImg: "/tiles/mattress-bed/headboards/flat-pvc-20-inch.jpg",
+    roomImg: "/tiles/mattress-bed/headboards/flat-pvc-20-inch-preview.png",
+  },
+  {
+    id: 2,
+    title: "Divan Bases",
+    tileImg:
+      "/tiles/mattress-bed/headboards/premium-headboards-optional-material-designs-30.jpg",
+    roomImg:
+      "/tiles/mattress-bed/headboards/premium-headboards-optional-material-designs-30-preview.png",
   },
 ];
 
@@ -2113,7 +2135,8 @@ export const DIVAN_BASES_MATRESE_BED_FRAME_BRAND: WiderGridBrand[] = [
   {
     id: 1,
     title: "Bed",
-    description: "Lorem ipsum",
+    description:
+      "Discover the perfect foundation for your sleep with our handcrafted divan bases, designed for maximum stability and timeless style.",
     imageUrl: "/tiles/mattress-bed/divan-bases-preview.png",
     path: "/mattress-bed/bed",
   },
@@ -2123,7 +2146,8 @@ export const MATTRESS_MATRESE_BED_FRAME_BRAND: WiderGridBrand[] = [
   {
     id: 1,
     title: "Mattresses",
-    description: "Lorem ipsum",
+    description:
+      "Experience unparalleled comfort with our premium range of orthopaedic and pocket-sprung mattresses tailored for ultimate support.",
     imageUrl: "/tiles/mattress-bed/1500-pcket-sprung-mattress-preview.png",
     path: "/mattress-bed/mattress",
   },
@@ -2133,9 +2157,9 @@ export const FRAMES_MATRESE_BED_FRAME_BRAND: WiderGridBrand[] = [
   {
     id: 1,
     title: "Bed Frames",
-    description: "Lorem ipsum",
-    imageUrl:
-      "https://k1furnishings.com/wp-content/uploads/2018/06/London-Double.jpg",
+    description:
+      "Elevate your bedroom aesthetics with our exclusive bed frames, blending durable craftsmanship with modern architectural designs.",
+    imageUrl: "/tiles/mattress-bed/frames/london-frame-preview.png",
     path: "/mattress-bed/frame",
   },
 ];
@@ -2144,9 +2168,9 @@ export const HEADBOARDS_MATRESE_BED_FRAME_BRAND: WiderGridBrand[] = [
   {
     id: 1,
     title: "Headboards",
-    description: "Lorem ipsum",
-    imageUrl:
-      "https://k1furnishings.com/wp-content/uploads/2020/07/ALL-PVC-HB.jpg",
+    description:
+      "The ultimate finishing touch. Choose from a variety of textures and heights to add a layer of luxury and comfort to your bed.",
+    imageUrl: "/tiles/mattress-bed/headboards/flat-pvc-20-inch-preview.png",
     path: "/mattress-bed/headboards",
   },
 ];

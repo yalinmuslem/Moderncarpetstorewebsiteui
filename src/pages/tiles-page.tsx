@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import GradualBlurMemo from "@/components/GradualBlur";
 import type { Product } from "@/configs/products";
 import GalleryTilePreview from "@/components/GalleryTilePreview";
+import Breadcrumbs from "@/components/BreadCrumbs";
 
 interface GalleryTilePreviewProps {
   title: string;
@@ -17,6 +18,10 @@ const TilesPage: React.FC<GalleryTilePreviewProps> = (props) => {
     <>
       <div className="min-h-screen bg-white text-[#220905] font-sans selection:bg-[#660000] selection:text-white">
         <Navbar />
+
+        <section className="max-w-7xl mx-auto w-full px-6">
+          <Breadcrumbs />
+        </section>
 
         <GalleryTilePreview
           title={props.title}

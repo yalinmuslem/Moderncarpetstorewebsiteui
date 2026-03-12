@@ -90,25 +90,29 @@ export const LEMINATE_BRAND_SECTIONS: BrandSection[] = [
 export const MATRESE_BED_FRAME_BRAND_SECTIONS: BrandSection[] = [
   {
     title: "Bed",
-    description: "Lorem ipsum",
+    description:
+      "Upgrade your sleep sanctuary with our premium divan bases, engineered for superior durability and a clean, modern aesthetic.",
     items: DIVAN_BASES_MATRESE_BED_FRAME_BRAND,
     reverse: true,
   },
   {
     title: "Mattresses",
-    description: "Lorem ipsum",
+    description:
+      "From orthopaedic support to cloud-like softness, explore our curated selection of mattresses designed to provide the restorative rest you deserve.",
     items: MATTRESS_MATRESE_BED_FRAME_BRAND,
     reverse: true,
   },
   {
     title: "Frames",
-    description: "Lorem ipsum",
+    description:
+      "Define your bedroom's character with our range of high-quality bed frames, where structural integrity meets exquisite design.",
     items: FRAMES_MATRESE_BED_FRAME_BRAND,
     reverse: true,
   },
   {
-    title: "Headborads",
-    description: "Lorem ipsum",
+    title: "Headboards",
+    description:
+      "Add a touch of sophistication and personalized comfort with our elegant headboards, available in various premium fabrics and styles.",
     items: HEADBOARDS_MATRESE_BED_FRAME_BRAND,
     reverse: true,
   },
