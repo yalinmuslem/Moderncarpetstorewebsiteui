@@ -48,20 +48,54 @@ const Product: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   return (
-    <section id="product" className="py-20 px-6 max-w-7xl mx-auto bg-white">
-      <div className="text-center mb-16">
+    <section
+      id="product"
+      className="py-20 px-4 md:px-6 max-w-7xl mx-auto bg-white"
+    >
+      <div className="text-center mb-10 md:mb-16">
         <Chip>Products</Chip>
-        <h2 className="text-5xl font-medium mt-6 text-[#220905]">
+        <h2 className="text-4xl md:text-5xl font-medium mt-6 text-[#220905]">
           Explore Our Products
         </h2>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-12 items-start">
+      {/* --- MOBILE VIEW: Muncul Langsung Semua --- */}
+      <div className="flex flex-col gap-10 md:hidden">
+        {products.map((item, idx) => (
+          <div key={idx} className="flex flex-col gap-4">
+            <div className="relative overflow-hidden rounded-2xl aspect-[4/2] shadow-md">
+              <img
+                src={item.img}
+                alt={item.name}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-[#220905] mb-2">
+                {item.name}
+              </h3>
+              <p className="text-gray-600 leading-relaxed mb-4 text-sm">
+                {item.text}
+              </p>
+              <Link to={item.link}>
+                <button className="bg-[#660000] text-white px-6 py-2.5 rounded-full text-sm font-medium flex items-center gap-2">
+                  See more <MoveRight size={16} />
+                </button>
+              </Link>
+            </div>
+            {idx !== products.length - 1 && (
+              <hr className="border-gray-100 mt-4" />
+            )}
+          </div>
+        ))}
+      </div>
+
+      {/* --- DESKTOP VIEW: Sticky & Accordion (Hidden on Mobile) --- */}
+      <div className="hidden md:flex flex-row gap-12 items-start">
         {/* SISI KIRI: CROSS-FADE IMAGE */}
-        <div className="w-full md:w-1/2 sticky top-10">
-          <div className="relative overflow-hidden rounded-2xl aspect-[4/5] shadow-lg bg-[#660000]">
-            {/* Background gelap/brand agar tidak ada putih saat transisi pertama kali */}
-            <AnimatePresence initial={false}>
+        <div className="w-1/2 sticky top-24">
+          <div className="relative overflow-hidden rounded-2xl aspect-[3/4] shadow-lg bg-[#660000]">
+            <AnimatePresence initial={false} mode="wait">
               <motion.img
                 key={activeIndex}
                 src={products[activeIndex].img}
@@ -69,7 +103,7 @@ const Product: React.FC = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.6, ease: "easeInOut" }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
                 className="absolute inset-0 w-full h-full object-cover"
               />
             </AnimatePresence>
@@ -77,7 +111,7 @@ const Product: React.FC = () => {
         </div>
 
         {/* SISI KANAN: LIST AKORDEON */}
-        <div className="w-full md:w-1/2 border-t border-gray-200">
+        <div className="w-1/2 border-t border-gray-200">
           {products.map((item, idx) => {
             const isActive = activeIndex === idx;
 
@@ -85,6 +119,7 @@ const Product: React.FC = () => {
               <div
                 key={idx}
                 className="border-b border-gray-200 cursor-pointer"
+                onMouseEnter={() => setActiveIndex(idx)} // Di desktop bisa ganti jadi hover agar lebih interaktif
                 onClick={() => setActiveIndex(idx)}
               >
                 <div className="flex justify-between items-center py-6 group">
@@ -102,7 +137,7 @@ const Product: React.FC = () => {
 
                 <div
                   className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                    isActive ? "max-h-60 pb-8 opacity-100" : "max-h-0 opacity-0"
+                    isActive ? "max-h-80 pb-8 opacity-100" : "max-h-0 opacity-0"
                   }`}
                 >
                   <p className="text-gray-600 leading-relaxed max-w-lg">
