@@ -12,29 +12,33 @@ const GalleryPage: React.FC<{
   return (
     <>
       <div className="min-h-screen bg-white text-[#220905] font-sans selection:bg-[#660000] selection:text-white">
-        {/* 1. HEADER & NAVIGATION */}
         <Navbar />
 
-        <section className="max-w-7xl mx-auto w-full px-6">
+        {/* Padding disesuaikan untuk mobile (pt-20 agar tidak tertutup navbar) */}
+        <section className="max-w-7xl mx-auto w-full px-6 pt-24 md:pt-10 pb-6">
           <Breadcrumbs />
         </section>
 
-        <GalleryScroll productsList={productsList} />
+        <main>
+          <GalleryScroll productsList={productsList} />
+        </main>
 
-        {/* 9. FOOTER SECTION */}
         <Footer />
       </div>
 
-      <GradualBlurMemo
-        target="page"
-        position="bottom"
-        height="6rem"
-        strength={0.5}
-        divCount={5}
-        curve="bezier"
-        exponential
-        opacity={1}
-      />
+      {/* Sembunyikan Blur di Mobile jika mengganggu performa/tampilan */}
+      <div className="hidden md:block">
+        <GradualBlurMemo
+          target="page"
+          position="bottom"
+          height="6rem"
+          strength={0.5}
+          divCount={5}
+          curve="bezier"
+          exponential
+          opacity={1}
+        />
+      </div>
     </>
   );
 };
