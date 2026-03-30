@@ -47,15 +47,13 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-medium mb-6">Pages</h4>
             <ul className="space-y-4 text-gray-400 text-sm">
-              {["Home", "Product", "Project", "Services", "About"].map(
-                (link) => (
-                  <li key={link}>
-                    <a href="#" className="hover:text-white transition-colors">
-                      {link}
-                    </a>
-                  </li>
-                ),
-              )}
+              {["Home", "Product", "Services", "About"].map((link) => (
+                <li key={link}>
+                  <a href="#" className="hover:text-white transition-colors">
+                    {link}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 

@@ -2,6 +2,7 @@ import React from "react";
 import BlurText from "@/components/BlurText"; // Pastikan path ini benar
 import { MoveRight } from "lucide-react";
 import Chip from "./Chip";
+import { Link } from "react-router";
 
 const About: React.FC = () => {
   const lines = [
@@ -11,7 +12,10 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="text-center py-32 bg-white flex flex-col items-center">
+    <section
+      id="about"
+      className="text-center py-32 bg-white flex flex-col items-center"
+    >
       <Chip>Why Choose Standard Carpets?</Chip>
       <div className="text-3xl md:text-3xl font-normal max-w-4xl mx-auto mt-8 leading-tight text-[#220905]">
         {lines.map((line, idx) => (
@@ -25,9 +29,12 @@ const About: React.FC = () => {
           />
         ))}
       </div>
-      <button className="mt-10 bg-[#660000] text-white px-8 py-3 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-[#bd0d11] transition-colors">
+      <Link
+        to={"/about"}
+        className="mt-10 bg-[#660000] text-white px-8 py-3 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-[#bd0d11] transition-colors"
+      >
         Learn more <MoveRight size={16} />
-      </button>
+      </Link>
     </section>
   );
 };

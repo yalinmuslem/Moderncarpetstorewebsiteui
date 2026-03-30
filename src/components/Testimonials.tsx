@@ -10,12 +10,36 @@ interface Testimonial {
 }
 
 const testimonials: Testimonial[] = [
-  { link: "https://maps.app.goo.gl/L3Y4a53Gi599q9kT9", name: "Sayful Islam.", role: "", text: "Honestly couldn’t ask for better. Customer service is on point. Good quality carpet, really comfortable to walk on. Fitted the carpet on my stairs really well and has 35 years of experience can’t go wrong with that. No mess and doesn’t damage anything whilst fitting. I’ve seen other shops and I see a lot of complaints about damages but this one is really professional. Highly recommend." },
-  { link: "https://maps.app.goo.gl/qgXtHV3gWqsyT3V27", name: "Susanne Lydia Maguire.", role: "", text: "Excellent service and workmanship. Incredibly fast fitting and high quality finish - I am delighted with both the carpets and new kitchen floor! Thank you." },
-  { link: "https://maps.app.goo.gl/KJ21Hc5W7KK18RuB6", name: "Lynsey Waugh", role: "", text: "Went above and beyond to help me with finding a carpet fitter, and then great quality carpet when I was in a pickle. Fitters were brill too" },
-  { link: "https://maps.app.goo.gl/hrNupR9n3ss1hn2i6", name: "Sara Pouri", role: "", text: "Amazing service. Yasir was very personable and went out of his way to order and fit our carpet in a very short timeframe of 48 hours where others were quoting weeks. Really knowledgeable, super reliable and the final result looks great. Brilliant local business, and one to fully support over the big names" },
-  { link: "https://maps.app.goo.gl/z9CyRamGir2AtYGf6", name: "Insha Hothi", role: "", text: "Really lovely and excellent quality carpet, work carried out to great finish. Highly recommend them!" },
-  { link: "https://maps.app.goo.gl/LphBhn8wvjJfCZyF9", name: "Bedford&Lindley", role: "", text: "I have been using standard carpets as a landlord for over 20 years. Their pricing for carpets and beds is unbeatable. They provide a polite service. Would thoroughly recommend!" },
+  {
+    link: "https://maps.app.goo.gl/L3Y4a53Gi599q9kT9",
+    name: "Sayful Islam.",
+    role: "",
+    text: "Honestly couldn’t ask for better. Customer service is on point. Good quality carpet, really comfortable to walk on. Fitted the carpet on my stairs really well and has 35 years of experience can’t go wrong with that. No mess and doesn’t damage anything whilst fitting. I’ve seen other shops and I see a lot of complaints about damages but this one is really professional. Highly recommend.",
+  },
+  {
+    link: "https://maps.app.goo.gl/qgXtHV3gWqsyT3V27",
+    name: "Susanne Lydia Maguire.",
+    role: "",
+    text: "Excellent service and workmanship. Incredibly fast fitting and high quality finish - I am delighted with both the carpets and new kitchen floor! Thank you.",
+  },
+  {
+    link: "https://maps.app.goo.gl/KJ21Hc5W7KK18RuB6",
+    name: "Lynsey Waugh",
+    role: "",
+    text: "Went above and beyond to help me with finding a carpet fitter, and then great quality carpet when I was in a pickle. Fitters were brill too",
+  },
+  {
+    link: "https://maps.app.goo.gl/hrNupR9n3ss1hn2i6",
+    name: "Sara Pouri",
+    role: "",
+    text: "Amazing service. Yasir was very personable and went out of his way to order and fit our carpet in a very short timeframe of 48 hours where others were quoting weeks. Really knowledgeable, super reliable and the final result looks great. Brilliant local business, and one to fully support over the big names",
+  },
+  {
+    link: "https://maps.app.goo.gl/LphBhn8wvjJfCZyF9",
+    name: "Bedford&Lindley",
+    role: "",
+    text: "I have been using standard carpets as a landlord for over 20 years. Their pricing for carpets and beds is unbeatable. They provide a polite service. Would thoroughly recommend!",
+  },
 ];
 
 const TestimonialCard = ({ item }: { item: Testimonial }) => (
@@ -30,13 +54,26 @@ const TestimonialCard = ({ item }: { item: Testimonial }) => (
       <div className="w-12 h-12 bg-gray-300 rounded-full"></div>
       <div>
         <p className="text-2xl text-[#220905]">{item.name}</p>
-        <a target="_blank" rel="noopener noreferrer" href={item.link} className="text-xs text-gray-400">Details</a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={item.link}
+          className="text-xs text-gray-400"
+        >
+          Details
+        </a>
       </div>
     </div>
   </div>
 );
 
-const ScrollingRow = ({ items, direction = "left" }: { items: Testimonial[], direction?: "left" | "right" }) => {
+const ScrollingRow = ({
+  items,
+  direction = "left",
+}: {
+  items: Testimonial[];
+  direction?: "left" | "right";
+}) => {
   const isLeft = direction === "left";
   // Tips: Ulangi array 4 kali untuk memastikan layar lebar (Ultrawide) tetap terisi penuh
   const duplicatedItems = [...items, ...items, ...items, ...items];
@@ -105,7 +142,7 @@ const Testimonials: React.FC = () => {
       <div className="relative flex flex-col">
         {/* Row 1: Ke Kanan */}
         <ScrollingRow items={firstRow} direction="right" />
-        
+
         {/* Row 2: Ke Kiri */}
         <ScrollingRow items={secondRow} direction="left" />
 

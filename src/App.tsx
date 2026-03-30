@@ -46,6 +46,8 @@ import {
   MATTRESS_BED_DESCRIPTION,
   VINYL_DESCRIPTION,
 } from "./configs/description";
+import DetailService from "./pages/detail-service";
+import AboutPage from "./pages/about-page";
 
 function App() {
   const { pathname } = useLocation();
@@ -66,6 +68,10 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
+
+      <Route path="/services" element={<DetailService />} />
+      <Route path="/about" element={<AboutPage />} />
+
       <Route
         path="/carpet"
         element={
@@ -166,7 +172,10 @@ function App() {
       <Route
         path="/carpet/lewis-abbott-flat-weaves-herringbone"
         element={
-          <GalleryPage
+          <TilesPage
+            title="Lewis Abbott - Flat Waves Herringbone"
+            description="Chic, woven, and built to last. Our Herringbone shades offer a sophisticated look with the rugged durability needed for every room in your home."
+            heroImage="/tiles/carpet/lewis-abbott/herringbone/copper-preview.png"
             productsList={LEWIS_ABBOTT_FLAT_WEAVES_HERRINGBONE_CARPET_DATA}
           />
         }
@@ -201,6 +210,7 @@ function App() {
         path="/vinyl/abingdon-endurance"
         element={<GalleryPage productsList={FURLONG_ENDURANCE_VINYLs_DATA} />}
       />
+
       {/* ========== LVT ========== */}
       <Route
         path="/lvt"
@@ -219,6 +229,7 @@ function App() {
         path="/lvt/artisan-click-abingdon"
         element={<GalleryPage productsList={ABINGDON_LVT_DATA} />}
       />
+
       {/* ========== LEMINATE ========== */}
       <Route
         path="/laminate"
@@ -241,6 +252,7 @@ function App() {
         path="/leminate/elite-xl-10mm"
         element={<GalleryPage productsList={LEMINATE_ELITE_XL_DATA} />}
       />
+
       {/* ========== MATTRESS ========== */}
       <Route
         path="/mattress-bed"

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const menuItems = ["Home", "Product", "About", "Project", "Services"];
+  const menuItems = ["Home", "Product", "About", "Services"];
 
   return (
     <nav className="relative z-50">
