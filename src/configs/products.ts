@@ -1698,9 +1698,9 @@ export const FURLONG_ENDURANCE_VINYLs_DATA: Product[] = [
   },
 ];
 
-// LEMINATE
+// LAMINATE
 
-export const LEMINATE_URBAN_DATA: Product[] = [
+export const LAMINATE_URBAN_DATA: Product[] = [
   {
     id: 1,
     title: "Oslo AU017",
@@ -1751,7 +1751,7 @@ export const LEMINATE_URBAN_DATA: Product[] = [
   },
 ];
 
-export const LEMINATE_RIVER_DATA: Product[] = [
+export const LAMINATE_RIVER_DATA: Product[] = [
   {
     id: 1,
     title: "Danube Oak",
@@ -1802,7 +1802,7 @@ export const LEMINATE_RIVER_DATA: Product[] = [
   },
 ];
 
-export const LEMINATE_ELITE_XL_DATA: Product[] = [
+export const LAMINATE_ELITE_XL_DATA: Product[] = [
   {
     id: 1,
     title: "Ankara FXL015",
@@ -2100,9 +2100,9 @@ export const LVT_BRAND: WiderGridBrand[] = [
   },
 ];
 
-// ===== LEMINATE =====
+// ===== LAMINATE =====
 
-export const LEMINATE_BRAND: WiderGridBrand[] = [
+export const LAMINATE_BRAND: WiderGridBrand[] = [
   {
     id: 1,
     title: "Urban 8mm",

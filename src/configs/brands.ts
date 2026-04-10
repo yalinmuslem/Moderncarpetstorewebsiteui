@@ -7,7 +7,7 @@ import {
   LEWIS_ABBOTT_CARPET_BRAND,
   type WiderGridBrand,
   LVT_BRAND,
-  LEMINATE_BRAND,
+  LAMINATE_BRAND,
   HEADBOARDS_MATRESE_BED_FRAME_BRAND,
   FRAMES_MATRESE_BED_FRAME_BRAND,
   MATTRESS_MATRESE_BED_FRAME_BRAND,
@@ -77,12 +77,12 @@ export const LVT_BRAND_SECTIONS: BrandSection[] = [
   },
 ];
 
-export const LEMINATE_BRAND_SECTIONS: BrandSection[] = [
+export const LAMINATE_BRAND_SECTIONS: BrandSection[] = [
   {
-    title: "Leminate",
+    title: "Laminate",
     description:
       "Laminate flooring is a stylish and cost-effective solution for modern homes and busy spaces.",
-    items: LEMINATE_BRAND,
+    items: LAMINATE_BRAND,
     reverse: true,
   },
 ];
