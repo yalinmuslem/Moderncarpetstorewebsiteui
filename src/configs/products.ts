@@ -2342,9 +2342,6 @@ export const MATRESE_BED_BEDSET_DATA: Product[] = [
   },
 ];
 
-const MATTRESS_SIZES =
-  "Single (3FT), Small Double (4FT), Double (4FT6), King (5FT)";
-
 export const MATRESE_BED_MATTRESSES_DATA: Product[] = [
   {
     id: 1,
