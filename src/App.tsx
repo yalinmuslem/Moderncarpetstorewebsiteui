@@ -240,15 +240,15 @@ function App() {
         }
       />
       <Route
-        path="/leminate/urban-8mm"
+        path="/laminate/urban-8mm"
         element={<GalleryPage productsList={LAMINATE_URBAN_DATA} />}
       />
       <Route
-        path="/leminate/river-water-resistant-8mm"
+        path="/laminate/river-water-resistant-8mm"
         element={<GalleryPage productsList={LAMINATE_RIVER_DATA} />}
       />
       <Route
-        path="/leminate/elite-xl-10mm"
+        path="/laminate/elite-xl-10mm"
         element={<GalleryPage productsList={LAMINATE_ELITE_XL_DATA} />}
       />
 

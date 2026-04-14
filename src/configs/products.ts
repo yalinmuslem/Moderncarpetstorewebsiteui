@@ -2662,7 +2662,7 @@ export const LAMINATE_BRAND: WiderGridBrand[] = [
     description:
       "Urban laminate flooring is a top-quality 8mm laminate that offers a perfect combination of price, decors and availability. The market-leading Uniclic® click system is incorporated into the flooring, making the installation process quicker and simpler.",
     imageUrl: "/tiles/leminate/urban/kartaca-fu018-preview.png",
-    path: "/leminate/urban-8mm",
+    path: "/laminate/urban-8mm",
   },
   {
     id: 2,
@@ -2670,7 +2670,7 @@ export const LAMINATE_BRAND: WiderGridBrand[] = [
     description:
       "Hardwearing and sustainably sourced with a Uniclic® system for faster fitting, River delivers on price, quality and aesthetic. The on trend decors range from light to dark and are inspired by authentic wood types – plus with its 72 hour water resistance, River really is the perfect hardflooring choice.",
     imageUrl: "/tiles/leminate/river/danube-oak-preview.png",
-    path: "/leminate/river-water-resistant-8mm",
+    path: "/laminate/river-water-resistant-8mm",
   },
   {
     id: 3,
@@ -2678,7 +2678,7 @@ export const LAMINATE_BRAND: WiderGridBrand[] = [
     description:
       "Furlong Flooring's Elite XL is an exclusive 12mm laminate range that is strong, hard-wearing, and environmentally sustainable. It has an AC5 rating, making it highly durable and suitable for commercial settings. Available in 8 trendy decors that are specifically designed for the UK market, Elite XL offers unbeatable value for money. ",
     imageUrl: "/tiles/leminate/elite-xl/ankara-fxl015-preview.png",
-    path: "/leminate/elite-xl-10mm",
+    path: "/laminate/elite-xl-10mm",
   },
 ];
 

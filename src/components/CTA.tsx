@@ -1,4 +1,5 @@
 import { MoveRight } from "lucide-react";
+import { Link } from "react-router";
 
 export const CTA = () => {
   return (
@@ -12,9 +13,14 @@ export const CTA = () => {
             Personal consultation for home or office projects — practical
             solutions from planning to installation.
           </p>
-          <button className="bg-[#660000] text-white px-10 py-5 rounded-full font-medium flex items-center gap-2 mx-auto md:mx-0 hover:bg-[#bd0d11] transition-all">
-            Let's Talk <MoveRight size={20} />
-          </button>
+          <Link
+            target="_blank"
+            to={`https://wa.me/6281234567890?text=${encodeURIComponent("Hello! I am interested in your product.")}`}
+          >
+            <button className="bg-[#660000] cursor-pointer text-white px-10 py-5 rounded-full font-medium flex items-center gap-2 mx-auto md:mx-0 hover:bg-[#bd0d11] transition-all">
+              Let's Talk <MoveRight size={20} />
+            </button>
+          </Link>
         </div>
 
         {/* CTA Decorative Images */}
