@@ -20,9 +20,9 @@ import {
   FURLONG_FAIRWAY_CARPET_DATA,
   FURLONG_TRIDENT_TWIST_CARPET_DATA,
   INVICTUS_LVT_DATA,
-  LEMINATE_ELITE_XL_DATA,
-  LEMINATE_RIVER_DATA,
-  LEMINATE_URBAN_DATA,
+  LAMINATE_ELITE_XL_DATA,
+  LAMINATE_RIVER_DATA,
+  LAMINATE_URBAN_DATA,
   LEWIS_ABBOTT_FLAT_WEAVES_GATSBY_CARPET_DATA,
   LEWIS_ABBOTT_FLAT_WEAVES_HERRINGBONE_CARPET_DATA,
   MATRESE_BED_BEDSET_DATA,
@@ -33,7 +33,7 @@ import {
 import WiderPage from "./pages/wider-page";
 import {
   CARPET_BRAND_SECTIONS,
-  LEMINATE_BRAND_SECTIONS,
+  LAMINATE_BRAND_SECTIONS,
   LVT_BRAND_SECTIONS,
   MATRESE_BED_FRAME_BRAND_SECTIONS,
   VINYL_BRAND_SECTIONS,
@@ -229,28 +229,27 @@ function App() {
         path="/lvt/artisan-click-abingdon"
         element={<GalleryPage productsList={ABINGDON_LVT_DATA} />}
       />
-
-      {/* ========== LEMINATE ========== */}
+      {/* ========== LAMINATE ========== */}
       <Route
         path="/laminate"
         element={
           <WiderPage
-            brandList={LEMINATE_BRAND_SECTIONS}
+            brandList={LAMINATE_BRAND_SECTIONS}
             headerContent={LAMINATE_DESCRIPTION}
           />
         }
       />
       <Route
-        path="/leminate/urban-8mm"
-        element={<GalleryPage productsList={LEMINATE_URBAN_DATA} />}
+        path="/laminate/urban-8mm"
+        element={<GalleryPage productsList={LAMINATE_URBAN_DATA} />}
       />
       <Route
-        path="/leminate/river-water-resistant-8mm"
-        element={<GalleryPage productsList={LEMINATE_RIVER_DATA} />}
+        path="/laminate/river-water-resistant-8mm"
+        element={<GalleryPage productsList={LAMINATE_RIVER_DATA} />}
       />
       <Route
-        path="/leminate/elite-xl-10mm"
-        element={<GalleryPage productsList={LEMINATE_ELITE_XL_DATA} />}
+        path="/laminate/elite-xl-10mm"
+        element={<GalleryPage productsList={LAMINATE_ELITE_XL_DATA} />}
       />
 
       {/* ========== MATTRESS ========== */}
