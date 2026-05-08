@@ -3,11 +3,19 @@ import Chip from "./Chip";
 import { MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router";
+import OptimizedImage from "./OptimizedImage";
+import service1 from "../assets/home/service-1.png?preset=responsive";
+import service2 from "../assets/home/service-2.png?preset=responsive";
+
+type PictureSource = {
+  sources: Record<string, string>;
+  img: { src: string; w: number; h: number };
+};
 
 interface ServiceItem {
   title: string;
   description: string;
-  image: string;
+  image: PictureSource;
 }
 
 const SERVICES_DATA: ServiceItem[] = [
@@ -15,13 +23,13 @@ const SERVICES_DATA: ServiceItem[] = [
     title: "Free Home Survey & Measurement",
     description:
       "Our experts will visit your home to assess your flooring needs, take precise measurements, and provide personalized recommendations for the best carpet solutions.",
-    image: "home/service-1.png",
+    image: service1,
   },
   {
     title: "Professional Carpet & Flooring Installation",
     description:
       "Our skilled team ensures a seamless installation process, transforming your space with precision and care.",
-    image: "home/service-2.png",
+    image: service2,
   },
 ];
 
@@ -30,10 +38,8 @@ const ServiceCard: React.FC<ServiceItem> = ({ title, description, image }) => {
     <div className="group">
       {/* Container Gambar: Tinggi dikurangi di mobile agar lebih proporsional */}
       <div className="rounded-[2rem] md:rounded-[2.5rem] overflow-hidden mb-6 h-64 md:h-80 cursor-pointer relative shadow-sm transition-shadow hover:shadow-xl">
-        <motion.img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover"
+        <motion.div
+          className="w-full h-full"
           initial={{ scale: 1.4 }}
           whileInView={{ scale: 1 }}
           transition={{
@@ -42,7 +48,15 @@ const ServiceCard: React.FC<ServiceItem> = ({ title, description, image }) => {
           }}
           viewport={{ once: true }}
           whileHover={{ scale: 1.1 }}
-        />
+        >
+          <OptimizedImage
+            source={image}
+            alt={title}
+            sizes="(min-width: 768px) 50vw, 100vw"
+            pictureClassName="block w-full h-full"
+            className="w-full h-full object-cover"
+          />
+        </motion.div>
       </div>
       <h3 className="text-xl md:text-2xl font-medium mb-3 text-[#220905] group-hover:text-[#660000] transition-colors">
         {title}

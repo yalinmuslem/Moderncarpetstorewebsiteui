@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { Product } from "@/configs/products";
+import TileImage from "./TileImage";
 
 export default function GalleryScroll({
   productsList,
@@ -68,9 +69,10 @@ export default function GalleryScroll({
                   transition={{ duration: 0.6, ease: "easeInOut" }}
                   className="absolute inset-0"
                 >
-                  <img
-                    src={item.roomImg}
+                  <TileImage
+                    src={item.roomImg ?? ""}
                     alt={item.title}
+                    pictureClassName="block w-full h-full"
                     className="w-full h-full object-cover"
                   />
                   {/* Overlay gradasi untuk mobile */}
@@ -108,9 +110,10 @@ export default function GalleryScroll({
             >
               {/* Aspect ratio square di desktop (md:aspect-square) */}
               <div className="aspect-[3/4] md:aspect-square overflow-hidden shadow-xl rounded-sm ring-1 ring-black/5">
-                <img
+                <TileImage
                   src={item.tileImg}
                   alt={item.title}
+                  pictureClassName="block w-full h-full"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>

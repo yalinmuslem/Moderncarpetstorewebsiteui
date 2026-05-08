@@ -11,6 +11,7 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Chip from "@/components/Chip";
+import TileImage from "@/components/TileImage";
 import { Link } from "react-router";
 
 const AboutPage: React.FC = () => {
@@ -18,7 +19,7 @@ const AboutPage: React.FC = () => {
     initial: { opacity: 0, y: 30 },
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true },
-    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as const },
   };
 
   const stats = [
@@ -72,9 +73,11 @@ const AboutPage: React.FC = () => {
               viewport={{ once: true }}
               className="col-span-12 md:col-span-8 h-[300px] md:h-full rounded-[2rem] md:rounded-[3rem] overflow-hidden relative group"
             >
-              <img
+              <TileImage
                 src="/tiles/carpet/lewis-abbott/herringbone/copper-preview.png"
                 alt="Modern Flooring"
+                eager
+                pictureClassName="block w-full h-full"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors" />
@@ -88,9 +91,10 @@ const AboutPage: React.FC = () => {
                 viewport={{ once: true }}
                 className="h-[200px] md:h-1/2 rounded-[2rem] overflow-hidden shadow-lg"
               >
-                <img
+                <TileImage
                   src="/tiles/lvt/abingdon/smokey-oak-preview.png"
                   alt="Craftsmanship"
+                  pictureClassName="block w-full h-full"
                   className="w-full h-full object-cover"
                 />
               </motion.div>

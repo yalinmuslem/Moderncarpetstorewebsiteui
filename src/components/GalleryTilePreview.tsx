@@ -1,5 +1,6 @@
 import type { Product } from "@/configs/products";
 import React from "react";
+import TileImage from "./TileImage";
 
 interface GalleryTilePreviewProps {
   title: string;
@@ -29,9 +30,11 @@ const GalleryTilePreview: React.FC<GalleryTilePreviewProps> = ({
       {/* Hero Image: Border radius lebih lembut di mobile */}
       <div className="relative w-full h-[250px] sm:h-[400px] md:h-[550px] overflow-hidden rounded-2xl shadow-md mb-8 md:mb-12">
         <div className="absolute inset-0 bg-black/5 z-10 pointer-events-none" />
-        <img
+        <TileImage
           src={heroImage}
           alt={`Preview of ${title}`}
+          eager
+          pictureClassName="block w-full h-full"
           className="w-full h-full object-cover"
         />
       </div>
@@ -44,9 +47,10 @@ const GalleryTilePreview: React.FC<GalleryTilePreviewProps> = ({
             className="group flex flex-col items-center pb-3 rounded-2xl transition-all duration-300 bg-white hover:bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md active:scale-95"
           >
             <div className="w-full aspect-square overflow-hidden rounded-t-2xl mb-3">
-              <img
+              <TileImage
                 src={carpet.tileImg}
                 alt={carpet.title}
+                pictureClassName="block w-full h-full"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
             </div>

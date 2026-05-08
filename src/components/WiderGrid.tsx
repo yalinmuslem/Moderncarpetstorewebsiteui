@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router";
 import type { WiderGridBrand } from "@/configs/products";
+import TileImage from "./TileImage";
 
 const WiderGrid: React.FC<{ items: WiderGridBrand[] }> = ({ items }) => {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
@@ -34,9 +35,10 @@ const WiderGrid: React.FC<{ items: WiderGridBrand[] }> = ({ items }) => {
               scale: hoveredId === item.id ? 1.05 : 1,
             }}
           >
-            <img
+            <TileImage
               src={item.imageUrl}
               alt={item.title}
+              pictureClassName="block h-full w-full"
               className="h-full w-full object-cover"
             />
           </motion.div>

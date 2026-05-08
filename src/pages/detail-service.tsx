@@ -12,6 +12,10 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Chip from "@/components/Chip";
+import TileImage from "@/components/TileImage";
+import OptimizedImage from "@/components/OptimizedImage";
+import service1 from "@/assets/home/service-1.png?preset=responsive";
+import service2 from "@/assets/home/service-2.png?preset=responsive";
 import { Link, useNavigate } from "react-router";
 
 const DetailService: React.FC = () => {
@@ -21,7 +25,7 @@ const DetailService: React.FC = () => {
     initial: { opacity: 0, y: 30 },
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true },
-    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as const },
   };
 
   return (
@@ -63,9 +67,11 @@ const DetailService: React.FC = () => {
             transition={{ duration: 1.2 }}
             className="w-full h-[300px] md:h-[500px] rounded-[2rem] md:rounded-[3rem] overflow-hidden my-10 md:my-16 shadow-2xl"
           >
-            <img
+            <TileImage
               src="/tiles/lvt/abingdon/antique-walnut-preview.png"
               alt="Luxury Interior Flooring"
+              eager
+              pictureClassName="block w-full h-full"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-[3s]"
             />
           </motion.div>
@@ -107,9 +113,11 @@ const DetailService: React.FC = () => {
                 </div>
               </div>
               <div className="order-1 md:order-2 rounded-[1.5rem] md:rounded-[2rem] overflow-hidden h-[250px] md:h-[400px]">
-                <img
-                  src="/home/service-1.png"
+                <OptimizedImage
+                  source={service1}
                   alt="Measurement Service"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  pictureClassName="block w-full h-full"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -121,9 +129,11 @@ const DetailService: React.FC = () => {
               className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 py-12 md:py-20 border-b border-gray-100"
             >
               <div className="rounded-[1.5rem] md:rounded-[2rem] overflow-hidden h-[250px] md:h-[400px]">
-                <img
-                  src="/home/service-2.png"
+                <OptimizedImage
+                  source={service2}
                   alt="Professional Installation"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  pictureClassName="block w-full h-full"
                   className="w-full h-full object-cover"
                 />
               </div>

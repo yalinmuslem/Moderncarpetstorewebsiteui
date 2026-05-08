@@ -1,4 +1,9 @@
 import { MoveRight } from "lucide-react";
+import OptimizedImage from "./OptimizedImage";
+import contact1 from "../assets/home/contact-1.png?preset=responsive";
+import contact2 from "../assets/home/contact-2.png?preset=responsive";
+import contact3 from "../assets/home/contact-3.png?preset=responsive";
+import contact4 from "../assets/home/contact-4.png?preset=responsive";
 
 export const CTA = () => {
   return (
@@ -21,33 +26,41 @@ export const CTA = () => {
         <div className="md:w-1/2 grid grid-cols-2 gap-4">
           <div className="space-y-4">
             <div className="h-40 rounded-3xl overflow-hidden bg-gray-200">
-              <img
-                src="home/contact-1.png"
-                className="w-full h-full object-cover"
+              <OptimizedImage
+                source={contact1}
                 alt="nature"
+                sizes="(min-width: 768px) 25vw, 50vw"
+                pictureClassName="block w-full h-full"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="h-60 rounded-3xl overflow-hidden bg-gray-200">
-              <img
-                src="home/contact-2.png"
-                className="w-full h-full object-cover"
+              <OptimizedImage
+                source={contact2}
                 alt="office"
+                sizes="(min-width: 768px) 25vw, 50vw"
+                pictureClassName="block w-full h-full"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
           <div className="space-y-4 pt-12">
             <div className="h-60 rounded-3xl overflow-hidden bg-gray-200">
-              <img
-                src="home/contact-3.png"
-                className="w-full h-full object-cover"
+              <OptimizedImage
+                source={contact3}
                 alt="leaf"
+                sizes="(min-width: 768px) 25vw, 50vw"
+                pictureClassName="block w-full h-full"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="h-40 rounded-3xl overflow-hidden bg-gray-200">
-              <img
-                src="home/contact-4.png"
-                className="w-full h-full object-cover"
+              <OptimizedImage
+                source={contact4}
                 alt="person"
+                sizes="(min-width: 768px) 25vw, 50vw"
+                pictureClassName="block w-full h-full"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
