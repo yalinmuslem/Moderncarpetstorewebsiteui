@@ -1,4 +1,4 @@
-import React from "react";
+import { siteContact } from "@/configs/contact";
 
 type Props = {
   /** E.164 phone number without plus, e.g. 6281234567890. If omitted opens WhatsApp with a prefilled message but no number selected. */
@@ -6,7 +6,10 @@ type Props = {
   message?: string;
 };
 
-const WhatsAppButton: React.FC<Props> = ({ phone, message = "Hello! I am interested in your product." }) => {
+const WhatsAppButton: React.FC<Props> = ({ 
+  phone = siteContact.whatsappNumber, 
+  message = siteContact.whatsappMessage 
+}) => {
   const cleanPhone = phone ? phone.replace(/\D/g, "") : "";
   const href = cleanPhone
     ? `https://wa.me/${cleanPhone}?text=${encodeURIComponent(message)}`

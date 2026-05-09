@@ -17,6 +17,7 @@ import OptimizedImage from "@/components/OptimizedImage";
 import service1 from "@/assets/home/service-1.png?preset=responsive";
 import service2 from "@/assets/home/service-2.png?preset=responsive";
 import { Link, useNavigate } from "react-router";
+import { siteContact } from "@/configs/contact";
 
 const DetailService: React.FC = () => {
   const navigate = useNavigate();
@@ -215,7 +216,7 @@ const DetailService: React.FC = () => {
                         <MapPin size={20} />
                       </div>
                       <span className="font-medium text-sm md:text-base text-[#220905]">
-                        Leyton, London, E10
+                        {siteContact.address}
                       </span>
                     </div>
                     <div className="flex items-center gap-4">
@@ -223,14 +224,14 @@ const DetailService: React.FC = () => {
                         <Phone size={20} />
                       </div>
                       <span className="font-medium text-sm md:text-base text-[#220905]">
-                        +44 20 1234 5678
+                        {siteContact.phoneNumber}
                       </span>
                     </div>
                   </div>
                 </div>
                 <Link
                   target="_blank"
-                  to={`https://wa.me/6281234567890?text=${encodeURIComponent("Hello! I am interested in your product.")}`}
+                  to={`https://wa.me/${siteContact.whatsappNumber}?text=${encodeURIComponent(siteContact.whatsappMessage)}`}
                   className="w-full py-4 md:py-5 bg-[#220905] text-white rounded-2xl font-medium flex items-center justify-center gap-3 hover:bg-[#660000] transition-all group text-sm md:text-base"
                 >
                   <Calendar
@@ -244,7 +245,7 @@ const DetailService: React.FC = () => {
               {/* Google Maps Embed - Tinggi dikurangi di mobile */}
               <div className="h-[300px] md:h-[400px] rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-100">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2480.252062534062!2d-0.015241423405785041!3d51.56360697182583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d7639556857%3A0xc0747447477382d3!2sLeyton%2C%20London!5e0!3m2!1sen!2suk!4v1711234567890!5m2!1sen!2suk"
+                  src={siteContact.googleMapsUrl}
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

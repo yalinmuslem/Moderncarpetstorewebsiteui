@@ -6,6 +6,8 @@ import contact2 from "../assets/home/contact-2.png?preset=responsive";
 import contact3 from "../assets/home/contact-3.png?preset=responsive";
 import contact4 from "../assets/home/contact-4.png?preset=responsive";
 
+import { siteContact } from "@/configs/contact";
+
 export const CTA = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 pb-20">
@@ -20,7 +22,7 @@ export const CTA = () => {
           </p>
           <Link
             target="_blank"
-            to={`https://wa.me/6281234567890?text=${encodeURIComponent("Hello! I am interested in your product.")}`}
+            to={`https://wa.me/${siteContact.whatsappNumber}?text=${encodeURIComponent(siteContact.whatsappMessage)}`}
           >
             <button className="bg-[#660000] cursor-pointer text-white px-10 py-5 rounded-full font-medium flex items-center gap-2 mx-auto md:mx-0 hover:bg-[#bd0d11] transition-all">
               Let's Talk <MoveRight size={20} />

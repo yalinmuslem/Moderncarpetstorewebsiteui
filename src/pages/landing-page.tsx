@@ -43,7 +43,7 @@ const GreenleafLanding: React.FC = () => {
 
           {/* 7. FAQ SECTION */}
           {/* Floating WhatsApp button (phone number optional) */}
-          <WhatsAppButton phone="6281234567890" />
+          <WhatsAppButton />
           {/* <FAQ /> */}
 
           {/* 8. CTA SECTION */}

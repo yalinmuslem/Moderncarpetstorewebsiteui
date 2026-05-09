@@ -13,6 +13,7 @@ import Footer from "@/components/Footer";
 import Chip from "@/components/Chip";
 import TileImage from "@/components/TileImage";
 import { Link } from "react-router";
+import { siteContact } from "@/configs/contact";
 
 const AboutPage: React.FC = () => {
   const fadeIn = {
@@ -56,7 +57,7 @@ const AboutPage: React.FC = () => {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-gray-500 leading-relaxed">
-              Based in Leyton, London, we are a family-owned business proudly
+              Based in {siteContact.address}, we are a family-owned business proudly
               serving homes and businesses across East London for over two
               decades.
             </p>
@@ -212,7 +213,7 @@ const AboutPage: React.FC = () => {
             <div className="flex justify-center">
               <Link
                 target="_blank"
-                to={`https://wa.me/6281234567890?text=${encodeURIComponent("Hello! I am interested in your product.")}`}
+                to={`https://wa.me/${siteContact.whatsappNumber}?text=${encodeURIComponent(siteContact.whatsappMessage)}`}
                 className="w-full sm:w-auto px-10 py-4 bg-[#660000] text-white rounded-full font-medium hover:bg-[#bd0d11] transition-all shadow-lg hover:shadow-xl shadow-[#660000]/20 flex items-center justify-center gap-2"
               >
                 Book a Free Survey <ArrowRight size={18} />
