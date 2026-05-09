@@ -1,5 +1,5 @@
 export const siteContact = {
-  whatsappNumber: " +447958057867",
+  whatsappNumber: "+447958057867",
   whatsappMessage: "Hello! I am interested in your product.",
   phoneNumber: "+447958057867",
   address: "Leyton, London, E10",
