@@ -9,6 +9,7 @@ import Testimonials from "@/components/Testimonials";
 import GradualBlurMemo from "@/components/GradualBlur";
 import { Services } from "@/components/Services";
 import { CTA } from "@/components/CTA";
+import Showroom from "@/components/Showroom";
 import Products from "@/components/Product";
 // import Chip from "@/components/Chip";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -48,6 +49,7 @@ const GreenleafLanding: React.FC = () => {
 
           {/* 8. CTA SECTION */}
           <CTA />
+          <Showroom />
         </main>
 
         {/* 9. FOOTER SECTION */}

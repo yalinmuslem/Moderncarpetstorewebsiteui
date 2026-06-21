@@ -3,9 +3,6 @@ import { motion } from "framer-motion";
 import {
   Check,
   ArrowLeft,
-  Phone,
-  MapPin,
-  Calendar,
   Clock,
   Star,
 } from "lucide-react";
@@ -16,8 +13,7 @@ import TileImage from "@/components/TileImage";
 import OptimizedImage from "@/components/OptimizedImage";
 import service1 from "@/assets/home/service-1.png?preset=responsive";
 import service2 from "@/assets/home/service-2.png?preset=responsive";
-import { Link, useNavigate } from "react-router";
-import { siteContact } from "@/configs/contact";
+import { useNavigate } from "react-router";
 
 const DetailService: React.FC = () => {
   const navigate = useNavigate();
@@ -199,63 +195,6 @@ const DetailService: React.FC = () => {
               </div>
             </motion.div>
 
-            {/* Location & CTA Section */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-10 mb-20">
-              <div className="space-y-8">
-                <div>
-                  <h3 className="text-2xl font-medium mb-4 italic">
-                    Visit Our Showroom
-                  </h3>
-                  <p className="text-gray-500 mb-6 text-sm md:text-base">
-                    Experience our collection in person. Our experts are ready
-                    to guide you through our premium selection.
-                  </p>
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-4">
-                      <div className="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center text-[#660000] shrink-0">
-                        <MapPin size={20} />
-                      </div>
-                      <span className="font-medium text-sm md:text-base text-[#220905]">
-                        {siteContact.address}
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-4">
-                      <div className="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center text-[#660000] shrink-0">
-                        <Phone size={20} />
-                      </div>
-                      <span className="font-medium text-sm md:text-base text-[#220905]">
-                        {siteContact.phoneNumber}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <Link
-                  target="_blank"
-                  to={`https://wa.me/${siteContact.whatsappNumber}?text=${encodeURIComponent(siteContact.whatsappMessage)}`}
-                  className="w-full py-4 md:py-5 bg-[#220905] text-white rounded-2xl font-medium flex items-center justify-center gap-3 hover:bg-[#660000] transition-all group text-sm md:text-base"
-                >
-                  <Calendar
-                    size={20}
-                    className="group-hover:rotate-12 transition-transform"
-                  />
-                  Book Free Survey
-                </Link>
-              </div>
-
-              {/* Google Maps Embed - Tinggi dikurangi di mobile */}
-              <div className="h-[300px] md:h-[400px] rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-100">
-                <iframe
-                  src={siteContact.googleMapsUrl}
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Standard Carpets Location"
-                ></iframe>
-              </div>
-            </div>
           </div>
         </div>
       </main>
